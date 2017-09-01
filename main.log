@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.31)  1 SEP 2017 12:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.31)  1 SEP 2017 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1792,20 +1792,30 @@ LaTeX Font Warning: Font shape `T1/Carlito-LF/m/sc' undefined
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 1306.
 [34] [35 <./figures/Pooling.pdf>]
+
+Package natbib Warning: Citation `Comparisonofcoarseningschemesformultilevelgra
+phpartitioning' on page 36 undefined on input line 1328.
+
 No file main.bbl.
 
 Package natbib Warning: There were undefined citations.
 
 [36]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1336.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1336.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1344.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1344.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1336.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1336.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1344.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1344.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 92846E232F33775B047F7D008451839C;1621.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 92846E232F33775B047F7D008451839C;1621
+(rerunfilecheck)             After:  DE97913E548A6D3E2969ABB0A4E6C1AA;1695.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1815,12 +1825,12 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1336.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1344.
  ) 
 Here is how much of TeX's memory you used:
- 25189 strings out of 492990
- 465646 string characters out of 6136334
- 671344 words of memory out of 5000000
+ 25190 strings out of 492990
+ 465718 string characters out of 6136334
+ 671303 words of memory out of 5000000
  28116 multiletter control sequences out of 15000+600000
  134186 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1842,10 +1852,10 @@ pe1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-
 super/sfrm1000.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt
 0800.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (36 pages, 5426451 bytes).
+Output written on main.pdf (36 pages, 5427132 bytes).
 PDF statistics:
- 625 PDF objects out of 1000 (max. 8388607)
- 456 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 626 PDF objects out of 1000 (max. 8388607)
+ 457 compressed objects within 5 object streams
+ 102 named destinations out of 1000 (max. 500000)
  324 words of extra memory for PDF output out of 10000 (max. 10000000)
 

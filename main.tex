@@ -1306,8 +1306,9 @@ The decoding process is a bit more involved.  Given a latent representation $z$ 
 \item \textsc{Get\_Children}$(z)$ -- a function from the $k$ dimensional latent space that produces two $k$ dimensional vectors, the children of the node, used only if the node is non-terminal
 \item \textsc{Reify}$(z)$ --- a function from the $k$ dimensional graph latent space to the $h$ dimensional tile latent space, used if the node is terminal
 
-\item \textsc{Find\_Links}$(T)$ --- a function from a binary tree structured graph that returns the links between nodes.  The output is a sequence of leaf id pairs signifying an edge from the first leaf to the second. 
+\item \textsc{Find\_Links}$(T)$ --- a function from a binary tree structured graph that returns the links between nodes.  The output is a sequence of leaf id pairs signifying an edge from the first leaf to the second. I plan to combine a Tree-RNN or Tree-LSTM \cite{treernn,treelstm} with a pointer network \cite{pointernetwork} to reference back to the leaf nodes.
 \end{itemize}
+
 
 Given that, decoding operates via decoding the root level latent node with the following procedure:
 
@@ -1328,10 +1329,16 @@ This returns a binary tree form of the graph, where each leaf represents an actu
 Given that there are many possible trees that describe the graph coarsening \cite{Comparisonofcoarseningschemesformultilevelgraphpartitioning}, I intend to utilize domain knowledge to choose the order of coarsening.  Given that the graphs come from play throughs, I will order the nodes in the order that they are capable of being reached by the player.  Then when the pooling step occurs, the lowest neighbor will be chosen.
 
 
-
 \subsubsection{Work Remaining}
 
-The graph learning/generation portion represents the largest portion remaining 
+The graph learning/generation portion represents the largest portion remaining for my dissertation.  Given that it is a completely novel approach (graph convolutions \cite{kipfgraphconvolutions}  and learning and generation of trees \cite{trees} have been done, but generative neural graph learning has yet to be done), there are no guarantees about this approach.  Early experiments are in process.  If the approach does not seem like it will work, I have multiple ideas for fall back approaches:
+
+\begin{itemize}
+\item Utilize a graph generation approach similar to that of my earlier Zelda work, where each node is sample from some distribution. This approach relied on design knowledge about Zelda dungeons, so modifications will be required to work around this.
+\item Starting from a graphical structure (perhaps sampled a la GraphLearn \cite{Learning an efficient constructive sampler for graphs.}) initialize each node with white noise.  Perform gradient descent on the graph given some neural network that encodes the graph (perhaps something as simple as a graph convolution that tries to predict each node from its neighborhood).
+\end{itemize}
+
+
 
 \subsection{Farore --- Game Behavior Generation}
 \begin{quotation}
