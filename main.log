@@ -1,0 +1,1851 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.31)  1 SEP 2017 12:14
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(./main.tex
+LaTeX2e <2017-04-15>
+Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
+(c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(c:/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(c:/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(c:/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(c:/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(c:/texlive/2017/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(c:/texlive/2017/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+
+(c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count87
+\uc@combtoks=\toks16
+\uc@combtoksb=\toks17
+\uc@temptokena=\toks18
+)
+(c:/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2017/06/29 3.12 The Babel package
+
+(c:/texlive/2017/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2017/06/29 3.12 Babel switching mechanism
+)
+(c:/texlive/2017/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(c:/texlive/2017/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2017/06/29 3.12 Babel common definitions
+
+(c:/texlive/2017/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2017/06/29 3.12 Babel switching mechanism
+)
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(c:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen104
+\Hy@linkcounter=\count89
+\Hy@pagecounter=\count90
+
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count91
+
+(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count92
+
+(c:/texlive/2017/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen105
+\Fld@menulength=\count93
+\Field@Width=\dimen106
+\Fld@charsize=\dimen107
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring ON on input line 6376.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count94
+\c@Item=\count95
+\c@Hfootnote=\count96
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count97
+\c@bookmark@seq@number=\count98
+
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
+(c:/texlive/2017/texmf-dist/tex/latex/carlito/carlito.sty
+Package: carlito 2014/08/20 (Bob Tennent) Supports Carlito fonts for LaTeX, pdf
+LaTeX, luaLaTeX and xeLaTeX.
+
+(c:/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+)
+\XKV@depth=\count99
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(c:/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2014/03/23 v1.0d Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \scshape on input line 37.
+))
+(c:/texlive/2017/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip44
+\f@nch@O@elh=\skip45
+\f@nch@O@erh=\skip46
+\f@nch@O@olh=\skip47
+\f@nch@O@orh=\skip48
+\f@nch@O@elf=\skip49
+\f@nch@O@erf=\skip50
+\f@nch@O@olf=\skip51
+\f@nch@O@orf=\skip52
+)
+(c:/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip53
+\bibsep=\skip54
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count100
+)
+(c:/texlive/2017/texmf-dist/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip55
+\@affilsep=\skip56
+\c@Maxaffil=\count101
+\c@authors=\count102
+\c@affil=\count103
+)
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks22
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(c:/texlive/2017/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count104
+\float@exts=\toks23
+\float@box=\box26
+\@float@everytoks=\toks24
+\@floatcapt=\box27
+)
+(c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks25
+\c@algorithm=\count105
+)
+(c:/texlive/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(c:/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count106
+\c@ALG@rem=\count107
+\c@ALG@nested=\count108
+\ALG@tlm=\skip57
+\ALG@thistlm=\skip58
+\c@ALG@Lnr=\count109
+\c@ALG@blocknr=\count110
+\c@ALG@storecount=\count111
+\c@ALG@tmpcounter=\count112
+\ALG@tmplength=\skip59
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (c:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen108
+\Gin@req@width=\dimen109
+)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen110
+\pgfutil@tempdimb=\dimen111
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box28
+
+(c:/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks29
+))
+\pgf@x=\dimen112
+\pgf@y=\dimen113
+\pgf@xa=\dimen114
+\pgf@ya=\dimen115
+\pgf@xb=\dimen116
+\pgf@yb=\dimen117
+\pgf@xc=\dimen118
+\pgf@yc=\dimen119
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count113
+\c@pgf@countb=\count114
+\c@pgf@countc=\count115
+\c@pgf@countd=\count116
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+ (c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count117
+\pgfsyssoftpath@bigbuffer@items=\count118
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (c:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen120
+\pgfmath@count=\count119
+\pgfmath@box=\box29
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count120
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen121
+\pgf@picmaxx=\dimen122
+\pgf@picminy=\dimen123
+\pgf@picmaxy=\dimen124
+\pgf@pathminx=\dimen125
+\pgf@pathmaxx=\dimen126
+\pgf@pathminy=\dimen127
+\pgf@pathmaxy=\dimen128
+\pgf@xx=\dimen129
+\pgf@xy=\dimen130
+\pgf@yx=\dimen131
+\pgf@yy=\dimen132
+\pgf@zx=\dimen133
+\pgf@zy=\dimen134
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen135
+\pgf@path@lasty=\dimen136
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen137
+\pgf@shorten@start@additional=\dimen138
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count121
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen139
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen140
+\pgf@pt@y=\dimen141
+\pgf@pt@temp=\dimen142
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen143
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen144
+\pgf@sys@shading@range@num=\count122
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box33
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box34
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen145
+\pgf@nodesepend=\dimen146
+)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen147
+\pgffor@skip=\dimen148
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count123
+\pgfplotmarksize=\dimen149
+)
+\tikz@lastx=\dimen150
+\tikz@lasty=\dimen151
+\tikz@lastxsaved=\dimen152
+\tikz@lastysaved=\dimen153
+\tikzleveldistance=\dimen154
+\tikzsiblingdistance=\dimen155
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count124
+\tikznumberofchildren=\count125
+\tikznumberofcurrentchild=\count126
+\tikz@fig@count=\count127
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count128
+\pgfmatrixcurrentcolumn=\count129
+\pgf@matrix@numberofcolumns=\count130
+)
+\tikz@expandcount=\count131
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
+eometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+isc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
+ymbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
+rrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.callouts.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+allouts.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+ultipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box39
+\pgfnodeparttwobox=\box40
+\pgfnodepartthreebox=\box41
+\pgfnodepartfourbox=\box42
+\pgfnodeparttwentybox=\box43
+\pgfnodepartnineteenbox=\box44
+\pgfnodeparteighteenbox=\box45
+\pgfnodepartseventeenbox=\box46
+\pgfnodepartsixteenbox=\box47
+\pgfnodepartfifteenbox=\box48
+\pgfnodepartfourteenbox=\box49
+\pgfnodepartthirteenbox=\box50
+\pgfnodeparttwelvebox=\box51
+\pgfnodepartelevenbox=\box52
+\pgfnodeparttenbox=\box53
+\pgfnodepartninebox=\box54
+\pgfnodeparteightbox=\box55
+\pgfnodepartsevenbox=\box56
+\pgfnodepartsixbox=\box57
+\pgfnodepartfivebox=\box58
+))) (c:/texlive/2017/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip60
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks38
+\ex@=\dimen156
+))
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen157
+)
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count132
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count133
+\leftroot@=\count134
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count135
+\DOTSCASE@=\count136
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+\big@size=\dimen158
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count137
+\c@MaxMatrixCols=\count138
+\dotsspace@=\muskip11
+\c@parentequation=\count139
+\dspbrk@lvl=\count140
+\tag@help=\toks39
+\row@=\count141
+\column@=\count142
+\maxfields@=\count143
+\andhelp@=\toks40
+\eqnshift@=\dimen159
+\alignsep@=\dimen160
+\tagshift@=\dimen161
+\tagwidth@=\dimen162
+\totwidth@=\dimen163
+\lineht@=\dimen164
+\@envbody=\toks41
+\multlinegap=\skip61
+\multlinetaggap=\skip62
+\mathdisplay@stack=\toks42
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(c:/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks43
+\thm@bodyfont=\toks44
+\thm@headfont=\toks45
+\thm@notefont=\toks46
+\thm@headpunct=\toks47
+\thm@preskip=\skip63
+\thm@postskip=\skip64
+\thm@headsep=\skip65
+\dth@everypar=\toks48
+)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(c:/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(c:/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen165
+\captionmargin@=\dimen166
+\captionwidth=\dimen167
+\caption@tempdima=\dimen168
+\caption@indent=\dimen169
+\caption@parindent=\dimen170
+\caption@hangindent=\dimen171
+)
+\c@ContinuedFloat=\count144
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+(c:/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count145
+\c@subtable=\count146
+)
+(c:/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count147
+\Gm@cntv=\count148
+\c@Gm@tempcnt=\count149
+\Gm@bindingoffset=\dimen172
+\Gm@wd@mp=\dimen173
+\Gm@odd@mp=\dimen174
+\Gm@even@mp=\dimen175
+\Gm@layoutwidth=\dimen176
+\Gm@layoutheight=\dimen177
+\Gm@layouthoffset=\dimen178
+\Gm@layoutvoffset=\dimen179
+\Gm@dimlist=\toks49
+)
+(c:/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen180
+\lightrulewidth=\dimen181
+\cmidrulewidth=\dimen182
+\belowrulesep=\dimen183
+\belowbottomsep=\dimen184
+\aboverulesep=\dimen185
+\abovetopsep=\dimen186
+\cmidrulesep=\dimen187
+\cmidrulekern=\dimen188
+\defaultaddspace=\dimen189
+\@cmidla=\count150
+\@cmidlb=\count151
+\@aboverulesep=\dimen190
+\@belowrulesep=\dimen191
+\@thisruleclass=\count152
+\@lastruleclass=\count153
+\@thisrulewidth=\dimen192
+)
+(c:/texlive/2017/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup7
+)
+(c:/texlive/2017/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip66
+\plpartopsep=\skip67
+\plitemsep=\skip68
+\plparsep=\skip69
+\pl@lab=\toks50
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count154
+\lst@gtempboxa=\box61
+\lst@token=\toks51
+\lst@length=\count155
+\lst@currlwidth=\dimen193
+\lst@column=\count156
+\lst@pos=\count157
+\lst@lostspace=\dimen194
+\lst@width=\dimen195
+\lst@newlines=\count158
+\lst@lineno=\count159
+\lst@maxwidth=\dimen196
+
+(c:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count160
+\lst@skipnumbers=\count161
+\lst@framebox=\box62
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(c:/texlive/2017/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+) (c:/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count162
+\calc@Bcount=\count163
+\calc@Adimen=\dimen197
+\calc@Bdimen=\dimen198
+\calc@Askip=\skip70
+\calc@Bskip=\skip71
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count164
+\calc@Cskip=\skip72
+)
+\c@@todonotes@numberoftodonotes=\count165
+) (c:/texlive/2017/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip73
+\fb@frw=\dimen199
+\fb@frh=\dimen256
+\FrameRule=\dimen257
+\FrameSep=\dimen258
+)
+(c:/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count166
+) (./main.aux
+
+LaTeX Warning: Label `fig:dungeon' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
+ (c:/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Try loading font information for T1+Carlito-LF on input lin
+e 69.
+
+(c:/texlive/2017/texmf-dist/tex/latex/carlito/t1carlito-lf.fd
+File: T1Carlito-LF.fd 2014/08/20 (autoinst) Font definitions for T1/Carlito-LF.
+
+)
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 69.
+
+(c:/texlive/2017/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+\AtBeginShipoutBox=\box63
+Package hyperref Info: Link coloring ON on input line 69.
+
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count167
+)
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
+
+(./main.out) (./main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+\c@mv@tabular=\count168
+\c@mv@boldtabular=\count169
+
+(c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count170
+\scratchdimen=\dimen259
+\scratchbox=\box64
+\nofMPsegments=\count171
+\nofMParguments=\count172
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count173
+\MPscratchDim=\dimen260
+\MPnumerator=\count174
+\makeMPintoPDFobject=\count175
+\everyMPtoPDFconversion=\toks53
+) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.91173pt
+* \headheight=41.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=49.79231pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count176
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 70.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 70.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 73.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/n' in size <14.4> not availabl
+e
+(Font)              Font shape `T1/Carlito-LF/b/n' tried instead on input line 
+73.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 73.
+LaTeX Font Info:    Try loading font information for TS1+Carlito-LF on input li
+ne 90.
+(c:/texlive/2017/texmf-dist/tex/latex/carlito/ts1carlito-lf.fd
+File: TS1Carlito-LF.fd 2014/08/20 (autoinst) Font definitions for TS1/Carlito-L
+F.
+)
+LaTeX Font Info:    Font shape `TS1/Carlito-LF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 90.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 90.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/n' in size <10> not available
+(Font)              Font shape `T1/Carlito-LF/b/n' tried instead on input line 
+100.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 100.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/sl' in size <10> not available
+(Font)              Font shape `T1/Carlito-LF/m/it' tried instead on input line
+ 103.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 103.
+ [1
+
+{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (12.75696pt too wide) in paragraph at lines 105--106
+[]\T1/Carlito-LF/b/n/10 Question 2: How should con-tent be rep-re-sented such t
+hat it can be ef-fi-ciently learned for gen-er-a-tion? 
+ []
+
+LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/n' in size <12> not available
+(Font)              Font shape `T1/Carlito-LF/b/n' tried instead on input line 
+139.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 139.
+
+Package natbib Warning: Citation `Introduction to Active Automata Learning from
+ a Practical Perspective?' on page 2 undefined on input line 144.
+
+[2]
+
+Package natbib Warning: Citation `niggemann2012learning' on page 3 undefined on
+ input line 148.
+
+
+Package natbib Warning: Citation `hybridmodels2015santana' on page 3 undefined 
+on input line 158.
+
+
+Overfull \hbox (16.06277pt too wide) in paragraph at lines 158--159
+[]\T1/Carlito-LF/m/n/10 Santana \T1/Carlito-LF/m/it/10 et al. \T1/Carlito-LF/b/
+n/10 ? \T1/Carlito-LF/m/n/10 learned Prob-a-bilis-tic Hy-brid Au-tomata (PHA) f
+rom ob-ser-va-tion us-ing Expectation-Maximization.
+ []
+
+
+Package natbib Warning: Citation `Learning Symbolic Representations of Hybrid D
+ynamical Systems' on page 3 undefined on input line 161.
+
+
+Package natbib Warning: Citation `baum1966statistical' on page 3 undefined on i
+nput line 165.
+
+
+Package natbib Warning: Citation `beal2002infinite' on page 3 undefined on inpu
+t line 166.
+
+
+Package natbib Warning: Citation `kukreja2005least' on page 3 undefined on inpu
+t line 169.
+
+
+Package natbib Warning: Citation `bridewell2008inductive' on page 3 undefined o
+n input line 169.
+
+
+Package natbib Warning: Citation `bjornsson2012learning' on page 3 undefined on
+ input line 171.
+
+
+Package natbib Warning: Citation `PROCJAM2015' on page 3 undefined on input lin
+e 176.
+
+
+Package natbib Warning: Citation `PROCJAM2016' on page 3 undefined on input lin
+e 176.
+
+
+Package natbib Warning: Citation `SOMETHING' on page 3 undefined on input line 
+176.
+
+
+Package natbib Warning: Citation `SOMETHING' on page 3 undefined on input line 
+176.
+
+
+Package natbib Warning: Citation `mario2010' on page 3 undefined on input line 
+181.
+
+
+Package natbib Warning: Citation `mawhorterORE' on page 3 undefined on input li
+ne 181.
+
+
+Package natbib Warning: Citation `mario2010' on page 3 undefined on input line 
+181.
+
+[3]
+
+Package natbib Warning: Citation `mario2010' on page 4 undefined on input line 
+183.
+
+
+Package natbib Warning: Citation `tanagra' on page 4 undefined on input line 18
+3.
+
+
+Package natbib Warning: Citation `mario2010' on page 4 undefined on input line 
+185.
+
+
+Package natbib Warning: Citation `sorpasq' on page 4 undefined on input line 18
+5.
+
+
+Package natbib Warning: Citation `VARGASPLOTPOINTS' on page 4 undefined on inpu
+t line 189.
+
+
+Package natbib Warning: Citation `JDADVENTURE' on page 4 undefined on input lin
+e 191.
+
+
+Package natbib Warning: Citation `VDLPROCGENLEVEL' on page 4 undefined on input
+ line 192.
+
+
+Package natbib Warning: Citation `SORPASLEVEL' on page 4 undefined on input lin
+e 194.
+
+
+Package natbib Warning: Citation `VALTCHANOVEVOLVE' on page 4 undefined on inpu
+t line 194.
+
+
+Package natbib Warning: Citation `hartsook' on page 4 undefined on input line 1
+95.
+
+[4]
+
+Package natbib Warning: Citation `HORSWILLCONSTRAINT' on page 5 undefined on in
+put line 200.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 206.
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 206.
+
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 206.
+
+(c:/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 206.
+
+(c:/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+
+Package natbib Warning: Citation `dahlskog2014linear' on page 5 undefined on in
+put line 206.
+
+
+Package natbib Warning: Citation `dahlskog2013patterns' on page 5 undefined on 
+input line 206.
+
+
+Package natbib Warning: Citation `snodgrass2014experiments' on page 5 undefined
+ on input line 209.
+
+
+Package natbib Warning: Citation `ching2007multi' on page 5 undefined on input 
+line 209.
+
+
+Package natbib Warning: Citation `snodgrass2015hierarchical' on page 5 undefine
+d on input line 213.
+
+
+Package natbib Warning: Citation `snodgrassconstrained' on page 5 undefined on 
+input line 213.
+
+
+Package natbib Warning: Citation `snodgrass2016learning' on page 5 undefined on
+ input line 213.
+
+
+Package natbib Warning: Citation `Pulli:2012:RCV:2184319.2184337' on page 5 und
+efined on input line 216.
+
+
+Package natbib Warning: Citation `kalogerakis:2012:SIG' on page 5 undefined on 
+input line 218.
+
+
+Package natbib Warning: Citation `guzdial2016game' on page 5 undefined on input
+ line 218.
+
+
+Package natbib Warning: Citation `MARIOGRAPHGRAMMAR' on page 5 undefined on inp
+ut line 218.
+
+[5]
+
+Package natbib Warning: Citation `shaker2014alone' on page 6 undefined on input
+ line 220.
+
+
+Package natbib Warning: Citation `lee1999learning' on page 6 undefined on input
+ line 222.
+
+
+Package natbib Warning: Citation `AGDViaMechanics' on page 6 undefined on input
+ line 229.
+
+(c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-34.def
+File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
+)
+
+Package natbib Warning: Citation `programsynthesis' on page 6 undefined on inpu
+t line 242.
+
+
+Package natbib Warning: Citation `Oleksandr Polozov and Sumit Gulwani. 2015. Fl
+ashMeta: A framework for inductive program synthesis' on page 6 undefined on in
+put line 243.
+
+
+Package natbib Warning: Citation `Eric Schkufza' on page 6 undefined on input l
+ine 243.
+
+
+Package natbib Warning: Citation `Rahul Sharma' on page 6 undefined on input li
+ne 243.
+
+
+Package natbib Warning: Citation `and Alex Aiken. 2013. Stochastic Superoptimiz
+ation.' on page 6 undefined on input line 243.
+
+[6]
+
+Package natbib Warning: Citation `towardsAGD' on page 7 undefined on input line
+ 251.
+
+
+Package natbib Warning: Citation `conceptnet' on page 7 undefined on input line
+ 251.
+
+
+Package natbib Warning: Citation `wordnet' on page 7 undefined on input line 25
+1.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 251.
+
+(c:/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+
+Package natbib Warning: Citation `gameomatic' on page 7 undefined on input line
+ 253.
+
+
+Package natbib Warning: Citation `(' on page 7 undefined on input line 255.
+
+
+Package natbib Warning: Citation `mikesThesis' on page 7 undefined on input lin
+e 257.
+
+[7]
+
+Package natbib Warning: Citation `Evolutionary Game Design' on page 8 undefined
+ on input line 271.
+
+
+Package natbib Warning: Citation `OperationalLogics' on page 8 undefined on inp
+ut line 289.
+
+
+Package natbib Warning: Citation `OperationalLogics' on page 8 undefined on inp
+ut line 289.
+
+<figures/Clusters.png, id=145, 955.57pt x 536.0025pt>
+File: figures/Clusters.png Graphic file (type png)
+<use figures/Clusters.png>
+Package pdftex.def Info: figures/Clusters.png  used on input line 301. on input
+ line 301.
+Package pdftex.def Info: Requested size: 413.98813pt x 232.21046pt on input lin
+e 301.
+[8]
+
+LaTeX Warning: Reference `fig:clusters' on page 9 undefined on input line 317.
+
+[9 <./figures/Clusters.png>]
+Overfull \hbox (9.06097pt too wide) in paragraph at lines 341--343
+[][] 
+ []
+
+
+Overfull \hbox (9.06097pt too wide) in paragraph at lines 370--372
+[][]
+ []
+
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 372.
+
+Overfull \hbox (9.06097pt too wide) in paragraph at lines 393--395
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--398
+[][]
+ []
+
+[10]
+
+Package natbib Warning: Citation `wardrip-fruin2005playable' on page 11 undefin
+ed on input line 413.
+
+
+Package natbib Warning: Citation `osborn2017refining' on page 11 undefined on i
+nput line 413.
+
+
+Package natbib Warning: Citation `nesdev' on page 11 undefined on input line 43
+2.
+
+[11]
+
+Package natbib Warning: Citation `summerville2017mechanics' on page 12 undefine
+d on input line 463.
+
+[12]
+<figures/screen.png, id=175, 241.3818pt x 226.2051pt>
+File: figures/screen.png Graphic file (type png)
+<use figures/screen.png>
+Package pdftex.def Info: figures/screen.png  used on input line 477. on input l
+ine 477.
+Package pdftex.def Info: Requested size: 187.78923pt x 175.98364pt on input lin
+e 477.
+<figures/ntram.png, id=176, 242.8272pt x 227.6505pt>
+File: figures/ntram.png Graphic file (type png)
+<use figures/ntram.png>
+Package pdftex.def Info: figures/ntram.png  used on input line 478. on input li
+ne 478.
+Package pdftex.def Info: Requested size: 187.78923pt x 176.06256pt on input lin
+e 478.
+<figures/Metroid.pdf, id=178, pagebox=cropbox, 3062.44125pt x 4490.7775pt>
+File: figures/Metroid.pdf Graphic file (type pdf)
+<use figures/Metroid.pdf>
+Package pdftex.def Info: figures/Metroid.pdf  used on input line 492. on input 
+line 492.
+Package pdftex.def Info: Requested size: 204.85802pt x 300.3392pt on input line
+ 492.
+ [13 <./figures/screen.png> <./figures/ntram.png>] [14 <./figures/Metroid.pdf>]
+<figures/LSTM_Cell.png, id=221, 963.6pt x 722.7pt>
+File: figures/LSTM_Cell.png Graphic file (type png)
+<use figures/LSTM_Cell.png>
+Package pdftex.def Info: figures/LSTM_Cell.png  used on input line 532. on inpu
+t line 532.
+Package pdftex.def Info: Requested size: 213.39568pt x 160.0421pt on input line
+ 532.
+
+
+Package natbib Warning: Citation `LSTM' on page 15 undefined on input line 538.
+
+
+<figures/Naive.png, id=223, 702.625pt x 693.59125pt>
+File: figures/Naive.png Graphic file (type png)
+<use figures/Naive.png>
+Package pdftex.def Info: figures/Naive.png  used on input line 549. on input li
+ne 549.
+Package pdftex.def Info: Requested size: 76.8193pt x 75.8296pt on input line 54
+9.
+<figures/BottomToTop.png, id=224, 702.625pt x 693.59125pt>
+File: figures/BottomToTop.png Graphic file (type png)
+<use figures/BottomToTop.png>
+Package pdftex.def Info: figures/BottomToTop.png  used on input line 553. on in
+put line 553.
+Package pdftex.def Info: Requested size: 76.8193pt x 75.8296pt on input line 55
+3.
+<figures/Snaking__1_.png, id=225, 702.625pt x 693.59125pt>
+File: figures/Snaking__1_.png Graphic file (type png)
+<use figures/Snaking__1_.png>
+Package pdftex.def Info: figures/Snaking__1_.png  used on input line 557. on in
+put line 557.
+Package pdftex.def Info: Requested size: 76.8193pt x 75.8296pt on input line 55
+7.
+<figures/Hilbert.png, id=226, 702.625pt x 693.59125pt>
+File: figures/Hilbert.png Graphic file (type png)
+<use figures/Hilbert.png>
+Package pdftex.def Info: figures/Hilbert.png  used on input line 561. on input 
+line 561.
+Package pdftex.def Info: Requested size: 76.8193pt x 75.8296pt on input line 56
+1.
+<figures/Z_Order.png, id=227, 702.625pt x 693.59125pt>
+File: figures/Z_Order.png Graphic file (type png)
+<use figures/Z_Order.png>
+Package pdftex.def Info: figures/Z_Order.png  used on input line 565. on input 
+line 565.
+Package pdftex.def Info: Requested size: 76.8193pt x 75.8296pt on input line 56
+5.
+
+Package natbib Warning: Citation `hilbert1891ueber' on page 15 undefined on inp
+ut line 577.
+
+[15 <./figures/LSTM_Cell.png>]
+
+Package natbib Warning: Citation `morton1966computer' on page 16 undefined on i
+nput line 578.
+
+<figures/1-1.png, id=235, 3244.12pt x 224.84pt>
+File: figures/1-1.png Graphic file (type png)
+<use figures/1-1.png>
+Package pdftex.def Info: figures/1-1.png  used on input line 585. on input line
+ 585.
+Package pdftex.def Info: Requested size: 413.98813pt x 28.69159pt on input line
+ 585.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 585.
+<figures/SDP1.png, id=236, 2922.92pt x 256.96pt>
+File: figures/SDP1.png Graphic file (type png)
+<use figures/SDP1.png>
+Package pdftex.def Info: figures/SDP1.png  used on input line 589. on input lin
+e 589.
+Package pdftex.def Info: Requested size: 413.98813pt x 36.39368pt on input line
+ 589.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/n' in size <9> not available
+(Font)              Font shape `T1/Carlito-LF/b/n' tried instead on input line 
+589.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 589.
+<figures/1-2.png, id=237, 2409.0pt x 224.84pt>
+File: figures/1-2.png Graphic file (type png)
+<use figures/1-2.png>
+Package pdftex.def Info: figures/1-2.png  used on input line 592. on input line
+ 592.
+Package pdftex.def Info: Requested size: 413.98813pt x 38.6374pt on input line 
+592.
+<figures/SDP_1_3.png, id=238, 2778.38pt x 256.96pt>
+File: figures/SDP_1_3.png Graphic file (type png)
+<use figures/SDP_1_3.png>
+Package pdftex.def Info: figures/SDP_1_3.png  used on input line 595. on input 
+line 595.
+Package pdftex.def Info: Requested size: 413.98813pt x 38.28748pt on input line
+ 595.
+
+Package natbib Warning: Citation `snodgrassmdmc' on page 16 undefined on input 
+line 599.
+
+
+Package natbib Warning: Citation `mawhorterORE' on page 16 undefined on input l
+ine 599.
+
+
+LaTeX Warning: Reference `fig:mario_levels' on page 16 undefined on input line 
+599.
+
+[16 <./figures/Naive.png> <./figures/BottomToTop.png> <./figures/Snaking__1_.pn
+g> <./figures/Hilbert.png> <./figures/Z_Order.png> <./figures/1-1.png (PNG copy
+)> <./figures/SDP1.png (PNG copy)> <./figures/1-2.png (PNG copy)> <./figures/SD
+P_1_3.png (PNG copy)>]
+<figures/CopyOfLoz1.png, id=251, 1286.8075pt x 918.43124pt>
+File: figures/CopyOfLoz1.png Graphic file (type png)
+<use figures/CopyOfLoz1.png>
+Package pdftex.def Info: figures/CopyOfLoz1.png  used on input line 620. on inp
+ut line 620.
+Package pdftex.def Info: Requested size: 405.45047pt x 289.37744pt on input lin
+e 620.
+
+
+Package natbib Warning: Citation `ZELDASHRINE' on page 17 undefined on input li
+ne 624.
+
+
+Package natbib Warning: Citation `ANGELFIRE' on page 17 undefined on input line
+ 624.
+
+
+Package natbib Warning: Citation `ZELDAELEMENTS' on page 17 undefined on input 
+line 624.
+
+
+Package natbib Warning: Citation `IANALBERT' on page 17 undefined on input line
+ 624.
+
+<figures/The_Learning_of_Zelda.png, id=254, 908.39375pt x 579.16376pt>
+File: figures/The_Learning_of_Zelda.png Graphic file (type png)
+<use figures/The_Learning_of_Zelda.png>
+Package pdftex.def Info: figures/The_Learning_of_Zelda.png  used on input line 
+630. on input line 630.
+Package pdftex.def Info: Requested size: 426.79135pt x 272.10979pt on input lin
+e 630.
+[17] [18 <./figures/CopyOfLoz1.png>]
+<figures/PCAInterp.png, id=266, 928.97063pt x 120.45pt>
+File: figures/PCAInterp.png Graphic file (type png)
+<use figures/PCAInterp.png>
+Package pdftex.def Info: figures/PCAInterp.png  used on input line 658. on inpu
+t line 658.
+Package pdftex.def Info: Requested size: 413.98813pt x 53.67818pt on input line
+ 658.
+<figures/lttp1.png, id=267, 1349.04pt x 1349.04pt>
+File: figures/lttp1.png Graphic file (type png)
+<use figures/lttp1.png>
+Package pdftex.def Info: figures/lttp1.png  used on input line 665. on input li
+ne 665.
+Package pdftex.def Info: Requested size: 413.98813pt x 413.97823pt on input lin
+e 665.
+<figures/lttp1_zoom.png, id=268, 583.42969pt x 511.15968pt>
+File: figures/lttp1_zoom.png Graphic file (type png)
+<use figures/lttp1_zoom.png>
+Package pdftex.def Info: figures/lttp1_zoom.png  used on input line 673. on inp
+ut line 673.
+Package pdftex.def Info: Requested size: 413.98813pt x 362.71532pt on input lin
+e 673.
+
+
+LaTeX Warning: Reference `fig:zoom' on page 19 undefined on input line 677.
+
+[19 <./figures/The_Learning_of_Zelda.png (PNG copy)>]
+<figures/Proceduralist_Readings_Graph.png, id=277, 495.8525pt x 265.99374pt>
+File: figures/Proceduralist_Readings_Graph.png Graphic file (type png)
+<use figures/Proceduralist_Readings_Graph.png>
+Package pdftex.def Info: figures/Proceduralist_Readings_Graph.png  used on inpu
+t line 683. on input line 683.
+Package pdftex.def Info: Requested size: 413.98813pt x 222.08165pt on input lin
+e 683.
+<figures/Free_Culture.png, id=280, 712.6625pt x 571.13374pt>
+File: figures/Free_Culture.png Graphic file (type png)
+<use figures/Free_Culture.png>
+Package pdftex.def Info: figures/Free_Culture.png  used on input line 706. on i
+nput line 706.
+Package pdftex.def Info: Requested size: 405.45047pt x 324.93086pt on input lin
+e 706.
+
+
+Package natbib Warning: Citation `salen2004rules' on page 20 undefined on input
+ line 722.
+
+LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/it' in size <10> not available
+
+(Font)              Font shape `T1/Carlito-LF/b/it' tried instead on input line
+ 729.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/b/it' will be
+(Font)              scaled to size 10.0pt on input line 729.
+<figures/Copy_of_Proceduralist_Reading.png, id=281, 950.55125pt x 537.00626pt>
+File: figures/Copy_of_Proceduralist_Reading.png Graphic file (type png)
+<use figures/Copy_of_Proceduralist_Reading.png>
+Package pdftex.def Info: figures/Copy_of_Proceduralist_Reading.png  used on inp
+ut line 738. on input line 738.
+Package pdftex.def Info: Requested size: 405.45047pt x 229.05634pt on input lin
+e 738.
+[20 <./figures/PCAInterp.png>] [21 <./figures/lttp1.png>]
+
+Package natbib Warning: Citation `martens2015ceptre' on page 22 undefined on in
+put line 798.
+
+
+Package natbib Warning: Citation `stolee2011expressing' on page 22 undefined on
+ input line 799.
+
+[22 <./figures/lttp1_zoom.png>]
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 812.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 812.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 831.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 831.
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--831
+[][][]\T1/Carlito-LF/m/n/8 All code is avail-able at: [][]$\T1/cmtt/m/n/8 https
+ : / / github . com / LudoNarrative / ClimateChange / tree / master / GameGener
+ator /
+ []
+
+[23 <./figures/Proceduralist_Readings_Graph.png>]
+<figures/-Proceduralist_Reading_-_CODE.pdf, id=317, pagebox=cropbox, 1721.43124
+pt x 1163.34625pt>
+File: figures/-Proceduralist_Reading_-_CODE.pdf Graphic file (type pdf)
+<use figures/-Proceduralist_Reading_-_CODE.pdf>
+Package pdftex.def Info: figures/-Proceduralist_Reading_-_CODE.pdf  used on inp
+ut line 986. on input line 986.
+Package pdftex.def Info: Requested size: 426.79135pt x 288.42169pt on input lin
+e 986.
+
+
+Package caption Warning: \label without proper reference on input line 739.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:free_culture' on page 24 undefined on input line 
+987.
+
+
+Package caption Warning: \label without proper reference on input line 739.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:free_culture' on page 24 undefined on input line 
+987.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `clingo' on page 24 undefined on input line 10
+17.
+
+[24 <./figures/Free_Culture.png>] [25 <./figures/Copy_of_Proceduralist_Reading.
+png>] [26] [27]
+Overfull \hbox (16.61024pt too wide) in paragraph at lines 1095--1096
+\T1/Carlito-LF/m/n/10 have to have added com-plex-ity to han-dle this com-bi-na
+-tion since naïvely look-ing for \T1/cmtt/m/n/10 result(O,move(E))
+ []
+
+[28 <./figures/-Proceduralist_Reading_-_CODE.pdf>]
+
+Package natbib Warning: Citation `GGPSTUFF' on page 29 undefined on input line 
+1111.
+
+
+Package natbib Warning: Citation `phaser' on page 29 undefined on input line 11
+17.
+
+<figures/Nayru_Architecture.pdf, id=433, pagebox=cropbox, 764.8575pt x 366.3687
+4pt>
+File: figures/Nayru_Architecture.pdf Graphic file (type pdf)
+<use figures/Nayru_Architecture.pdf>
+Package pdftex.def Info: figures/Nayru_Architecture.pdf  used on input line 113
+4. on input line 1134.
+Package pdftex.def Info: Requested size: 426.79135pt x 204.43275pt on input lin
+e 1134.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29]
+
+Package natbib Warning: Citation `summerville2017what' on page 30 undefined on 
+input line 1155.
+
+
+Package natbib Warning: Citation `kalman' on page 30 undefined on input line 11
+59.
+
+
+Package natbib Warning: Citation `imm' on page 30 undefined on input line 1159.
+
+
+[30 <./figures/Nayru_Architecture.pdf>] [31]
+<figures/Din_Architecture.pdf, id=476, pagebox=cropbox, 701.62125pt x 234.8775p
+t>
+File: figures/Din_Architecture.pdf Graphic file (type pdf)
+<use figures/Din_Architecture.pdf>
+Package pdftex.def Info: figures/Din_Architecture.pdf  used on input line 1222.
+ on input line 1222.
+Package pdftex.def Info: Requested size: 426.79135pt x 142.87724pt on input lin
+e 1222.
+ [32 <./figures/Din_Architecture.pdf>]
+<figures/Din_Graph_Detail.pdf, id=509, pagebox=cropbox, 275.0275pt x 159.59625p
+t>
+File: figures/Din_Graph_Detail.pdf Graphic file (type pdf)
+<use figures/Din_Graph_Detail.pdf>
+Package pdftex.def Info: figures/Din_Graph_Detail.pdf  used on input line 1242.
+ on input line 1242.
+Package pdftex.def Info: Requested size: 413.98813pt x 240.25583pt on input lin
+e 1242.
+ [33 <./figures/Din_Graph_Detail.pdf>]
+
+Package natbib Warning: Citation `thomaskipfgraphconvolutions' on page 34 undef
+ined on input line 1265.
+
+
+Package natbib Warning: Citation `treestructuredvariationalautoencoder' on page
+ 34 undefined on input line 1265.
+
+
+Package natbib Warning: Citation `relu' on page 34 undefined on input line 1279
+.
+
+<figures/Pooling.pdf, id=519, pagebox=cropbox, 648.4225pt x 685.56125pt>
+File: figures/Pooling.pdf Graphic file (type pdf)
+<use figures/Pooling.pdf>
+Package pdftex.def Info: figures/Pooling.pdf  used on input line 1285. on input
+ line 1285.
+Package pdftex.def Info: Requested size: 413.98813pt x 437.70116pt on input lin
+e 1285.
+
+LaTeX Font Warning: Font shape `T1/Carlito-LF/m/sc' undefined
+(Font)              using `T1/Carlito-LF/m/n' instead on input line 1305.
+
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 1306.
+[34] [35 <./figures/Pooling.pdf>]
+No file main.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[36]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1336.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1336.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1336.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1336.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 92846E232F33775B047F7D008451839C;1621.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1336.
+ ) 
+Here is how much of TeX's memory you used:
+ 25189 strings out of 492990
+ 465646 string characters out of 6136334
+ 671344 words of memory out of 5000000
+ 28116 multiletter control sequences out of 15000+600000
+ 134186 words of font info for 79 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,11n,92p,2302b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
+ive/2017/texmf-dist/fonts/enc/dvips/carlito/crlt_csjzgd.enc}{c:/texlive/2017/te
+xmf-dist/fonts/enc/dvips/carlito/crlt_llspvt.enc}<c:/texlive/2017/texmf-dist/fo
+nts/type1/typoland/carlito/Carlito-Bold.pfb><c:/texlive/2017/texmf-dist/fonts/t
+ype1/typoland/carlito/Carlito-BoldItalic.pfb><c:/texlive/2017/texmf-dist/fonts/
+type1/typoland/carlito/Carlito-Italic.pfb><c:/texlive/2017/texmf-dist/fonts/typ
+e1/typoland/carlito/Carlito.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.
+pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-
+super/sfrm1000.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt
+0800.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (36 pages, 5426451 bytes).
+PDF statistics:
+ 625 PDF objects out of 1000 (max. 8388607)
+ 456 compressed objects within 5 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 324 words of extra memory for PDF output out of 10000 (max. 10000000)
+
