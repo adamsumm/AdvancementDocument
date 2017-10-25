@@ -1,74 +1,53 @@
-\documentclass[a4paper]{article}
+\documentclass[12pt]{article}
 
-%% Language and font encodings
-\usepackage[T1]{fontenc}
-\usepackage[utf8x]{inputenc}
-\usepackage[english]{babel}
+% Users of the {thebibliography} environment or BibTeX should use the
+% scicite.sty package, downloadable from *Science* at
+% www.sciencemag.org/about/authors/prep/TeX_help/ .
+% This package should properly format in-text
+% reference calls and reference-list numbers.
 
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{scicite}
 
-\urlstyle{tt}
-\newcommand{\email}[1]{\href{mailto:#1}{\tt{\nolinkurl{#1}}}}
-\newcommand{\orcid}[1]{ORCID: \href{https://orcid.org/#1}{\tt{\nolinkurl{#1}}}}
+% Use times if you have the font installed; otherwise, comment out the
+% following line.
 
-\usepackage[sfdefault,lf]{carlito}
-%% The 'lf' option for lining figures
-%% The 'sfdefault' option to make the base font sans serif
-\usepackage[parfill]{parskip}
-\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
-\usepackage{fancyhdr}
-\usepackage{natbib}
-\usepackage{authblk}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage{amssymb}
-\usepackage{algorithm,algpseudocode}
-\usepackage{graphicx}
+\usepackage{hyperref}
+% The preamble here sets up a lot of new/revised commands and
+% environments.  It's annoying, but please do *not* try to strip these
+% out into a separate .sty file (which could lead to the loss of some
+% information when we convert the file to other formats).  Instead, keep
+% them in the preamble of your main LaTeX source file.
 
-\usepackage{tikz}
-\usetikzlibrary{shapes}
 
+% The following parameters seem to provide a reasonable page setup.
 
-\RequirePackage{ifthen}
-\usepackage{latexsym}
-\RequirePackage{amsmath}
-\RequirePackage{amsthm}
-\RequirePackage{amssymb}
-\RequirePackage{xspace}
-\RequirePackage{graphics}
-\usepackage{graphicx}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{xcolor}
-
-\setlength{\headheight}{41pt}
-
-%% Sets page size and margins
-\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-
-%% Useful packages
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{subcaption}
-
-\usepackage{keyval}
-%\usepackage{listings}
-\usepackage{xspace}
-\usepackage{mathrsfs,paralist, amsmath,amssymb,url,listings,mathrsfs}
-\usepackage[colorinlistoftodos]{todonotes}
-\usepackage{framed}
-\usepackage{lipsum}
+\topmargin 0.0cm
+\oddsidemargin 0.2cm
+\textwidth 16cm 
+\textheight 21cm
+\footskip 1.0cm
 
 
 
+\title{Learning from Games for Generative Purposes}
 
-%\renewcommand{\headrulewidth}{0pt}
-\pagestyle{plain}
-\title{Learning to Generate Game Content Without Human Supervision }
-\author[1]{Adam Summerville}
+\author{Adam Summerville}
+
+
+
 
 \begin{document}
+
+\flushbottom
 \maketitle
-\thispagestyle{fancy}
+% * <john.hammersley@gmail.com> 2015-02-09T12:07:31.197Z:
+%
+%  Click the title above to edit the author information and abstract
+%
 
 \section{Introduction}
 
@@ -82,61 +61,55 @@ PCG has been a part of computer games for the majority of their existence (Benea
 
 This is not to say that it can not be done, as, obviously, people have done this.  But it is to say that in general it is a hard, arduous endeavor that can still lead to feelings of ``oatmealishness'' (** CITE KATE and MIKE), i.e. content that while different in countless different ways, still feels the same.  
 
-However, the design decisions to generate a piece of content do not need to be exhaustively encoded, they can be learned.  The design of an artifact is latent within the artifact itself.  The goal of this work is to learn that latent design, so as to be able to generate perceptually similar artifacts, and to do so from observation, with minimal human supervision.
+However, the design decisions to generate a piece of content do not need to be exhaustively encoded, they can be learned.  The design of an artifact is latent within the artifact itself.  The goal of this work is to learn that latent design, so as to be able to generate perceptually similar artifacts, and to do so from observation, with minimal human supervision. 
 
-Towards this end, I propose three related systems, each one possible of working in isolation, but intended to work together:
 
-\begin{itemize}
-\item \textit{Nayru} - Given access to a game - extract all of the content from it, the levels, the behaviors, the interactions, etc.
-\item \textit{Farore} - Given descriptions of game entities (e.g. their behaviors) - generate new entities that are *most importantly* sound, and that have similar properties to existing entities
-\item \textit{Din} - Given a set of game levels - generate new levels with similar perceptual properties
 
-\end{itemize}
+\subsection{Research Questions and Contributions}
 
-These three systems (named after the goddesses from \textit{The Legend of Zelda} series) are intended to work with minimal human supervision (the only thing a human need provide is a game) and while they can work in isolation (a designer could feed \textit{Din} levels without every worrying about \textit{Nayru}) they are intended to work such that \textit{Nayru} provides the necessary input for \textit{Farore} and \textit{Din}.  
-
-These three (hereafter referred to as \textit{Hylia} when discussing the system as a whole) are intended to resolve a number of research questions:
+To this end I propose a body of work that will look to answer the following questions:
 
 \textbf{Question 1: How can a machine learn the important mechanical properties of the content?}
 
-Currently, techniques such as Generative Adversarial Networks (GANs) or Variational AutoEncoders (VAEs) are popular techniques for image generation.  Certainly, it would be possible to supply images of game levels (these exist in abundance on the internet **CITE VGATLAS**), but visual signifiers are only one portion of the semiotics of a game.  The mechanical properties of the game entities are at least equally as important (and certainly visuals can deceive, as two visually identical entities might have different properties).  While image based techniques might be able to generate visually acceptable levels, without a way of encoding these properties they are going to lack the expressivity of a generator which has access to such properties.  Previous machine learned approaches have either operated on the visual level or with designer specified mechanical properties.   I aim to answer the question of how to learn the mechanical properties in a way that enables down stream use (e.g. for use in \textit{Din}).
+Currently, techniques such as Generative Adversarial Networks (GANs) or Variational AutoEncoders (VAEs) are popular techniques for image generation.  Certainly, it would be possible to supply images of game levels (these exist in abundance on the internet **CITE VGATLAS**), but visual signifiers are only one portion of the semiotics of a game.  The mechanical properties of the game entities are at least equally as important (and certainly visuals can deceive, as two visually identical entities might have different properties).  While image based techniques might be able to generate visually acceptable levels, without a way of encoding these properties they are going to lack the expressivity of a generator which has access to such properties.  Previous machine learned approaches have either operated on the visual level or with designer specified mechanical properties.   I aim to answer the question of how to learn the mechanical properties in a way that enables down stream use (e.g., for a generator).
 
 
 \textbf{Question 2: How should content be represented such that it can be efficiently learned for generation?}
 
-Most uses of machine learned generation have focused on two types of data: text and images.  Both have standard structures and associated machine learning techniques (e.g. text as a sequence handled by Long Short-Term Memory Recurrent Neural Networks and images as RGB Tensors handled via GANs or VAEs).  Game levels have some features similar to both, but are often composed of multiple pieces of arbitrary shape and size.  Behaviors have no commonly agreed upon format.  I aim to answer the question of how to best represent game content for the sake of efficient training and generation.
+Most uses of machine learned generation have focused on two types of data: text and images.  Both have standard structures and associated machine learning techniques (e.g. text as a sequence handled by Long Short-Term Memory Recurrent Neural Networks and images as RGB Tensors handled via GANs or VAEs).  Game levels have some features similar to both, but are often composed of multiple pieces of arbitrary shape and size.  Behaviors and rules have no commonly agreed upon format.  I aim to answer the question of how to best represent game content for the sake of efficient training and generation.
 
 \textbf{Question 3: How do we assess whether a learned generator has learned to generate the desired content?}
 
 Evaluation of PCG for games has largely focused on examining a few hand-picked generated artifacts or on visually analyzing a histogram of the expressive range of a generator.  The former is prone to cherry picking, leaving one to wonder what the expressive capabilities of the system actually are, while the latter is rarely tied back to an intuitive understanding (e.g. Is it good or bad to have a wide histogram? What does it mean for certain portions of the space to be under or over represented? Are the dimensions shown actually worthwhile?).  For a classical PCG system these evaluations are perhaps unsatisfying, but given that authors do not necessarily make any claims about the generative space of the systems, they are not mission-critical.  On the other hand, machine learned PCG systems make the claim that they are accurately learning the design space of the original training data, so it is necessary to show that the generators are able to generate similar content while not memorizing the training data.
 
 
+\textbf{Question 4: Can higher level properties of games be learned?}
+
+Most work on machine-learning of game content has focused on learning game level content.  What little other work exists has still learned fairly low-level mechanics (i.e., hybrid automata behaviors and state transition rules).  Despite the ability for games to convey great meaning, and furthermore, despite the presence of game generators that intend to generate games with meaning, there has been very little research into understanding the intended (or unintended) meaning of a game. Can a machine learning system learn to infer the meaning of a game?  Can this be utilized for the generation of games targeting a specific meaning?
 
 
-The primary contributions of this research are two-fold:
+
+The primary contributions of this research are three-fold:
 \begin{enumerate}
 \item The development of techniques to learn the properties of game content automatically from observation
-\item The development of formalisms for representing rules, entities, and levels in a manner amenable to the training of machine learning systems and then generating new content that is similar
+\item The development of formalisms for representing rules, entities, and levels in a manner amenable to the training of machine learning systems and then generating new content 
 \item The development of techniques for evaluating machine learned generators
 \end{enumerate}
 
 
 Which represent contributions to the fields of machine learning, procedural content generation, and automated game design research.
 
-
-There are three components to \textit{Hylia}:
+\section{Related Work}
+There are two major components of this work:
 
 \begin{itemize}
-\item Learning behaviors and levels from observation
-\item Generating behaviors
-\item Generating levels
+\item Learning from games --- levels, behaviors, higher order properties
+\item Generating levels, behaviors, games targeting higher order properties --- from the learned properties
 \end{itemize}
 
-so it is important to place these components in context with existing work.
+, so we need to first situate this work in the context of the existing work.
 
-
-
-\subsection{Learning From Observation}
+\subsection{Learning from Games}
 
 Learning a representation of a black-box system is a problem that has been approached before.  Depending on the desired properties of the representation and the observed properties of the system, different approaches are suitable.  For deterministic discrete state-space system there exists a body of work to learn Finite State Machines from observation.  
 
@@ -145,14 +118,7 @@ a Practical Perspective?} is a library that learns Mealy machines via active lea
 
 For systems that have a mixture of real valued behaviors (e.g. position changing in real time) that change depending on discrete modes (e.g. an aircraft maneuvers differently while turning than it does while traveling at a constant heading) Hybrid Automata (HA) represent a natural formalism. 
 Given the desirable properties of HAs, and the ready availability of tools for dealing with them, many researchers have explored automatically recovering these high-level models from real-world system behaviors.
-CHARDA shares motivations with HyBUTLA~\cite{niggemann2012learning}, which also aimed to learn a complete automaton from observational data.
-%% A superficial difference is that their work operates on multiple episodes of observations; CHARDA could easily be extended in that way.
-%% MM: I'd delete the above sentence. Since it's a superficial distinction it's only a distraction. 
-%% Joe: OK
-HyBUTLA seems able to learn only acyclic hybrid automata, since it works by constructing a prefix acceptor tree of the modes for each observation episode and then merges compatible modes from the bottom up.
-%% MM: added "for each observation episode" above since I'm suggesting deleting the previous sentence.  
-%% Joe: OK
-Moreover, HyBUTLA assumes that the segmentation is given in advance and that all transitions happen due to individual discrete events, presumably from a relatively small set.
+HyBUTLA~\cite{niggemann2012learning} aimed to learn a complete automaton from observational data. HyBUTLA seems able to learn only acyclic hybrid automata, since it works by constructing a prefix acceptor tree of the modes for each observation episode and then merges compatible modes from the bottom up. Moreover, HyBUTLA assumes that the segmentation is given in advance and that all transitions happen due to individual discrete events, presumably from a relatively small set.
 
 
 Santana \textit{et al.}~\cite{hybridmodels2015santana} learned Probabilistic Hybrid Automata (PHA) from observation using Expectation-Maximization.  At each stage of the EM algorithm a Support Vector Machine was trained to predict the probability of transitioning to a new mode. Their work requires a priori knowledge about the number of modes.
@@ -170,8 +136,11 @@ Kukreja \textit{et al.}\cite{kukreja2005least} found models of switched mode sys
 
 In the games domain, there has been minimal work in learning games from observation. In  \cite{bjornsson2012learning}, an approach was introduced for learning the rules of a simple game through observation. This approach includes learning a \textit{DFA} (\textit{deterministic finite automata}) as a model for game rules. Their work focused on learning the rules of a board game and is tied to this domain.  In fact a large portion of the work relies not just on observing moves that took place but being given all of the moves that could have taken place.
 
-\subsection{Procedural Content Generation}
 
+Recent work by Guzdial et al. \cite{guzdial2017game} learns game state transitions from observation.  Taking in frame-by-frame image locations, they greedily learn rules that best describe the transitions of those images to the next frame.  By operating at the level of frame-to-frame transitions learned from an annotated video stream, a number of complications arise.  Their approach convolves level design and game rules in a way that is both unintuitive to humans and hamstrings their rules, i.e., they must learn all of the levels of a game as rules.  These ``level design rules'' are unlikely to generalize well and very rarely do humans encode a level as a collection of rules.
+
+
+\subsection{Procedural Generation of Levels}
 
 The procedural generation of level content has been popular in commercial, hobbyist, and academic circles with recent years seeing increasing amounts of interest in procedural generation.   A game jam devoted to procedural content, PROCJAM, had 99 games submitted in 2015 and nearly double, 173, in 2016 \cite{PROCJAM2015,PROCJAM2016}.  While PCG has focused on a number of different game aspects such as characters \cite{SOMETHING}, narrative \cite{SOMETHING}, levels have been a major area of focus.   
 
@@ -221,7 +190,7 @@ Guzdial and Riedl's model structure was adapted from \cite{kalogerakis:2012:SIG}
 
 Their system begins by generating $1000$ levels of length $200$ with each of the $G=5$ unique generators. These $5000$ levels in the training set are represented as vectors recording the locations or amount of $T=5$ content types at each level column: Platforms, Hills, Gaps, Items, and Enemies. These vectors are combined into $T$ matrices, one for each level content type.  The algorithm then uses a multiplicative update NNMF algorithm \cite{lee1999learning} to factor the data matrices into $T$ approximate ``part matrices'' which represent level patterns and $T$ coefficient matrices corresponding to weights for each pattern that appear in the training set.  The part matrices can be examined to see what types of patterns appear globally and uniquely in different generators, and multiplying these part matrices by novel coefficient vectors can be used to generate new levels. 
 
-\subsection{Mechanic Generation and Automated Game Design}
+\subsection{Procedural Generation of Mechanics, Behaviors, and Games}
 
 While level design has received the bulk of attention for procedural generation, there has been work on the generation of mechanics and whole games procedurally.
 
@@ -233,9 +202,9 @@ $\langle DamageOverTime, $
 
 $\quad \{\langle Absolute, 0, GreaterThan(Health(Enemy), 0)\rangle\}, $
 
-$\quad \{\langle Relative, 1, Update(Health(Enemy), −1)\rangle, $
+$\quad \{\langle Relative, 1, Update(Health(Enemy), -1)\rangle, $
 
-$ \quad  \langle Relative, 2,  Update(Health(Enemy),  −1)\rangle\}\rangle$
+$ \quad  \langle Relative, 2,  Update(Health(Enemy),  -1)\rangle\}\rangle$
 
 Answer Set Programming found mechanics that satisfied a number of constraints for playability (the player must be able to reach a goal location given some number of timesteps) and design heuristics (the set of generated mechanics should be small, and a minimal number of entities should be referenced by a given mechanic).  
 
@@ -270,13 +239,16 @@ Finally, \textit{ANGELINA}$_{5}$ moves away from 2D games and instead creates fi
 
 Moving away from videogames, Cameron Browne's   \textit{Ludi} \cite{Evolutionary Game Design} generates 2 player board games.  \textit{Ludi} uses EC to generate games and then undergoes a multi-step evaluation.  Similar to the work of Nielsen \textit{et al.}, simulated players play the games and their playtraces are evaluated for different aesthetic criteria, such as whether the game is balanced (player order does not matter) or the game has drama (a player can come back from a bad position to win the game). While a wide variety of rulesets are possible with the \textit{Ludi} game formalism, the EC tended to favor $N$-in-a-row goals more heavily than other types of rules, perhaps speaking to an issue in evaluation.
 
-\section{Prior Work}
+
+\section{Previous Work}
+
+
 
 My previous work that I will build upon has focused on:
 
 \begin{itemize}
 \item Learning mechanical properties of game entities
-\item Generating content
+\item Generating level content
 \item Automatic game design
 \end{itemize}
 
@@ -650,31 +622,32 @@ The trained BN captured a variety of high level features, such as number of room
 
 Once the global level parameters have either been observed or inferred, the dungeon is built up from a seed room. The initial entry point to every dungeon is a special \textit{Start} room. \textit{Start} rooms only ever have 1 neighbor, and it is this first neighbor room that is inferred. The room type, the incoming door type, and the number of neighbors are all inferred, given the prior room type (initially the \textit{Start} room), the traversed door type (initially a regular door), its depth in the dungeon (initially one), and all of the inferred or specified global parameters. During this process there is a simultaneous grid embedding process that happens in parallel. The \textit{Start} room is always placed at $(0,-1)$ and its child room is always placed at $(0,0)$. Each new child room is placed at an open neighboring place on the grid, and added to a list of rooms to be inferred. Once all of the specified number of rooms have been placed, a second cleaning process guarantees that the level is playable. d{figure}
 
-For a level to be playable, all of the rooms must be accessible, the number of key locked doors must equal the number of placed keys, all keys must be used to complete the level, all keys must be in front of the doors they lock, and there must be a special item room, a boss room, and an end room. To resolve any of these constraints, we utilize the same machinery that tested the validity of the algorithm, the log-likelihood of a specific event occurring. For example, if there was no end room placed, we simply iterate over all rooms, find the one that has the highest likelihood of being an end room, and change it to an end room. We do this for the boss and special item rooms, in addition to the key locked doors. Once these have been taken care of, we then find the optimal path through the dungeon in order to guarantee that the optimal path through the dungeon uses all of the placed keys. If the level is not completable, then we know that the player is unable to reach a required key. This can be resolved in one of two ways, \textbf{1)} Move a key that has not been reached to a room that has been reached, or \textbf{2)} Move a locked door that has been reached to a door that has not been reached. The choice of how to resolve the violation is chosen at random. On the other hand, if the level is completable, but not all keys are used, then a key-locked door is placed unnecessarily.  To resolve this, an unseen key locked door is moved to a seen unlocked door. No matter what constraint violation is being resolved, it is handled with the same machinery seen above, e.g. if a key needs to be moved, then the existing key room that is least likely to be a key room is removed, and the room it is moved to is the one most likely to be a key room.
 
-
-\begin{figure*}[ht]
+\begin{figure*}[htbp!]
 \centering
     \includegraphics[width=0.97\textwidth]{figures/PCAInterp.png}
     \caption{Interpolation between two human authored rooms.  The rooms on the ends are human authored while the rooms in between represents steps between them of 20\%.}
   \label{fig:PCAinterp}
 \end{figure*}
 
-\begin{figure*}[ht]
+For a level to be playable, all of the rooms must be accessible, the number of key locked doors must equal the number of placed keys, all keys must be used to complete the level, all keys must be in front of the doors they lock, and there must be a special item room, a boss room, and an end room. To resolve any of these constraints, we utilize the same machinery that tested the validity of the algorithm, the log-likelihood of a specific event occurring. For example, if there was no end room placed, we simply iterate over all rooms, find the one that has the highest likelihood of being an end room, and change it to an end room. We do this for the boss and special item rooms, in addition to the key locked doors. Once these have been taken care of, we then find the optimal path through the dungeon in order to guarantee that the optimal path through the dungeon uses all of the placed keys. If the level is not completable, then we know that the player is unable to reach a required key. This can be resolved in one of two ways, \textbf{1)} Move a key that has not been reached to a room that has been reached, or \textbf{2)} Move a locked door that has been reached to a door that has not been reached. The choice of how to resolve the violation is chosen at random. On the other hand, if the level is completable, but not all keys are used, then a key-locked door is placed unnecessarily.  To resolve this, an unseen key locked door is moved to a seen unlocked door. No matter what constraint violation is being resolved, it is handled with the same machinery seen above, e.g. if a key needs to be moved, then the existing key room that is least likely to be a key room is removed, and the room it is moved to is the one most likely to be a key room.
+
+
+\begin{figure*}[htbp!]
 \centering
-    \includegraphics[width=0.97\textwidth]{figures/lttp1.png}
+    \includegraphics[width=0.6\textwidth]{figures/lttp1.png}
     \caption{A generated level with the most likely high level parameters.}
   \label{fig:dungeon}
 \end{figure*}
 
 
-\begin{figure*}[ht]
+\begin{figure*}[htbp!]
 \centering
-    \includegraphics[width=0.97\textwidth]{figures/lttp1_zoom.png}
+    \includegraphics[width=0.6\textwidth]{figures/lttp1_zoom.png}
     \caption{A zoomed in subset, showing the entry point (bottom right corner) and 8 other generated rooms..}
-  \label{fig:dungeon}
+  \label{fig:dungeon_zoom}
 \end{figure*}
-With the level topology constructed we need to generate the rooms at the tile level to have a playable level.  To generate rooms we first performed Principal Component Analaysis (PCA) on a tile level grid representation of the rooms. The dataset for this work was 488 rooms from the three aforementioned games.  However, to increase the size of the sample space we also used all mirrorings (up-down, left-right, both) to quadruple the size of our dataset. Each room can be thought of as a tensor of width by height by tile type, and this tensor is then raveled t make a 1-dimensional vector of size width $\times$ height $\times$ tile type.  All 1952 rooms are converted to this vector format and stacked together to form a 1952 by width $\times$ height $\times$ tile type.  PCA is then applied to this matrix to find a lower dimensionality representation, 20 dimensions in the case covering 95\% of the variance within the data.  To generate a room, existing vectors in this 20 dimensional space are chosen based on the room types (e.g. if a room containing enemies must be generated, 2 vectors corresponding to enemy rooms are chosen) and then randomly interpolated between.  The results of this interpolation can be seen in figure \ref{fig:PCAinterp}. A generated level can be seen in figure \ref{fig:dungeon}, along with a zoomed subset in figure \ref{fig:zoom}.
+With the level topology constructed we need to generate the rooms at the tile level to have a playable level.  To generate rooms we first performed Principal Component Analaysis (PCA) on a tile level grid representation of the rooms. The dataset for this work was 488 rooms from the three aforementioned games.  However, to increase the size of the sample space we also used all mirrorings (up-down, left-right, both) to quadruple the size of our dataset. Each room can be thought of as a tensor of width by height by tile type, and this tensor is then raveled t make a 1-dimensional vector of size width $\times$ height $\times$ tile type.  All 1952 rooms are converted to this vector format and stacked together to form a 1952 by width $\times$ height $\times$ tile type.  PCA is then applied to this matrix to find a lower dimensionality representation, 20 dimensions in the case covering 95\% of the variance within the data.  To generate a room, existing vectors in this 20 dimensional space are chosen based on the room types (e.g. if a room containing enemies must be generated, 2 vectors corresponding to enemy rooms are chosen) and then randomly interpolated between.  The results of this interpolation can be seen in figure \ref{fig:PCAinterp}. A generated level can be seen in figure \ref{fig:dungeon}, along with a zoomed subset in figure \ref{fig:dungeon_zoom}.
 
 \subsection{Automatic Game Design}
 
@@ -854,8 +827,8 @@ precondition to the result, while the \verb|near(-)| and
 
 
 
-\begin{figure*}
-
+\begin{figure*}[htbp!]
+\footnotesize
 %\begin{verbatim}
 %%% (Mechanic 1)
 %precondition(slow_timeout, gen_idea).
@@ -872,7 +845,7 @@ precondition to the result, while the \verb|near(-)| and
 %  inspire).
 %result(inspire, increase(ideasAbsorbed)).
 %\end{verbatim}
-
+\vspace{-2\baselineskip}
 \begin{verbatim}
 %% (Mechanic 1): Producers make new ideas
 precondition(slow_timeout, gen_idea).
@@ -930,7 +903,7 @@ precondition(tick, forget_old).
 result(forget_old, decrease(ideasConsumed, low)).
 \end{verbatim}
 
-\caption{Formal specification of the mechanics of the \textit{Free Culture Game} in Cygnus.}
+\caption{\vspace{-1\baselineskip}Formal specification of the mechanics of the \textit{Free Culture Game} in Cygnus.}
 \label{fig:fcgformal}
 \end{figure*}
 
@@ -983,7 +956,7 @@ goal is to prevent producers from converting into consumers.}
 See Figure~\ref{fig:fcgaux} for these auxilliary clauses.
 \begin{figure*}[h]
 \centering
-\includegraphics[width=1\textwidth]{figures/-Proceduralist_Reading_-_CODE.pdf}%{-Proceduralist_Reading_-_CODE.png}
+\includegraphics[width=0.99\textwidth]{figures/-Proceduralist_Reading_-_CODE.pdf}%{-Proceduralist_Reading_-_CODE.png}
 \caption{A full reasoning chain, analagous to the prose interpretation found in figure \ref{fig:free_culture}.  The rules invoked in the reasoning are chain are found in purple.  As can be seen, numerous rules and sub-facts might need to be invoked to build up to larger pieces of knowledge, such as the chain building up to \textbf{Reading 2a} ``The outcome labeled `learn' is favorable'' which builds off of 3 separate game definitions and invokes \textbf{Rules 1}, \textbf{2}, and \textbf{3}.}
 \label{fig:proc_reading_code}
 \end{figure*}
@@ -1051,7 +1024,7 @@ As mentioned above, a game is defined by the base objects (entities, resources, 
 \item How entities are visually represented
 \end{itemize}
 
-to describe the base definitions of the game, but it is in the rules and interactions that govern these entities and resources that the game is found.
+\noindent to describe the base definitions of the game, but it is in the rules and interactions that govern these entities and resources that the game is found.
 
 The generator chooses how many outcomes can exist and then builds up their preconditions and actions.  The preconditions available are:
 \begin{itemize}
@@ -1061,6 +1034,7 @@ The generator chooses how many outcomes can exist and then builds up their preco
 \item Did the player press a button in the last frame
 \item Was a button held down in the last frame
 \item Did a timer elapse in the last frame
+\item Whether the distance between two types of entities, given some criterion (nearest, furthest, random, average), is above or below a threshold
 \end{itemize}
 
 In addition to these, there is a default precondition referred to as \textit{tick} which automatically fires every frame of the game.
@@ -1068,7 +1042,7 @@ In addition to these, there is a default precondition referred to as \textit{tic
 The possible actions of an outcome are:
 
 \begin{itemize}
-\item Modify resource $A$ by either adding or subtracting value $B$ from it
+\item Modify resource $A$ (or property $B$ of entity $C$) by either adding or subtracting value $B$ from it
 \item Add $C$ entity $A$'s at location $L$
 \item Delete entity $A$
 \item Move entity $A$ towards or away from entity $B$ at speed $C$
@@ -1118,7 +1092,36 @@ Where $O$ is a parameter (1000 for this work) to penalize the difference between
 
 \section{Proposed Work}
 
-\textit{Hylia} is composed of three subsystems: \textit{Nayru}, \textit{Farore}, and \textit{Din} which I will now describe.
+
+\begin{figure*}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{figures/WORK_TO_BE_DONE.pdf}
+\caption{ The work that has been done and that which remains (dotted lines).  Understanding systems are green and generation systems are orange.}
+\label{fig:remaining_work}
+\end{figure*}
+
+
+The work that I have done so far falls broadly in two categories:
+
+\begin{enumerate}
+\item Game Understanding/Analysis
+\item Game Content Generation
+\end{enumerate}
+
+Except for the work on \textit{Gemini}, these two categories have  remained cleanly partitioned.  A large part of the remaining work  comes in bridging these different works.  Figure \ref{fig:remaining_work}  shows my existing body of work (anything with a firm outline), and the remaining work (anything with a dotted line).  The largest remaining pieces are:
+
+
+
+\begin{itemize}
+\item \textit{Leda} --- a system that takes in Cygnus specified games, observations about them, and attempts to deduce the rules required to make those inferences
+\item \textit{Mappy} --- Mappy currently produces maps at a fairly low level, namely the tiles that make up Mappy levels are just the set of all seen tiles at that position. To make Mappy useful for downstream generative processes, I intend to incorporate the work on causal affordance learning into Mappy. 
+\item \textit{Ingo} --- Ingo represents the next iteration of a graph-based, machine learned level generator.  The earlier Bayes Net approach had a number of drawbacks - a lot of human annotation, poor generalization.  Ingo represent a switch to a neural approach, which will hopefully not have these short-comings.
+\item \textit{Talon} --- Talon represents the next iteration of the tile-based, machine learned room generator.  The largest difference between Talon and the earlier work is that Talon will act as an encoder of levels, and not just an auto-regressive process.  This should enable better capabilities in Ingo, and allow for more interesting usage of Talon (e.g., conceptual blending between levels)
+\item \textit{Protoman} --- Protoman will generate hybrid automata characters and behaviors, as observed by CHARDA.  The goal of Protoman is to learn from entity behaviors, so as to be able to generate new behaviors.  While most of the previous work has been within one game (e.g., learning levels from just Super Mario Bros.), Protoman will, almost by necessity, have to learn from many different game, due to a lack of variety within most games. Some games allow have meaningfully important character/behavior differences, but most games have a single controlled character and a small set of character behaviors.  To generalize, Protoman will have to look at multiple games and learn the generalizable structure to characters.
+
+\end{itemize}
+
+
 
 \subsection{Nayru --- Game Knowledge Extraction}
 \begin{quotation}
@@ -1209,148 +1212,21 @@ Each of the individual sub-components (Entity Tracker, CHARDA, Mappy, and Mechan
 
 
 
-\subsection{Din --- Game Level Generation}
-\begin{quotation}
-\textit{ Din... With her strong flaming arms, she cultivated the land and created the red earth.} \\ \indent \indent --- Ocarina of Time
-\end{quotation}
-
-\textit{Din}, named after the goddess of strengh, is the subsystem that learns to generate levels.  This section will first provide an overview of the architecture of \textit{Din} and then detail the work that still remains to be done.
-
-
-\begin{figure*}[h]
-\centering
-\includegraphics[width=1\textwidth]{figures/Din_Architecture.pdf}
-\caption{The proposed architecture of \textit{Din}.  \textit{Din} takes in levels, player tracks, and mechanical clusters. After formatting the levels in the way that best makes sense, the formatted levels are passed to the generator which learns from the input levels.  The trained generator is capable of producing new levels (and exemplar player paths for these levels).  }
-\label{fig:din_architecture}
-\end{figure*}
+\subsection{ Game Level Generation}
 
 \subsubsection{Din Architecture}
 
-\textit{Din} is the subsystem in charge of generating levels.  It is intended that the input to \textit{Din} will be from the output of \textit{Nayru}, namely that the annotated levels and player tracks produced by \textit{Nayru} will be used by \textit{Din}; however, \textit{Din} is also intended to be generic,so as long as the level data is in the correct format, \textit{Din} should work.
 
-As mentioned in the last section, the annotated levels ,  $\{\mathcal{L}\}$, are a set of individual levels, $\mathcal{L}$, where each level is a list of all entities (both static and dynamic) found in the level, with entities being given a unique identifier that ties their identity to the levels and mechanical clusters.  Given that the levels are just unordered lists which, while certainly a valid format to pass to many machine learning algorithms, is unlikely to be the best approach.  
+\subsection{Learning from Games}
 
-Based on earlier work (see section \ref{sec:ContentGeneration}), I foresee two formats that will be utilized by \textit{Din}.
+\subsection{Procedural Generation of Levels}
 
-\begin{itemize}
-\item 2D Tile Based --- As in the earlier Super Mario Bros. work
-\item Graph Based --- As in the earlier Legend of Zelda work
-\end{itemize}
+\subsection{Procedural Generation of Games}
+\section{Remaining Work}
 
-\begin{figure}[ht]
-\centering
-    \includegraphics[width=0.97\textwidth]{figures/Din_Graph_Detail.pdf} 
-   
-   
-    \caption{A visualization of the graph convolution process. The \textit{Orange} node is the central node of the convolution. \textit{Red} edges are outgoing, while \textit{Blue} are incoming.  The \textit{Green} nodes are the nodes in the neighborhood of the central node, while \textit{Light Blue} nodes are those that are not in the neighborhood. }
-  \label{fig:convolution}
-  \end{figure}
-  
-Levels in the 2D Tile format are $w \times h \times c+i+1$ tensors where $w$ is the width, $h$ is the height, $c$ is the number of mechanical clusters, $i$ is the number of unique entity identifiers, and the final extra dimension is a binary indicator if the player's path passed through that tile.  As in my earlier Super Mario Bros. work, \textit{Din} will use autoregressive LSTMs for learning and generation.  As in that work, \textit{Din} will use a linearized representation, but unlike that work, it is as yet unknown what format will work best for a generalized pool of games.  To that end, part of the work remaining on \textit{Din} is a generalized linearization technique.  I intend to test the following approaches:
-
-\begin{itemize}
-\item \textit{Horizontal}  --- raster left-to-right, top-to-bottom
-\item \textit{Vertical}  --- raster  top-to-bottom, left-to-right
-\item \textit{Majority}  --- look at the aspect ratios of the original levels and choose from either \textit{Horizontal} or \textit{Vertical} based on the most common aspect ratio (\textit{Horizontal} for levels taller than wide, \textit{Vertical} for vice versa)
-\item \textit{Both}  --- encode levels both vertically and horizontally
-\item \textit{Aspect}  --- For each level choose from either \textit{Horizontal} or \textit{Vertical} based on its aspect ratio (\textit{Horizontal} for levels taller than wide, \textit{Vertical} for vice versa) --- Note: \textit{Aspect} will only be considered if is different from \textit{Majority} 
-\end{itemize}
-
-Furthermore, for \textit{Aspect} and \textit{Both}, I will perform two sub-experiments, one will encode the direction  between each token in the sequence (e.g. $A \rightarrow B \rightarrow C ...$ or $A \uparrow B \uparrow C ...$) and the other will only encode the tokens.  My hypothesis is that encoding the direction will be superior to ignoring it, as ignoring it is likely to become confused with multiple directions.
-
-The tile based levels comprise the graph format in that each individual node of the graph format is a tiled level.  Unlike the relatively straight forward training and sampling of the tile levels, graph levels have a much more complex training and sampling process.  
-
-At training time, each node is trained in a similar manner as the above tile based manner, but instead of an autoregressive LSTM the levels are trained using a sequence-to-sequence autoencoder.  The encoder is composed of multiple layers of bidirectional LSTMs (i.e. layers with two LSTMs, one progressing forward over the node, one progressing backwards) which after the full length of the node is traversed, the final outputs are encoded into a fixed length vector.  This vector is passed to a decoder, along with a \texttt{<Go>} token, telling the decoder LSTM to start the decoding process.  At each step of decoding, the previous decoded symbol is passed to the decoder, along with the encoded state.  
-
-After sufficient training of the individual nodes, the graphical structure is ready to be trained.  Using similar ideas to \cite{thomaskipfgraphconvolutions} and \cite{treestructuredvariationalautoencoder}, I propose a graph autoencoder.  The encoding portion of the autoencoder operates by:
-
-\begin{enumerate}
-\item Convolution --- Each node is convolved with its neighbors
-\item Pooling --- After the convolutions are performed, nodes are pooled to form a coarsened graph
-\end{enumerate}
-
-  
-\noindent and these steps are repeated until only a single coarsened node remains, which is then fed through a densely connected layer to a latent state.
-
-Given a node $n$ with a set of neighbors $O$ with edge weights $e_{j\rightarrow k}$ ($1$ if the directed edge from node $j$ to $k$ exists, $0$ if it doesn't), then the convolution performs the following operation:
-
-$c = n*w_0 + \sum_{o \in O} w_1*o*e_{n\rightarrow o}+ \sum_{o \in O} w_2*o*e_{o\rightarrow n}$
-
-with trainable weights $w_0$ (the weight applied to the center node), $w_1$ (the weight applied to neighbors for which there is a directed edge into them), and $w_2$ (the weight applied to neighbors for which there is a directed edge out of them). A non-linear activation will be applied to $c$ (most likely a Rectified Linear Unit \cite{relu}).
-
-The pooling stage operates by taking pairs of neighbors, finds the maximum of their values for each convolutional filter, and keeps it.  
-
-\begin{figure}[htbp!]
-\centering
-    \includegraphics[width=0.97\textwidth]{figures/Pooling.pdf} 
-   
-   
-    \caption{A visualization of the graph convolution pooling process. There are alternating pooling and coarsening phases that are iteratively applied.}
-  \label{fig:pooling}
-  \end{figure}
-  
-These steps are then repeated until a single latent state is arrived at.
-
-There exist a number of operational questions that need to be experimented with:
-
-\begin{itemize}
-\item Should weights be shared across all levels of the graph?
-\item If not, how should depth be measured? Bottom-up (e.g. leaves are depth 0) or top-down (e.g. the final source node is depth 0)? 
-\item If it is bottom up, how should conflicting depths be handled? Minimum or maximum?
-\end{itemize}
-
-The decoding process is a bit more involved.  Given a latent representation $z$ we need the following functions:
-
-\begin{itemize}
-\item \textsc{Is\_Terminal}$(z)$ -- a logistic function that specifies whether the given node should be a terminal node
-\item \textsc{Get\_Children}$(z)$ -- a function from the $k$ dimensional latent space that produces two $k$ dimensional vectors, the children of the node, used only if the node is non-terminal
-\item \textsc{Reify}$(z)$ --- a function from the $k$ dimensional graph latent space to the $h$ dimensional tile latent space, used if the node is terminal
-
-\item \textsc{Find\_Links}$(T)$ --- a function from a binary tree structured graph that returns the links between nodes.  The output is a sequence of leaf id pairs signifying an edge from the first leaf to the second. I plan to combine a Tree-RNN or Tree-LSTM \cite{treernn,treelstm} with a pointer network \cite{pointernetwork} to reference back to the leaf nodes.
-\end{itemize}
+\section{Evaluation}
 
 
-Given that, decoding operates via decoding the root level latent node with the following procedure:
-
-
-\begin{algorithmic}[1]
-\Procedure{Decode}{$z$}
-\If {\textsc{Is\_Terminal}$(z)$}
-\State \Return \textsc{Reify}$(z)$
-\Else 
-\State $z_{l}, z_{r} \gets $  \textsc{Get\_Children}$(z)$
-\State \Return $\langle$ Decode($z_l$) ,  Decode($z_r$) $\rangle$ 
-\EndIf
-\EndProcedure
-\end{algorithmic}
-
-This returns a binary tree form of the graph, where each leaf represents an actual node of the graph.   \textsc{Find\_Links} is then applied to the tree, returning the links.
-
-Given that there are many possible trees that describe the graph coarsening \cite{Comparisonofcoarseningschemesformultilevelgraphpartitioning}, I intend to utilize domain knowledge to choose the order of coarsening.  Given that the graphs come from play throughs, I will order the nodes in the order that they are capable of being reached by the player.  Then when the pooling step occurs, the lowest neighbor will be chosen.
-
-
-\subsubsection{Work Remaining}
-
-The graph learning/generation portion represents the largest portion remaining for my dissertation.  Given that it is a completely novel approach (graph convolutions \cite{kipfgraphconvolutions}  and learning and generation of trees \cite{trees} have been done, but generative neural graph learning has yet to be done), there are no guarantees about this approach.  Early experiments are in process.  If the approach does not seem like it will work, I have multiple ideas for fall back approaches:
-
-\begin{itemize}
-\item Utilize a graph generation approach similar to that of my earlier Zelda work, where each node is sample from some distribution. This approach relied on design knowledge about Zelda dungeons, so modifications will be required to work around this.
-\item Starting from a graphical structure (perhaps sampled a la GraphLearn \cite{Learning an efficient constructive sampler for graphs.}) initialize each node with white noise.  Perform gradient descent on the graph given some neural network that encodes the graph (perhaps something as simple as a graph convolution that tries to predict each node from its neighborhood).
-\end{itemize}
-
-
-
-\subsection{Farore --- Game Behavior Generation}
-\begin{quotation}
-\textit{Farore's rich soul created all life forms who would uphold the law.}  \\ \indent \indent --- Ocarina of Time
-\end{quotation}
-
-\bibliographystyle{apalike-oadoi}
-\bibliography{sample}
-
-\end{document}
-
-\bibliographystyle{apalike-oadoi}
-\bibliography{sample}
+\section*{Timeline}
 
 \end{document}
