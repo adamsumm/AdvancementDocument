@@ -1121,6 +1121,245 @@ Except for the work on \textit{Gemini}, these two categories have  remained clea
 
 \end{itemize}
 
+\subsection{Leda}
+
+Leda is in an early state, but the goal for Leda is to take a Cygnus specified game (as in Castor or as produced by Pollux), and a set of observations about those games (e.g., ``The player controls the paddle'', ``The player's goal is to increase their score'', etc.)
+
+\begin{enumerate}
+\item Could learn arbitrary clauses (both functors and literals)
+\item Required only the base background knowledge and positive examples
+\item Could utilize language constructs from AnsProlog
+\end{enumerate}
+
+Other approaches fail these requirements for a variety of reasons: FOIL is inappropriate due to (1), GOLEM is inappropriate due to (3), Metagol is inappropriate due to (2) and (3), etc. This led to the creation of \textit{Leda}. We note that \textit{Leda} is very much a work in progress, so while fully utilizing the language constructs specific to AnsProlog is a desired end goal, currently \textit{Leda} only utilizes the constructs of AnsProlog shared with Prolog (e.g., aggregations such as \texttt{X \{p(Z)\} Y } remain unused).
+
+\textit{Leda} takes in a list of games $G$ and a corresponding list of positive examples for those games $E$. Games take the form of Cygnus \cite{martens2016proceduralist} programs. An example rule from a Cygnus representation of \textit{Pong} is show below:
+
+
+\noindent \texttt{precondition(control\_event(}
+
+\texttt{player\_input(up\_arrow,held)),move\_up).}
+
+\noindent \texttt{result(move\_up,}
+
+\texttt{moves(paddle\_player,north,low)).}
+
+\noindent This rule defines the set of preconditions under which it fires (e.g., the control event coming from the player input of the Up arrowing being held down) and the results (e.g., the entity labeled as the \texttt{paddle\_player} moves north by a low amount). All of the definitions and rules describing a game are typically on the order of 40-50 lines of Cygnus code (e.g., \textit{Pong} can be represented in 37 lines and \textit{Kaboom!} in 40). 
+
+\textit{Leda} operates by reading in each game and determining a graph structure for how the lines of code relate to each other. This is done by determining the terms found in each line and associating lines that have the same terms. For instance, in this example the first line has the terms:
+
+$\{$\texttt{up\_arrow, held,move\_up}$\}$
+
+\noindent and the second:
+
+$\{$\texttt{move\_up,paddle\_player,north,low}$\}$
+
+So the association between these lines is that both contain the term \texttt{paddle\_player}. This is important, as it tells us how we can expect to use these lines in our rules. For instance, we know that a rule might take the form of:
+
+\noindent $Rule$ \texttt{:- precondition(control\_event(} 
+
+\hspace{3cm} \texttt{player\_input(A,B)),C),}
+
+\hspace{1cm} \texttt{result(C,moves(D,E,F)).}
+
+i.e. we use the only related term to determine the implicit type structure as opposed to explicitly defining the types of terms. 
+
+Given the graphical structure of how the clauses relate to each other, we know perform a breadth-first search over the rule space. The starting point of this search are the positive examples given. We will keep with the \textit{Pong} motivating example and say that our positive example is \texttt{player\_controls(paddle\_player)}. Given this, we know that the neighbors of \texttt{player\_controls(paddle\_player)} should include the term \texttt{paddle\_player}. In this case, the clauses with \texttt{paddle\_player} are:
+
+\noindent \texttt{entity(paddle\_player).}
+
+\noindent \texttt{initialize(paddle\_player,1,}
+
+\texttt{location(middle,left)).}
+
+\noindent \texttt{initialize(set\_sprite(paddle\_player,}
+
+\texttt{rectangle)).}
+
+\noindent \texttt{initialize(set\_color(paddle\_player,}
+
+\texttt{white)).}
+
+\noindent \texttt{moves(paddle\_player,north,low)).}
+
+\noindent \texttt{moves(paddle\_player,south,low)).}
+
+\noindent \texttt{precondition(overlaps(ball,paddle\_player),}
+
+\texttt{player\_hit).}
+
+Given the bias that better rules are those that are more compact, we visit the neighbors in ascending order number of predicates. With a set of clauses to be used in the rule, we then enumerate all possible rules given those clauses. This combinatorial space is made of all combinations of:
+
+\begin{itemize}
+\item Concrete and variable terms admitted by the clauses
+\item Subsumation of functors into variables
+\item Safe negations
+\end{itemize}
+
+Again, given the two clauses:
+
+
+\noindent \texttt{precondition(control\_event(}
+
+\texttt{player\_input(up\_arrow,held)),move\_up).}
+
+\noindent \texttt{result(move\_up,}
+
+\texttt{moves(paddle\_player,north,low)).}
+
+The abstractification process for the rule finds the set of all concrete terms found in the clauses (e.g., $\{$\texttt{up\_arrow, held, move\_up, paddle\_player, north, low}$\}$) and finds the possible  combinations of variables and concrete atoms ($2^6$ in this case). As with the bias that fewer terms are more preferred, we assume that better rules will use a smaller number of concrete term. For instance, in the case of \textit{Pong}, the rule:
+
+\noindent \texttt{player\_controls(paddle\_player) :- }
+
+\texttt{entity(paddle\_player).}
+
+\noindent would have full coverage of the positive examples in \textit{Pong} but would do a poor job of covering any other game (except for say, \textit{Breakout}, maybe). As such it is considered after the rule:
+
+
+\noindent \texttt{player\_controls(X) :- }
+
+\texttt{entity(X).}
+
+Given all possible combinations of concrete and variable terms, we then consider whether a functor can safely subsume its terms and be considered. Continuing with the motivating example of:
+
+\noindent \texttt{precondition(control\_event(}
+
+\texttt{player\_input(up\_arrow,held)),move\_up).}
+
+\noindent \texttt{result(move\_up,}
+
+\texttt{moves(paddle\_player,north,low)).}
+
+\noindent we see the functors:
+
+\noindent \texttt{control\_event(player\_input(up\_arrow,held))}
+
+\noindent \texttt{player\_input(up\_arrow,held)}
+
+\noindent \texttt{moves(paddle\_player,north,low)}
+
+A functor can safely be subsumed if it does not orphan any of the clauses considered.  In this case, each could safely be subsumed, as the only term that ties the clauses together is \texttt{move\_up}.  For instance, the subsumption of
+
+\noindent  \texttt{control\_event(player\_input(up\_arrow,held))} 
+
+\noindent leads to the rule:
+
+\noindent \texttt{precondition(X),move\_up).}
+
+\noindent \texttt{result(move\_up,}
+
+\texttt{moves(paddle\_player,north,low)).}
+
+However, if we were to consider the clauses:
+
+\noindent \texttt{result(move\_up,}
+
+\texttt{moves(paddle\_player,north,low))}
+
+
+\noindent \texttt{precondition(overlaps(ball,paddle\_player),}
+
+\noindent we see that neither \texttt{moves(paddle\_player,north,low)} or \texttt{overlaps(ball,paddle\_player)} could be subsumed in this case, as they both contain the linking term \texttt{paddle\_player}.
+
+Finally, we wish to be able to create rules with more expressivity than just $P \leftarrow A \land B \land ...$, and wish to consider rules that allow for the negation of clauses, i.e. $P \leftarrow A \land B \land \lnot C \land \lnot D \land ...$.  However, we need to ensure that negated clauses remain safe constructs, i.e. they do not contain any variables that are found in any other clause.  For instance the rule:
+
+\noindent \texttt{P(X) :- }
+
+\texttt{Q(X),}
+
+\texttt{not R(Y).}
+
+\noindent is unsafe as \texttt{Y} is not contained elsewhere, but
+
+\noindent \texttt{P(X) :- }
+
+\texttt{Q(X,Y),}
+
+\texttt{not R(Y).}
+
+\noindent is safe because \texttt{Y} is found in \texttt{Q(X,Y)}.  As such, we only allow the negation of a clause if all variables in the clause are contained in at least one positive clause.
+
+After finding all possible combinations of rules involving the abstractification of concrete terms, functor subsumption, and clause negation, we need to test the rules.  At each point in the search we test the rule on each pair of game and positive examples found in that game. If a rule produces false positives it is ignored, and the rule of minimal complexity that covers the most positive examples per game is kept.  This minimal complexity is determined by a lexicographic sorting, first sorting by number of concrete terms contained and then sorting by the number of terms found in the rule. If at any point a rule covers all positive examples in a game, then that rule is kept and the game is discarded.  The search continues until all games are removed or a maximal depth is reached.    
+
+\subsubsection{Leda --- Preliminary Results}
+
+Work on \textit{Leda} is still in an early stage; however, \textit{Leda} is able to produce low level inference rules important for higher level inferences.  We tested \textit{Leda} on two games written in Cygnus, \textit{Pong} and \textit{Kaboom!}, over four low level learning tasks, determining why a given entity would be labeled as being controlled by the player, why an entity would be labeled as static, why a given outcome would be labeled as being controlled by the player, and why an entity would be labeled as being controlled by the computer. The rules that \textit{Leda} learned are:
+
+\noindent \texttt{player\_controls(X) :- }
+ 
+\texttt{precondition(control\_event(C),O),}
+
+\texttt{result(O,moves(X,S,D)).}
+
+i.e. ``The player controls X if there is a precondition predicated on a control event that results in that entity moving in some way.''
+
+
+\noindent \texttt{non\_static(X) :- }
+
+\texttt{result(O,moves(X,S,D)).}
+
+i.e. ``An entity is non-static if it moves in some way.''
+
+While \textit{Leda} can not currently perform predicate invention, by utilizing previously learned rules it can learn rules such as:
+
+
+\noindent \texttt{player\_controls\_outcome(O) :- }
+
+\texttt{precondition(control\_event(C),O).}
+
+\noindent \texttt{player\_controls\_outcome(O) :- }
+
+\texttt{precondition(overlaps(X,Y),O),}
+
+\texttt{player\_controls(X).}
+
+i.e. ``The player controls outcome O if either that outcome is predicated on a control event or collision involving an entity X that the player controls.''
+
+
+\noindent \texttt{computer\_controls(X) :- }
+ 
+\texttt{result(O,moves(X,S,D),}
+
+\texttt{not player\_controls(X).}
+
+``The computer controls entity X if it moves in some way and the player does not control X.''
+
+While these rules are all quite simple, they are the building blocks for higher order inferences, and it points towards promising future directions for \textit{Leda}.  
+
+\subsubsection{Leda --- next steps}
+
+The next steps for Leda are:
+
+\begin{itemize}
+\item Consider multiple rules at a time --- currently, Leda only generates single rules at a time, but there are many types of rules that require an \textit{or} to fully cover the given observations (e.g., current Cygnus specifications for clicking-and-dragging do not rely on \texttt{precondition(control\_event(C),O)}, so would not be covered by the single rule above).  
+\item Use ASP language constructs --- Leda is designed to interface with Castor and Pollux, two ASP programs, and the rules they use often contain AnsProlog refinements on the standard Prolog currently used by Leda (e.g., counting such as \texttt{\{p(A)\}})
+\end{itemize}
+
+\subsection{Mappy}
+
+Currently, Mappy does not capture mechanically meaningful interactions, or rather it stores them but does not process them in a meaningful way.  For instance, while the full track of Mario is captured, the fact that Mario is ``interacting'' with entities in the game --- jumping on Goombas, hitting $?$ blocks --- is not incorporated.  Furthermore, important state interactions --- a $?$ block turning into an inert block after being hit on the underside by Mario --- are completely glossed over as just a series of frames with no context (e.g., frame 0 - tile $(4,5)$ is a $?$ block, frame 60 - tile $(4,5)$ is blue sky, frame 120 - tile $(4,5)$ is an inert block).  
+
+The work that I did on causal affordance learning is a natural fit here.  It is less an open research question as to whether it can be used here, but more an engineering step required to further refine Mappy.
+
+\subsection{Talon}
+
+The key reason for modifying Mappy is to support Talon in a way that does not rely on human annotated levels.  Previously, Talon used levels annotated at a broad mechanical level (e.g., inert solid tiles were one type, question mark blocks another, enemies another, etc.), so it is an open question as to how to best incorporate Mappy produced maps.   Each tile has a visual signifier and its mechanical property clusters (either single membership or multiple membership), so the possible ways of representing are:
+
+\begin{itemize}
+\item Visual Signifier --- Possibilities are: No visual information included, first seen visual, modal seen visual, set of all seen visuals
+\item Mechanical Properties --- Possibilities are: No mechanical properties included, single membership cluster identity, multiple membership cluster identities
+\end{itemize}
+
+These 11 different combinations ($4$ visual options $\times$ $3$ mechanical options, with the ``no visuals, no mechanics'' option be excluded since it would include no information) should then be compared to the earlier human annotated generators, to see what data is most important for a machine learned generator.
+
+Finally, I would like to encode the levels in a lower dimensional space.  Recently, there has been a lot of focus on Generative Adversarial Networks (GANs) \cite{gans}, Variational Autoencoders \cite{vae}, and sequence-to-sequence models \cite{seq2seq} (which I used for \textit{Mystical Tutor}) which all operate with a fixed dimensional latent ``encoding'' of the content they generate.  Some, such as the GAN, attempt to learn this by producing output in an attempt to confuse a critic network as to what is generated and what is an actual representative. Others, like the VAE and sequence-to-sequence models learn an encoded latent representation that is then decoded to reproduce the input.  The advantage to approaches such as these, is that they tend to learn densely informative latent representations, that can be utilized for meaningful modifications.  For instance, some work has shown that head angle, lighting angle, and facial gesture \cite{ganstuff} can be learned as dimensions in the latent space, allowing users to seamlessly change images by modifying these latent parameters.  Similarly, interpolating in the lower dimensional space is capable of providing conceptually blended artifacts in a way not possible by averaging pixel values between images \cite{ganinterpolation}.  Toward this end, I would like to learn a level representation that is capable of being utilized in these manners, with the goal being the discovery of important latent features (e.g., difficulty, etc.) that a user can modify and a meaningful generative space to be sampled from.  This meaningful space is an important component for future work on Ingo, which I will now discuss.
+
+\subsection{Ingo}
+
+Previously, Ingo used Bayes Nets to generate levels structured as graphs; however, it relied heavily on human annotation, both of the levels, and of the important mechanical properties found in the levels.  Furthermore, the Bayes Net approach had problems with generalization due to the tabular nature of its learned representation.  In an effort to alleviate these problems and to better interoperate with Talon, I intend to move from a Bayes Net approach to a neural approach.  The proposed architecture for Ingo can be seen in figure \ref{fig:Ingo}.
+
+\subsection{Protoman}
+
 
 
 \subsection{Nayru --- Game Knowledge Extraction}

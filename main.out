@@ -16,13 +16,20 @@
 \BOOKMARK [2][-]{subsection.3.7}{The Free Culture Game}{section.3}% 16
 \BOOKMARK [3][-]{subsubsection.3.7.1}{ASP Game Generation}{subsection.3.7}% 17
 \BOOKMARK [1][-]{section.4}{Proposed Work}{}% 18
-\BOOKMARK [2][-]{subsection.4.1}{Nayru \204 Game Knowledge Extraction}{section.4}% 19
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Nayru Architecture}{subsection.4.1}% 20
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Work Remaining}{subsection.4.1}% 21
-\BOOKMARK [2][-]{subsection.4.2}{ Game Level Generation}{section.4}% 22
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Din Architecture}{subsection.4.2}% 23
-\BOOKMARK [2][-]{subsection.4.3}{Learning from Games}{section.4}% 24
-\BOOKMARK [2][-]{subsection.4.4}{Procedural Generation of Levels}{section.4}% 25
-\BOOKMARK [2][-]{subsection.4.5}{Procedural Generation of Games}{section.4}% 26
-\BOOKMARK [1][-]{section.5}{Remaining Work}{}% 27
-\BOOKMARK [1][-]{section.6}{Evaluation}{}% 28
+\BOOKMARK [2][-]{subsection.4.1}{Leda}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Leda \204 Preliminary Results}{subsection.4.1}% 20
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Leda \204 next steps}{subsection.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.2}{Mappy}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.3}{Talon}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.4}{Ingo}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.5}{Protoman}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.6}{Nayru \204 Game Knowledge Extraction}{section.4}% 26
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Nayru Architecture}{subsection.4.6}% 27
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Work Remaining}{subsection.4.6}% 28
+\BOOKMARK [2][-]{subsection.4.7}{ Game Level Generation}{section.4}% 29
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Din Architecture}{subsection.4.7}% 30
+\BOOKMARK [2][-]{subsection.4.8}{Learning from Games}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.9}{Procedural Generation of Levels}{section.4}% 32
+\BOOKMARK [2][-]{subsection.4.10}{Procedural Generation of Games}{section.4}% 33
+\BOOKMARK [1][-]{section.5}{Remaining Work}{}% 34
+\BOOKMARK [1][-]{section.6}{Evaluation}{}% 35
