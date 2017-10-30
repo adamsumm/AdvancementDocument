@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.25)  27 OCT 2017 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.25)  30 OCT 2017 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,19 +6,20 @@ entering extended mode
 (./main.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -57,7 +58,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count87
+\Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
@@ -79,10 +80,10 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen110
 \caption@hangindent=\dimen111
 )
-\c@ContinuedFloat=\count88
+\c@ContinuedFloat=\count89
 )
-\c@subfigure=\count89
-\c@subtable=\count90
+\c@subfigure=\count90
+\c@subtable=\count91
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -153,13 +154,13 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen112
-\Hy@linkcounter=\count91
-\Hy@pagecounter=\count92
+\Hy@linkcounter=\count92
+\Hy@pagecounter=\count93
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count93
+\Hy@SavedSpaceFactor=\count94
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -171,7 +172,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count94
+\c@Hy@tempcnt=\count95
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
@@ -179,7 +180,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen113
-\Fld@menulength=\count95
+\Fld@menulength=\count96
 \Field@Width=\dimen114
 \Fld@charsize=\dimen115
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -191,17 +192,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count96
-\c@Item=\count97
-\c@Hfootnote=\count98
+\Hy@abspage=\count97
+\c@Item=\count98
+\c@Hfootnote=\count99
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count99
-\c@bookmark@seq@number=\count100
+\Fld@listcount=\count100
+\c@bookmark@seq@number=\count101
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -233,16 +234,16 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
+\scratchcounter=\count102
 \scratchdimen=\dimen116
 \scratchbox=\box26
-\nofMPsegments=\count102
-\nofMParguments=\count103
+\nofMPsegments=\count103
+\nofMParguments=\count104
 \everyMPshowfont=\toks16
-\MPscratchCnt=\count104
+\MPscratchCnt=\count105
 \MPscratchDim=\dimen117
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
 \everyMPtoPDFconversion=\toks17
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -271,7 +272,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count107
+\c@section@level=\count108
 )
 LaTeX Info: Redefining \ref on input line 43.
 LaTeX Info: Redefining \pageref on input line 43.
@@ -290,674 +291,712 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 57.
+
+
+LaTeX Warning: Citation `tellingmorethanwecanknow' on page 1 undefined on input
+ line 57.
+
+
+LaTeX Warning: Citation `artisticpractices_Social_Interactions_and_Cultural_Dyn
+amics' on page 1 undefined on input line 57.
+
+
+LaTeX Warning: Citation `kateoatmeal' on page 1 undefined on input line 62.
+
+
+LaTeX Warning: Citation `mikeaestheticoflargenumbers' on page 1 undefined on in
+put line 62.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
- [1
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 
+      [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 106.
+] [2] [3]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 107.
+
+
+LaTeX Warning: Citation `PROCJAM2015' on page 4 undefined on input line 109.
+
+
+LaTeX Warning: Citation `PROCJAM2016' on page 4 undefined on input line 109.
+
+
+LaTeX Warning: Citation `SOMETHING' on page 4 undefined on input line 109.
+
+
+LaTeX Warning: Citation `mario2010' on page 4 undefined on input line 114.
+
+
+LaTeX Warning: Citation `mawhorterORE' on page 4 undefined on input line 114.
+
+
+LaTeX Warning: Citation `tanagra' on page 4 undefined on input line 116.
+
+[4
+
+]
+
+LaTeX Warning: Citation `sorpasq' on page 5 undefined on input line 118.
+
+
+LaTeX Warning: Citation `VARGASPLOTPOINTS' on page 5 undefined on input line 12
+2.
+
+
+LaTeX Warning: Citation `JDADVENTURE' on page 5 undefined on input line 124.
+
+
+LaTeX Warning: Citation `VDLPROCGENLEVEL' on page 5 undefined on input line 125
+.
+
+[5]
+
+LaTeX Warning: Citation `SORPASLEVEL' on page 6 undefined on input line 127.
+
+
+LaTeX Warning: Citation `VALTCHANOVEVOLVE' on page 6 undefined on input line 12
+7.
+
+
+LaTeX Warning: Citation `hartsook' on page 6 undefined on input line 128.
+
+
+LaTeX Warning: Citation `HORSWILLCONSTRAINT' on page 6 undefined on input line 
+133.
+
+
+LaTeX Warning: Citation `dahlskog2014linear' on page 6 undefined on input line 
+139.
+
+
+LaTeX Warning: Citation `dahlskog2013patterns' on page 6 undefined on input lin
+e 139.
+
+[6]
+
+LaTeX Warning: Citation `snodgrass2014experiments' on page 7 undefined on input
+ line 142.
+
+
+LaTeX Warning: Citation `ching2007multi' on page 7 undefined on input line 142.
+
+
+
+Overfull \hbox (8.52496pt too wide) in paragraph at lines 142--143
+[]\OT1/ptm/m/n/12 In (\OT1/ptm/b/it/12 ?\OT1/ptm/m/n/12 ) Snod-grass and Onta[]
+n[]on present an ap-proach to level gen-er-a-tion us-ing multi-dimensional
+ []
+
+
+LaTeX Warning: Citation `snodgrass2015hierarchical' on page 7 undefined on inpu
+t line 146.
+
+
+LaTeX Warning: Citation `snodgrassconstrained' on page 7 undefined on input lin
+e 146.
+
+
+LaTeX Warning: Citation `snodgrass2016learning' on page 7 undefined on input li
+ne 146.
+
+
+LaTeX Warning: Citation `Pulli:2012:RCV:2184319.2184337' on page 7 undefined on
+ input line 149.
+
+
+LaTeX Warning: Citation `kalogerakis:2012:SIG' on page 7 undefined on input lin
+e 151.
+
+
+LaTeX Warning: Citation `guzdial2016game' on page 7 undefined on input line 151
+.
+
+
+LaTeX Warning: Citation `MARIOGRAPHGRAMMAR' on page 7 undefined on input line 1
+51.
+
+[7]
+
+LaTeX Warning: Citation `shaker2014alone' on page 8 undefined on input line 153
+.
+
+
+LaTeX Warning: Citation `lee1999learning' on page 8 undefined on input line 155
+.
+
+<figures/CopyOfLoz1.png, id=55, 1286.8075pt x 918.43124pt>
+File: figures/CopyOfLoz1.png Graphic file (type png)
+
+<use figures/CopyOfLoz1.png>
+Package pdftex.def Info: figures/CopyOfLoz1.png used on input line 165.
+(pdftex.def)             Requested size: 432.48048pt x 308.67488pt.
+
+
+LaTeX Warning: Citation `ZELDASHRINE' on page 8 undefined on input line 170.
+
+
+LaTeX Warning: Citation `ANGELFIRE' on page 8 undefined on input line 170.
+
+
+LaTeX Warning: Citation `ZELDAELEMENTS' on page 8 undefined on input line 170.
+
+
+LaTeX Warning: Citation `IANALBERT' on page 8 undefined on input line 170.
+
+[8] [9 <./figures/CopyOfLoz1.png>]
+<figures/The_Learning_of_Zelda.png, id=71, 908.39375pt x 579.16376pt>
+File: figures/The_Learning_of_Zelda.png Graphic file (type png)
+
+<use figures/The_Learning_of_Zelda.png>
+Package pdftex.def Info: figures/The_Learning_of_Zelda.png used on input line 1
+76.
+(pdftex.def)             Requested size: 455.24408pt x 290.25279pt.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 182.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 117.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 182.
+ [10 <./figures/The_Learning_of_Zelda.png (PNG copy)>]
+<figures/PCAInterp.png, id=78, 928.97063pt x 120.45pt>
+File: figures/PCAInterp.png Graphic file (type png)
+
+<use figures/PCAInterp.png>
+Package pdftex.def Info: figures/PCAInterp.png used on input line 202.
+(pdftex.def)             Requested size: 441.58731pt x 57.2566pt.
+ [11 <./figures/PCAInterp.png>]
+<figures/lttp1.png, id=85, 1349.04pt x 1349.04pt>
+File: figures/lttp1.png Graphic file (type png)
+ <use figures/lttp1.png>
+Package pdftex.def Info: figures/lttp1.png used on input line 212.
+(pdftex.def)             Requested size: 273.14922pt x 273.13794pt.
+
+<figures/lttp1_zoom.png, id=86, 583.42969pt x 511.15968pt>
+File: figures/lttp1_zoom.png Graphic file (type png)
+
+<use figures/lttp1_zoom.png>
+Package pdftex.def Info: figures/lttp1_zoom.png used on input line 220.
+(pdftex.def)             Requested size: 273.14922pt x 239.31691pt.
+ [12 <./figures/lttp1.png>]
+<figures/LSTM_Cell.png, id=97, 963.6pt x 722.7pt>
+File: figures/LSTM_Cell.png Graphic file (type png)
+ <use figures/LSTM_Cell.png>
+Package pdftex.def Info: figures/LSTM_Cell.png used on input line 234.
+(pdftex.def)             Requested size: 227.62204pt x 170.71672pt.
 
 
-LaTeX Warning: Citation `IntroductiontoActiveAutomataLearningfromaPracticalPers
-pective?' on page 3 undefined on input line 117.
+LaTeX Warning: Citation `LSTM' on page 13 undefined on input line 240.
 
+[13 <./figures/lttp1_zoom.png>]
+<figures/Naive.png, id=108, 702.625pt x 693.59125pt>
+File: figures/Naive.png Graphic file (type png)
+ <use figures/Naive.png>
+Package pdftex.def Info: figures/Naive.png used on input line 251.
+(pdftex.def)             Requested size: 81.9406pt x 80.87785pt.
 
-LaTeX Warning: Citation `niggemann2012learning' on page 3 undefined on input li
-ne 121.
+<figures/BottomToTop.png, id=109, 702.625pt x 693.59125pt>
+File: figures/BottomToTop.png Graphic file (type png)
 
-[3]
+<use figures/BottomToTop.png>
+Package pdftex.def Info: figures/BottomToTop.png used on input line 255.
+(pdftex.def)             Requested size: 81.9406pt x 80.87785pt.
 
-LaTeX Warning: Citation `hybridmodels2015santana' on page 4 undefined on input 
-line 124.
+<figures/Snaking__1_.png, id=110, 702.625pt x 693.59125pt>
+File: figures/Snaking__1_.png Graphic file (type png)
 
+<use figures/Snaking__1_.png>
+Package pdftex.def Info: figures/Snaking__1_.png used on input line 259.
+(pdftex.def)             Requested size: 81.9406pt x 80.87785pt.
 
-LaTeX Warning: Citation `LearningSymbolicRepresentationsofHybridDynamicalSystem
-s' on page 4 undefined on input line 127.
+<figures/Hilbert.png, id=111, 702.625pt x 693.59125pt>
+File: figures/Hilbert.png Graphic file (type png)
 
+<use figures/Hilbert.png>
+Package pdftex.def Info: figures/Hilbert.png used on input line 263.
+(pdftex.def)             Requested size: 81.9406pt x 80.87785pt.
 
-LaTeX Warning: Citation `baum1966statistical' on page 4 undefined on input line
- 131.
+<figures/Z_Order.png, id=112, 702.625pt x 693.59125pt>
+File: figures/Z_Order.png Graphic file (type png)
 
+<use figures/Z_Order.png>
+Package pdftex.def Info: figures/Z_Order.png used on input line 267.
+(pdftex.def)             Requested size: 81.9406pt x 80.87785pt.
 
-LaTeX Warning: Citation `beal2002infinite' on page 4 undefined on input line 13
-2.
-
-
-LaTeX Warning: Citation `kukreja2005least' on page 4 undefined on input line 13
-5.
-
-
-LaTeX Warning: Citation `bridewell2008inductive' on page 4 undefined on input l
-ine 135.
-
-
-LaTeX Warning: Citation `bjornsson2012learning' on page 4 undefined on input li
-ne 137.
-
-
-LaTeX Warning: Citation `guzdial2017game' on page 4 undefined on input line 140
-.
-
-[4]
-
-LaTeX Warning: Citation `PROCJAM2015' on page 5 undefined on input line 145.
-
-
-LaTeX Warning: Citation `PROCJAM2016' on page 5 undefined on input line 145.
-
-
-LaTeX Warning: Citation `SOMETHING' on page 5 undefined on input line 145.
-
-
-LaTeX Warning: Citation `mario2010' on page 5 undefined on input line 150.
-
-
-LaTeX Warning: Citation `mawhorterORE' on page 5 undefined on input line 150.
-
-
-LaTeX Warning: Citation `tanagra' on page 5 undefined on input line 152.
-
-
-LaTeX Warning: Citation `sorpasq' on page 5 undefined on input line 154.
-
-[5]
-
-LaTeX Warning: Citation `VARGASPLOTPOINTS' on page 6 undefined on input line 15
-8.
-
-
-LaTeX Warning: Citation `JDADVENTURE' on page 6 undefined on input line 160.
-
-
-LaTeX Warning: Citation `VDLPROCGENLEVEL' on page 6 undefined on input line 161
-.
-
-
-LaTeX Warning: Citation `SORPASLEVEL' on page 6 undefined on input line 163.
-
-
-LaTeX Warning: Citation `VALTCHANOVEVOLVE' on page 6 undefined on input line 16
-3.
-
-
-LaTeX Warning: Citation `hartsook' on page 6 undefined on input line 164.
-
-[6]
-
-LaTeX Warning: Citation `HORSWILLCONSTRAINT' on page 7 undefined on input line 
-169.
-
-
-LaTeX Warning: Citation `dahlskog2014linear' on page 7 undefined on input line 
-175.
-
-
-LaTeX Warning: Citation `dahlskog2013patterns' on page 7 undefined on input lin
-e 175.
-
-
-LaTeX Warning: Citation `snodgrass2014experiments' on page 7 undefined on input
- line 178.
-
-
-LaTeX Warning: Citation `ching2007multi' on page 7 undefined on input line 178.
-
-
-
-Overfull \hbox (8.52496pt too wide) in paragraph at lines 178--179
-[]\OT1/ptm/m/n/12 In (\OT1/ptm/b/it/12 ?\OT1/ptm/m/n/12 ) Snod-grass and Onta[]
-n[]on present an ap-proach to level gen-er-a-tion us-ing multi-dimensional
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+[]\OT1/ptm/m/n/10.95 (e) |Lebesgue
  []
 
-[7]
 
-LaTeX Warning: Citation `snodgrass2015hierarchical' on page 8 undefined on inpu
-t line 182.
+LaTeX Warning: Citation `hilbert1891ueber' on page 14 undefined on input line 2
+79.
 
+[14 <./figures/LSTM_Cell.png>]
 
-LaTeX Warning: Citation `snodgrassconstrained' on page 8 undefined on input lin
-e 182.
+LaTeX Warning: Citation `morton1966computer' on page 15 undefined on input line
+ 280.
 
+<figures/1-1.png, id=118, 3244.12pt x 224.84pt>
+File: figures/1-1.png Graphic file (type png)
+ <use figures/1-1.png>
+Package pdftex.def Info: figures/1-1.png used on input line 287.
+(pdftex.def)             Requested size: 441.58731pt x 30.60252pt.
 
-LaTeX Warning: Citation `snodgrass2016learning' on page 8 undefined on input li
-ne 182.
+<figures/SDP1.png, id=119, 2922.92pt x 256.96pt>
+File: figures/SDP1.png Graphic file (type png)
+ <use figures/SDP1.png>
+Package pdftex.def Info: figures/SDP1.png used on input line 291.
+(pdftex.def)             Requested size: 441.58731pt x 38.82071pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 291.
 
+<figures/1-2.png, id=120, 2409.0pt x 224.84pt>
+File: figures/1-2.png Graphic file (type png)
+ <use figures/1-2.png>
+Package pdftex.def Info: figures/1-2.png used on input line 294.
+(pdftex.def)             Requested size: 441.58731pt x 41.21393pt.
 
-LaTeX Warning: Citation `Pulli:2012:RCV:2184319.2184337' on page 8 undefined on
- input line 185.
-
-
-LaTeX Warning: Citation `kalogerakis:2012:SIG' on page 8 undefined on input lin
-e 187.
-
-
-LaTeX Warning: Citation `guzdial2016game' on page 8 undefined on input line 187
-.
-
-
-LaTeX Warning: Citation `MARIOGRAPHGRAMMAR' on page 8 undefined on input line 1
-87.
-
-
-LaTeX Warning: Citation `shaker2014alone' on page 8 undefined on input line 189
-.
-
-
-LaTeX Warning: Citation `lee1999learning' on page 8 undefined on input line 191
-.
-
-[8]
-
-LaTeX Warning: Citation `AGDViaMechanics' on page 9 undefined on input line 198
-.
+<figures/SDP_1_3.png, id=121, 2778.38pt x 256.96pt>
+File: figures/SDP_1_3.png Graphic file (type png)
+ <use figures/SDP_1_3.png>
+Package pdftex.def Info: figures/SDP_1_3.png used on input line 297.
+(pdftex.def)             Requested size: 441.58731pt x 40.83997pt.
 
 
-LaTeX Warning: Citation `programsynthesis' on page 9 undefined on input line 21
+LaTeX Warning: Citation `snodgrassmdmc' on page 15 undefined on input line 301.
+
+
+
+LaTeX Warning: Reference `fig:mario_levels' on page 15 undefined on input line 
+301.
+
+[15 <./figures/Naive.png> <./figures/BottomToTop.png> <./figures/Snaking__1_.pn
+g> <./figures/Hilbert.png> <./figures/Z_Order.png> <./figures/1-1.png (PNG copy
+)> <./figures/SDP1.png (PNG copy)> <./figures/1-2.png (PNG copy)> <./figures/SD
+P_1_3.png (PNG copy)>] [16]
+
+LaTeX Warning: Citation `wardrip-fruin2005playable' on page 17 undefined on inp
+ut line 325.
+
+
+LaTeX Warning: Citation `osborn2017refining' on page 17 undefined on input line
+ 325.
+
+[17]
+
+LaTeX Warning: Citation `nesdev' on page 18 undefined on input line 344.
+
+
+Package hyperref Warning: Suppressing empty link on input line 357.
+
+[18]
+
+LaTeX Warning: Citation `summerville2017mechanics' on page 19 undefined on inpu
+t line 375.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+<figures/screen.png, id=156, 241.3818pt x 226.2051pt>
+File: figures/screen.png Graphic file (type png)
+ <use figures/screen.png>
+Package pdftex.def Info: figures/screen.png used on input line 389.
+(pdftex.def)             Requested size: 200.3085pt x 187.71565pt.
+
+<figures/ntram.png, id=157, 242.8272pt x 227.6505pt>
+File: figures/ntram.png Graphic file (type png)
+ <use figures/ntram.png>
+Package pdftex.def Info: figures/ntram.png used on input line 390.
+(pdftex.def)             Requested size: 200.3085pt x 187.80006pt.
+
+Underfull \vbox (badness 1189) has occurred while \output is active []
+
+ [20 <./figures/screen.png> <./figures/ntram.png>]
+<figures/Metroid.pdf, id=167, 3062.44125pt x 4490.7775pt>
+File: figures/Metroid.pdf Graphic file (type pdf)
+
+<use figures/Metroid.pdf>
+Package pdftex.def Info: figures/Metroid.pdf used on input line 404.
+(pdftex.def)             Requested size: 218.51521pt x 320.41663pt.
+ [21 <./figures/Metroid.pdf>] [22]
+
+LaTeX Warning: Citation `OperationalLogics' on page 23 undefined on input line 
+443.
+
+[23] <figures/Clusters.png, id=213, 955.57pt x 536.0025pt>
+File: figures/Clusters.png Graphic file (type png)
+
+<use figures/Clusters.png>
+Package pdftex.def Info: figures/Clusters.png used on input line 468.
+(pdftex.def)             Requested size: 441.58731pt x 247.69281pt.
+
+
+LaTeX Warning: Reference `fig:clusters' on page 24 undefined on input line 484.
+
+
+[24] [25 <./figures/Clusters.png>]
+
+LaTeX Warning: Citation `gans' on page 26 undefined on input line 505.
+
+
+LaTeX Warning: Citation `vae' on page 26 undefined on input line 505.
+
+
+LaTeX Warning: Citation `seq2seq' on page 26 undefined on input line 505.
+
+
+LaTeX Warning: Citation `ganstuff' on page 26 undefined on input line 505.
+
+
+LaTeX Warning: Citation `ganinterpolation' on page 26 undefined on input line 5
+05.
+
+
+LaTeX Warning: File `figures/Agahnim Architecture.pdf' not found on input line 
+511.
+
+<figures/Agahnim Architecture.pdf, id=226, 593.21625pt x 285.065pt>
+File: figures/Agahnim Architecture.pdf Graphic file (type pdf)
+
+<use figures/Agahnim Architecture.pdf>
+Package pdftex.def Info: figures/Agahnim Architecture.pdf used on input line 51
 1.
+(pdftex.def)             Requested size: 441.58731pt x 212.21057pt.
+
+
+LaTeX Warning: Citation `pointer_network' on page 26 undefined on input line 52
+0.
+
+[26]
+
+LaTeX Warning: Citation `smith2010analyzing' on page 27 undefined on input line
+ 531.
+
+
+LaTeX Warning: Citation `van2013designing' on page 27 undefined on input line 5
+31.
+
+
+LaTeX Warning: Citation `summerville2016mariostring' on page 27 undefined on in
+put line 531.
+
+
+LaTeX Warning: Citation `smith2011launchpad' on page 27 undefined on input line
+ 531.
+
+[27 <./figures/Agahnim Architecture.pdf>]
+
+LaTeX Warning: Citation `ks' on page 28 undefined on input line 537.
+
+
+LaTeX Warning: Reference `fig:KDE' on page 28 undefined on input line 537.
+
+
+LaTeX Warning: Citation `szekely2013energy' on page 28 undefined on input line 
+542.
+
+[28]
+
+LaTeX Warning: Citation `programsynthesis' on page 29 undefined on input line 5
+66.
 
 
 LaTeX Warning: Citation `OleksandrPolozovandSumitGulwani.2015.FlashMeta:Aframew
-orkforinductiveprogramsynthesis' on page 9 undefined on input line 212.
+orkforinductiveprogramsynthesis' on page 29 undefined on input line 567.
 
 
-LaTeX Warning: Citation `EricSchkufza' on page 9 undefined on input line 212.
+LaTeX Warning: Citation `EricSchkufza' on page 29 undefined on input line 567.
 
 
-LaTeX Warning: Citation `RahulSharma' on page 9 undefined on input line 212.
+LaTeX Warning: Citation `RahulSharma' on page 29 undefined on input line 567.
 
 
 LaTeX Warning: Citation `andAlexAiken.2013.StochasticSuperoptimization.' on pag
-e 9 undefined on input line 212.
+e 29 undefined on input line 567.
 
 
-LaTeX Warning: Citation `towardsAGD' on page 9 undefined on input line 220.
+Overfull \hbox (0.6261pt too wide) in paragraph at lines 575--576
+[]\OT1/ptm/m/it/12 ANGELINA$[]$ \OT1/ptm/m/n/12 cre-ated ``arcade-style'' games
+ sim-i-lar to the afore-men-tioned GVG-AI ap-proach.
+ []
+
+[29
+
+]
+
+LaTeX Warning: Citation `IntroductiontoActiveAutomataLearningfromaPracticalPers
+pective?' on page 30 undefined on input line 583.
 
 
-LaTeX Warning: Citation `conceptnet' on page 9 undefined on input line 220.
+LaTeX Warning: Citation `niggemann2012learning' on page 30 undefined on input l
+ine 587.
 
 
-LaTeX Warning: Citation `wordnet' on page 9 undefined on input line 220.
+LaTeX Warning: Citation `hybridmodels2015santana' on page 30 undefined on input
+ line 590.
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 220.
+
+LaTeX Warning: Citation `LearningSymbolicRepresentationsofHybridDynamicalSystem
+s' on page 30 undefined on input line 593.
+
+
+LaTeX Warning: Citation `baum1966statistical' on page 30 undefined on input lin
+e 597.
+
+
+LaTeX Warning: Citation `beal2002infinite' on page 30 undefined on input line 5
+98.
+
+
+LaTeX Warning: Citation `kukreja2005least' on page 30 undefined on input line 6
+01.
+
+
+LaTeX Warning: Citation `bridewell2008inductive' on page 30 undefined on input 
+line 601.
+
+[30]
+Overfull \hbox (9.79999pt too wide) in paragraph at lines 628--630
+[][] 
+ []
+
+
+Overfull \hbox (9.79999pt too wide) in paragraph at lines 657--659
+[][]
+ []
+
+
+Overfull \hbox (9.79999pt too wide) in paragraph at lines 680--682
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--685
+[][]
+ []
+
+[31]
+
+LaTeX Warning: File `figures/CALE Architecture.pdf' not found on input line 700
+.
+
+<figures/CALE Architecture.pdf, id=289, 593.21625pt x 285.065pt>
+File: figures/CALE Architecture.pdf Graphic file (type pdf)
+
+<use figures/CALE Architecture.pdf>
+Package pdftex.def Info: figures/CALE Architecture.pdf used on input line 700.
+(pdftex.def)             Requested size: 441.58731pt x 212.21057pt.
+ [32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+[34 <./figures/CALE Architecture.pdf>] [35]
+
+LaTeX Warning: Citation `AGDViaMechanics' on page 36 undefined on input line 72
+7.
+
+
+LaTeX Warning: Citation `towardsAGD' on page 36 undefined on input line 740.
+
+
+LaTeX Warning: Citation `conceptnet' on page 36 undefined on input line 740.
+
+
+LaTeX Warning: Citation `wordnet' on page 36 undefined on input line 740.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 740.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
-LaTeX Warning: Citation `gameomatic' on page 9 undefined on input line 222.
+LaTeX Warning: Citation `gameomatic' on page 36 undefined on input line 742.
 
-[9]
+[36
 
-LaTeX Warning: Citation `(' on page 10 undefined on input line 224.
+]
 
+LaTeX Warning: Citation `(' on page 37 undefined on input line 744.
 
-LaTeX Warning: Citation `mikesThesis' on page 10 undefined on input line 226.
 
+LaTeX Warning: Citation `mikesThesis' on page 37 undefined on input line 746.
 
-Overfull \hbox (0.6261pt too wide) in paragraph at lines 228--229
-[]\OT1/ptm/m/it/12 ANGELINA$[]$ \OT1/ptm/m/n/12 cre-ated ``arcade-style'' games
- sim-i-lar to the afore-men-tioned GVG-AI ap-proach.
- []
 
-[10]
+LaTeX Warning: Citation `EvolutionaryGameDesign' on page 37 undefined on input 
+line 756.
 
-LaTeX Warning: Citation `EvolutionaryGameDesign' on page 11 undefined on input 
-line 240.
-
-[11]
-
-LaTeX Warning: Citation `OperationalLogics' on page 12 undefined on input line 
-261.
-
-<figures/Clusters.png, id=182, 955.57pt x 536.0025pt>
-File: figures/Clusters.png Graphic file (type png)
-
-<use figures/Clusters.png>
-Package pdftex.def Info: figures/Clusters.png used on input line 273.
-(pdftex.def)             Requested size: 441.58731pt x 247.69281pt.
- [12]
-
-LaTeX Warning: Reference `fig:clusters' on page 13 undefined on input line 289.
-
-
-[13 <./figures/Clusters.png>]
-Overfull \hbox (9.79999pt too wide) in paragraph at lines 313--315
-[][] 
- []
-
-
-Overfull \hbox (9.79999pt too wide) in paragraph at lines 342--344
-[][]
- []
-
-
-Overfull \hbox (9.79999pt too wide) in paragraph at lines 365--367
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--370
-[][]
- []
-
-
-LaTeX Warning: Citation `wardrip-fruin2005playable' on page 14 undefined on inp
-ut line 385.
-
-
-LaTeX Warning: Citation `osborn2017refining' on page 14 undefined on input line
- 385.
-
-[14] [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
-
-LaTeX Warning: Citation `nesdev' on page 17 undefined on input line 404.
-
-[17]
-
-LaTeX Warning: Citation `summerville2017mechanics' on page 18 undefined on inpu
-t line 435.
-
-[18] <figures/screen.png, id=220, 241.3818pt x 226.2051pt>
-File: figures/screen.png Graphic file (type png)
-
-<use figures/screen.png>
-Package pdftex.def Info: figures/screen.png used on input line 449.
-(pdftex.def)             Requested size: 200.3085pt x 187.71565pt.
- <figures/ntram.png, id=221, 242.8272pt x 227.6505pt>
-File: figures/ntram.png Graphic file (type png)
-
-<use figures/ntram.png>
-Package pdftex.def Info: figures/ntram.png used on input line 450.
-(pdftex.def)             Requested size: 200.3085pt x 187.80006pt.
- [19 <./figures/screen.png> <./figures/ntram.png>]
-<figures/Metroid.pdf, id=231, 3062.44125pt x 4490.7775pt>
-File: figures/Metroid.pdf Graphic file (type pdf)
-
-<use figures/Metroid.pdf>
-Package pdftex.def Info: figures/Metroid.pdf used on input line 464.
-(pdftex.def)             Requested size: 218.51521pt x 320.41663pt.
- [20 <./figures/Metroid.pdf>]
-<figures/LSTM_Cell.png, id=266, 963.6pt x 722.7pt>
-File: figures/LSTM_Cell.png Graphic file (type png)
- <use figures/LSTM_Cell.png>
-Package pdftex.def Info: figures/LSTM_Cell.png used on input line 504.
-(pdftex.def)             Requested size: 227.62204pt x 170.71672pt.
-
-
-LaTeX Warning: Citation `LSTM' on page 21 undefined on input line 510.
-
-[21] <figures/Naive.png, id=272, 702.625pt x 693.59125pt>
-File: figures/Naive.png Graphic file (type png)
-
-<use figures/Naive.png>
-Package pdftex.def Info: figures/Naive.png used on input line 521.
-(pdftex.def)             Requested size: 81.9406pt x 80.87785pt.
-
-<figures/BottomToTop.png, id=273, 702.625pt x 693.59125pt>
-File: figures/BottomToTop.png Graphic file (type png)
-
-<use figures/BottomToTop.png>
-Package pdftex.def Info: figures/BottomToTop.png used on input line 525.
-(pdftex.def)             Requested size: 81.9406pt x 80.87785pt.
-
-<figures/Snaking__1_.png, id=274, 702.625pt x 693.59125pt>
-File: figures/Snaking__1_.png Graphic file (type png)
-
-<use figures/Snaking__1_.png>
-Package pdftex.def Info: figures/Snaking__1_.png used on input line 529.
-(pdftex.def)             Requested size: 81.9406pt x 80.87785pt.
-
-<figures/Hilbert.png, id=275, 702.625pt x 693.59125pt>
-File: figures/Hilbert.png Graphic file (type png)
-
-<use figures/Hilbert.png>
-Package pdftex.def Info: figures/Hilbert.png used on input line 533.
-(pdftex.def)             Requested size: 81.9406pt x 80.87785pt.
-
-<figures/Z_Order.png, id=276, 702.625pt x 693.59125pt>
-File: figures/Z_Order.png Graphic file (type png)
-
-<use figures/Z_Order.png>
-Package pdftex.def Info: figures/Z_Order.png used on input line 537.
-(pdftex.def)             Requested size: 81.9406pt x 80.87785pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 537--537
-[]\OT1/ptm/m/n/10.95 (e) |Lebesgue
- []
-
-[22 <./figures/LSTM_Cell.png>]
-
-LaTeX Warning: Citation `hilbert1891ueber' on page 23 undefined on input line 5
-49.
-
-
-LaTeX Warning: Citation `morton1966computer' on page 23 undefined on input line
- 550.
-
-<figures/1-1.png, id=284, 3244.12pt x 224.84pt>
-File: figures/1-1.png Graphic file (type png)
- <use figures/1-1.png>
-Package pdftex.def Info: figures/1-1.png used on input line 557.
-(pdftex.def)             Requested size: 441.58731pt x 30.60252pt.
-
-<figures/SDP1.png, id=285, 2922.92pt x 256.96pt>
-File: figures/SDP1.png Graphic file (type png)
- <use figures/SDP1.png>
-Package pdftex.def Info: figures/SDP1.png used on input line 561.
-(pdftex.def)             Requested size: 441.58731pt x 38.82071pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 561.
-
-<figures/1-2.png, id=286, 2409.0pt x 224.84pt>
-File: figures/1-2.png Graphic file (type png)
- <use figures/1-2.png>
-Package pdftex.def Info: figures/1-2.png used on input line 564.
-(pdftex.def)             Requested size: 441.58731pt x 41.21393pt.
-
-<figures/SDP_1_3.png, id=287, 2778.38pt x 256.96pt>
-File: figures/SDP_1_3.png Graphic file (type png)
- <use figures/SDP_1_3.png>
-Package pdftex.def Info: figures/SDP_1_3.png used on input line 567.
-(pdftex.def)             Requested size: 441.58731pt x 40.83997pt.
-
-
-LaTeX Warning: Citation `snodgrassmdmc' on page 23 undefined on input line 571.
-
-
-
-LaTeX Warning: Reference `fig:mario_levels' on page 23 undefined on input line 
-571.
-
-[23 <./figures/Naive.png> <./figures/BottomToTop.png> <./figures/Snaking__1_.pn
-g> <./figures/Hilbert.png> <./figures/Z_Order.png>] [24 <./figures/1-1.png (PNG
- copy)> <./figures/SDP1.png (PNG copy)> <./figures/1-2.png (PNG copy)> <./figur
-es/SDP_1_3.png (PNG copy)>]
-<figures/CopyOfLoz1.png, id=304, 1286.8075pt x 918.43124pt>
-File: figures/CopyOfLoz1.png Graphic file (type png)
-
-<use figures/CopyOfLoz1.png>
-Package pdftex.def Info: figures/CopyOfLoz1.png used on input line 592.
-(pdftex.def)             Requested size: 432.48048pt x 308.67488pt.
-
-
-LaTeX Warning: Citation `ZELDASHRINE' on page 25 undefined on input line 596.
-
-
-LaTeX Warning: Citation `ANGELFIRE' on page 25 undefined on input line 596.
-
-
-LaTeX Warning: Citation `ZELDAELEMENTS' on page 25 undefined on input line 596.
-
-
-
-LaTeX Warning: Citation `IANALBERT' on page 25 undefined on input line 596.
-
-[25] <figures/The_Learning_of_Zelda.png, id=314, 908.39375pt x 579.16376pt>
-File: figures/The_Learning_of_Zelda.png Graphic file (type png)
-
-<use figures/The_Learning_of_Zelda.png>
-Package pdftex.def Info: figures/The_Learning_of_Zelda.png used on input line 6
-02.
-(pdftex.def)             Requested size: 455.24408pt x 290.25279pt.
- [26 <./figures/CopyOfLoz1.png>]
-[27 <./figures/The_Learning_of_Zelda.png (PNG copy)>]
-<figures/PCAInterp.png, id=325, 928.97063pt x 120.45pt>
-File: figures/PCAInterp.png Graphic file (type png)
-
-<use figures/PCAInterp.png>
-Package pdftex.def Info: figures/PCAInterp.png used on input line 628.
-(pdftex.def)             Requested size: 441.58731pt x 57.2566pt.
- [28 <./figures/PCAInterp.png>]
-<figures/lttp1.png, id=333, 1349.04pt x 1349.04pt>
-File: figures/lttp1.png Graphic file (type png)
- <use figures/lttp1.png>
-Package pdftex.def Info: figures/lttp1.png used on input line 638.
-(pdftex.def)             Requested size: 273.14922pt x 273.13794pt.
-
-<figures/lttp1_zoom.png, id=334, 583.42969pt x 511.15968pt>
-File: figures/lttp1_zoom.png Graphic file (type png)
-
-<use figures/lttp1_zoom.png>
-Package pdftex.def Info: figures/lttp1_zoom.png used on input line 646.
-(pdftex.def)             Requested size: 273.14922pt x 239.31691pt.
- [29 <./figures/lttp1.png>]
-<figures/Proceduralist_Readings_Graph.png, id=344, 495.8525pt x 265.99374pt>
+[37]
+<figures/Proceduralist_Readings_Graph.png, id=341, 495.8525pt x 265.99374pt>
 File: figures/Proceduralist_Readings_Graph.png Graphic file (type png)
 
 <use figures/Proceduralist_Readings_Graph.png>
 Package pdftex.def Info: figures/Proceduralist_Readings_Graph.png used on input
- line 656.
+ line 762.
 (pdftex.def)             Requested size: 441.58731pt x 236.88385pt.
- [30 <./figures/lttp1_zoom.png>]
-<figures/Free_Culture.png, id=354, 712.6625pt x 571.13374pt>
+ [38 <./figures/Proceduralist_Readings_Graph.png>] <figures/Free_Culture.png, i
+d=351, 712.6625pt x 571.13374pt>
 File: figures/Free_Culture.png Graphic file (type png)
 
 <use figures/Free_Culture.png>
-Package pdftex.def Info: figures/Free_Culture.png used on input line 679.
+Package pdftex.def Info: figures/Free_Culture.png used on input line 785.
 (pdftex.def)             Requested size: 432.48048pt x 346.58711pt.
+ [39 <./figures/Free_Culture.png>]
 
-
-LaTeX Warning: Citation `salen2004rules' on page 31 undefined on input line 695
+LaTeX Warning: Citation `salen2004rules' on page 40 undefined on input line 801
 .
 
-[31 <./figures/Proceduralist_Readings_Graph.png>]
-<figures/Copy_of_Proceduralist_Reading.png, id=364, 950.55125pt x 537.00626pt>
+
+<figures/Copy_of_Proceduralist_Reading.png, id=358, 950.55125pt x 537.00626pt>
 File: figures/Copy_of_Proceduralist_Reading.png Graphic file (type png)
 
 <use figures/Copy_of_Proceduralist_Reading.png>
 Package pdftex.def Info: figures/Copy_of_Proceduralist_Reading.png used on inpu
-t line 711.
+t line 817.
 (pdftex.def)             Requested size: 432.48048pt x 244.33003pt.
- [32 <./figures/Free_Culture.png>] [33 <./figures/Copy_of_Proceduralist_Reading
-.png>]
+ [40 <./figures/Copy_of_Proceduralist_Reading.png>]
 
-LaTeX Warning: Citation `martens2015ceptre' on page 34 undefined on input line 
-771.
-
-
-LaTeX Warning: Citation `stolee2011expressing' on page 34 undefined on input li
-ne 772.
+LaTeX Warning: Citation `martens2015ceptre' on page 41 undefined on input line 
+877.
 
 
-Underfull \hbox (badness 3058) in paragraph at lines 804--804
+LaTeX Warning: Citation `stolee2011expressing' on page 41 undefined on input li
+ne 878.
+
+[41]
+Underfull \hbox (badness 3058) in paragraph at lines 910--910
 [][][]\OT1/ptm/m/n/10 All code is avail-able at: []$\OT1/pcr/m/n/10 https : / /
  github . com / LudoNarrative / ClimateChange / tree /
  []
 
-[34]
+[42]
 
-LaTeX Warning: Float too large for page by 45.69202pt on input line 908.
+LaTeX Warning: Float too large for page by 45.69202pt on input line 1014.
 
 
-<figures/-Proceduralist_Reading_-_CODE.pdf, id=386, 1721.43124pt x 1163.34625pt
+<figures/-Proceduralist_Reading_-_CODE.pdf, id=383, 1721.43124pt x 1163.34625pt
 >
 File: figures/-Proceduralist_Reading_-_CODE.pdf Graphic file (type pdf)
  <use figures/-Proceduralist_Reading_-_CODE.pdf>
 Package pdftex.def Info: figures/-Proceduralist_Reading_-_CODE.pdf used on inpu
-t line 959.
+t line 1065.
 (pdftex.def)             Requested size: 450.69414pt x 304.57529pt.
 
 
-Package caption Warning: \label without proper reference on input line 712.
+Package caption Warning: \label without proper reference on input line 818.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:free_culture' on page 35 undefined on input line 
-960.
+LaTeX Warning: Reference `fig:free_culture' on page 43 undefined on input line 
+1066.
 
 
-Package caption Warning: \label without proper reference on input line 712.
+Package caption Warning: \label without proper reference on input line 818.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:free_culture' on page 35 undefined on input line 
-960.
+LaTeX Warning: Reference `fig:free_culture' on page 43 undefined on input line 
+1066.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `clingo' on page 35 undefined on input line 990.
+LaTeX Warning: Citation `clingo' on page 43 undefined on input line 1096.
 
 
-Overfull \hbox (10.11053pt too wide) in paragraph at lines 998--1007
+Overfull \hbox (10.11053pt too wide) in paragraph at lines 1104--1113
 []\OT1/ptm/m/n/12 The goal is to main-tain []\OT1/pcr/m/n/12 ideasAbsorbed\OT1/
 ptm/m/n/12 . The out-come []\OT1/pcr/m/n/12 forget \OT1/ptm/m/n/12 af-fects []\
 OT1/pcr/m/n/12 ideasAbsorbed
  []
 
-[35] [36] [37] [38 <./figures/-Proceduralist_Reading_-_CODE.pdf>] [39]
-
-LaTeX Warning: Citation `GGPSTUFF' on page 40 undefined on input line 1085.
-
-[40]
-
-LaTeX Warning: Citation `phaser' on page 41 undefined on input line 1091.
-
-<figures/WORK_TO_BE_DONE.pdf, id=503, 297.11pt x 344.28625pt>
-File: figures/WORK_TO_BE_DONE.pdf Graphic file (type pdf)
-
-<use figures/WORK_TO_BE_DONE.pdf>
-Package pdftex.def Info: figures/WORK_TO_BE_DONE.pdf used on input line 1098.
-(pdftex.def)             Requested size: 204.85844pt x 237.3949pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[41] [42 <./figures/WORK_TO_BE_DONE.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 1134
+[43] [44]
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 1128
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1134.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1128.
 
+ [45]
+[46 <./figures/-Proceduralist_Reading_-_CODE.pdf>]
 
+LaTeX Warning: Citation `harmon2017narrative' on page 47 undefined on input lin
+e 1166.
 
-LaTeX Warning: Citation `martens2016proceduralist' on page 43 undefined on inpu
-t line 1136.
+[47]
 
-[43] [44]
-Overfull \hbox (60.91075pt too wide) in paragraph at lines 1262--1263
+LaTeX Warning: Citation `martens2016proceduralist' on page 48 undefined on inpu
+t line 1186.
+
+[48] [49] [50]
+Overfull \hbox (60.91075pt too wide) in paragraph at lines 1312--1313
 \OT1/ptm/m/n/12 we see that nei-ther \OT1/pcr/m/n/12 moves(paddle[]player,north
 ,low) \OT1/ptm/m/n/12 or \OT1/pcr/m/n/12 overlaps(ball,paddle[]player)
  []
 
-[45] [46] [47]
+[51]
+No file main.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1351.
+[52
 
-LaTeX Warning: Citation `gans' on page 48 undefined on input line 1355.
-
-
-LaTeX Warning: Citation `vae' on page 48 undefined on input line 1355.
-
-
-LaTeX Warning: Citation `seq2seq' on page 48 undefined on input line 1355.
-
-
-LaTeX Warning: Citation `ganstuff' on page 48 undefined on input line 1355.
-
-
-LaTeX Warning: Citation `ganinterpolation' on page 48 undefined on input line 1
-355.
-
-
-LaTeX Warning: Reference `fig:Ingo' on page 48 undefined on input line 1359.
-
-[48] <figures/Nayru_Architecture.pdf, id=564, 764.8575pt x 366.36874pt>
-File: figures/Nayru_Architecture.pdf Graphic file (type pdf)
-
-<use figures/Nayru_Architecture.pdf>
-Package pdftex.def Info: figures/Nayru_Architecture.pdf used on input line 1376
-.
-(pdftex.def)             Requested size: 455.24408pt x 218.06198pt.
- [49 <./figures/Nayru_Architecture.pdf>]
-
-LaTeX Warning: Citation `summerville2017what' on page 50 undefined on input lin
-e 1397.
-
-
-LaTeX Warning: Citation `kalman' on page 50 undefined on input line 1401.
-
-
-LaTeX Warning: Citation `imm' on page 50 undefined on input line 1401.
-
-[50] [51]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1471.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52]
-[53]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1471.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1351.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1471.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1471.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1351.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1351.
 
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: BD435B24040D41136BA2A4D45F322B56;1997
-(rerunfilecheck)             After:  507B0432E5AEC9EF9778493FAF18CF72;2443.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1471.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1351.
  ) 
 Here is how much of TeX's memory you used:
- 7055 strings out of 494910
- 108049 string characters out of 6179835
- 191885 words of memory out of 5000000
- 10108 multiletter control sequences out of 15000+600000
- 35662 words of font info for 79 fonts, out of 8000000 for 9000
+ 7040 strings out of 494910
+ 107701 string characters out of 6179835
+ 192165 words of memory out of 5000000
+ 10096 multiletter control sequences out of 15000+600000
+ 37795 words of font info for 82 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 42i,8n,40p,2289b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsubsection.4.2.1} has been referenced but does
- not exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmri8a.pfb>
-Output written on main.pdf (53 pages, 5342929 bytes).
+ 42i,8n,40p,2193b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on main.pdf (53 pages, 5414747 bytes).
 PDF statistics:
- 702 PDF objects out of 1000 (max. 8388607)
- 523 compressed objects within 6 object streams
- 134 named destinations out of 1000 (max. 500000)
- 350 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 598 PDF objects out of 1000 (max. 8388607)
+ 423 compressed objects within 5 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
