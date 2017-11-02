@@ -69,21 +69,21 @@ However, the design decisions to generate a piece of content do not need to be e
 
 To this end I propose a body of work that will look to answer the following questions:
 
-\textbf{Question 1: How can a machine learn the important mechanical properties of the content?}
+\textbf{RQ1: How can a machine learn the important mechanical properties of the content?}
 
 Currently, techniques such as Generative Adversarial Networks (GANs) or Variational AutoEncoders (VAEs) are popular techniques for image generation.  Certainly, it would be possible to supply images of game levels (these exist in abundance on the internet **CITE VGATLAS**), but visual signifiers are only one portion of the semiotics of a game.  The mechanical properties of the game entities are at least equally as important (and certainly visuals can deceive, as two visually identical entities might have different properties).  While image based techniques might be able to generate visually acceptable levels, without a way of encoding these properties they are going to lack the expressivity of a generator which has access to such properties.  Previous machine learned approaches have either operated on the visual level or with designer specified mechanical properties.   I aim to answer the question of how to learn the mechanical properties in a way that enables down stream use (e.g., for a generator).
 
 
-\textbf{Question 2: How should content be represented such that it can be efficiently learned for generation?}
+\textbf{RQ2: How should content be represented such that it can be efficiently learned for generation?}
 
 Most uses of machine learned generation have focused on two types of data: text and images.  Both have standard structures and associated machine learning techniques (e.g. text as a sequence handled by Long Short-Term Memory Recurrent Neural Networks and images as RGB Tensors handled via GANs or VAEs).  Game levels have some features similar to both, but are often composed of multiple pieces of arbitrary shape and size.  Behaviors and rules have no commonly agreed upon format.  I aim to answer the question of how to best represent game content for the sake of efficient training and generation.
 
-\textbf{Question 3: How do we assess whether a learned generator has learned to generate the desired content?}
+\textbf{RQ3: How do we assess whether a learned generator has learned to generate the desired content?}
 
 Evaluation of PCG for games has largely focused on examining a few hand-picked generated artifacts or on visually analyzing a histogram of the expressive range of a generator.  The former is prone to cherry picking, leaving one to wonder what the expressive capabilities of the system actually are, while the latter is rarely tied back to an intuitive understanding (e.g. Is it good or bad to have a wide histogram? What does it mean for certain portions of the space to be under or over represented? Are the dimensions shown actually worthwhile?).  For a classical PCG system these evaluations are perhaps unsatisfying, but given that authors do not necessarily make any claims about the generative space of the systems, they are not mission-critical.  On the other hand, machine learned PCG systems make the claim that they are accurately learning the design space of the original training data, so it is necessary to show that the generators are able to generate similar content while not memorizing the training data.
 
 
-\textbf{Question 4: Can higher level properties of games be learned?}
+\textbf{RQ4: Can higher level properties of games be learned?}
 
 Most work on machine-learning of game content has focused on learning game level content.  What little other work exists has still learned fairly low-level mechanics (i.e., hybrid automata behaviors and state transition rules).  Despite the ability for games to convey great meaning, and furthermore, despite the presence of game generators that intend to generate games with meaning, there has been very little research into understanding the intended (or unintended) meaning of a game. Can a machine learning system learn to infer the meaning of a game?  Can this be utilized for the generation of games targeting a specific meaning?
 
@@ -99,10 +99,33 @@ The primary contributions of this research are three-fold:
 
 Which represent contributions to the fields of machine learning, procedural content generation, and automated game design research.
 
+We will address these questions and contributions as they relate to three different modes of procedural content generation:
+
+\begin{itemize}
+\item Level generation
+\item Behavior generation
+\item Game generation
+\end{itemize}
+
+\noindent with each mode of content being addressed separately.  The rest of the document will detail these three modes, the related work by others for that mode, my prior work, and my proposed work for that mode.
 
 \chapter*{Procedural Generation of Levels}
 
-Level generation has been the most popular avenue of procedural content generation for games, since PCG's inception.  The vast majority of work has been centered around human authored rules and constraints and only recently has machine learning been applied to the task of learning from levels so as to generate levels with similar properties.
+Level generation has been the most popular avenue of procedural content generation for games, since PCG's inception.  The vast majority of work has been centered around human authored rules and constraints and only recently has machine learning been applied to the task of learning from levels so as to generate levels with similar properties.  My work on level generation comes in the form of the following systems:
+
+\begin{itemize}
+\item \textit{Mappy} -- A tool that observes playthroughs of NES games and creates maps in the form of a graph where each node is a ``room'', a grid of observed tiles
+\item \textit{Kamek} -- An LSTM-based generator that generates rooms, in the \textit{Mappy} sense
+\item \textit{Agahnim} -- A Bayes Net based generator that generates graphs of rooms
+\end{itemize}
+
+These systems address:
+
+\begin{itemize}
+\item \textbf{RQ1} -- The use of \textit{Mappy} to learn mechanical properties from observation which in turn can be used by \textit{Kamek} and \textit{Agahnim}
+\item \textbf{RQ2} -- Explorations in representation for \textit{Kamek} and \textit{Agahnim} to find what representations allow for efficient learning
+\item \textbf{RQ3} -- The development of new techniques for comparing generators to their exemplar data 
+\end{itemize}
 
 \section*{Related Work}
 
@@ -558,7 +581,20 @@ and $n_i,n_j$ are the sizes of the two samples and $X_{ip}$ is the p-th observat
 
 \chapter*{Procedural Generation of Behaviors}
 
-Procedural generation is not just limited to levels, but can also be used to generate entity behaviors.  I intend to show that behaviors can be learned from observation, which can be used to inform automated generation of entity controllers and behaviors.
+Procedural generation is not just limited to levels, but can also be used to generate entity behaviors.  I intend to show that behaviors can be learned from observation, which can be used to inform automated generation of entity controllers and behaviors. My work on generating behaviors is centered on two systems: 
+\begin{itemize}
+\item \textit{CHARDA} -- A system that recovers a hybrid automata describing an entity's behavior via observation of said entity's behavior
+\item \textit{CALE} -- A machine learning system designed to generated hybrid automata, based on an input corpus of automata
+\end{itemize}
+
+These systems address:
+
+\begin{itemize}
+
+\begin{itemize}
+\item \textbf{RQ1} -- The use of \textit{CHARDA} to identify behaviors directly from observation
+\item \textbf{RQ2} -- Explorations in representation for \textit{CALE} showing which representations can be learned and generated efficiently
+\end{itemize}
 
 
 \section*{Related Work}
@@ -719,7 +755,20 @@ It is very much an open question as to how to evaluate generated behaviors.  Sim
 
 \chapter*{Procedural Generation of Games}
 
-Finally, there is the goal of automatic game generation. Instead of being concerned with a single type of content found within a game, here the goal is to generate all aspects of a game, so that they act in concert with eachother.  
+Finally, there is the goal of automatic game generation. Instead of being concerned with a single type of content found within a game, here the goal is to generate all aspects of a game, so that they act in concert with eachother.  My work on game generation is encompassed by:
+\begin{itemize}
+\item \textit{Cygnus} -- an expressive domain specific language for graphical logic based games, e.g., those heavily reliant on entity-entity interaction
+\item \textit{Gemini} -- an ASP based game generator with two paths -- an analysis path that can take in a \textit{Cygnus} game file and produce a reading of said game, and a generation path that can take in a desired interpretation and produce a game that matches that game
+\item \textit{Leda} -- an inductive logic programming system that takes in \textit{Cygnus} games and human interpretations of those games which then learns rules that produce such inferences
+
+\end{itemize}
+My work on game generation addresses:
+
+\begin{itemize}
+\item \textbf{RQ2} -- The development of a new game specification language, \textit{Cygnus}, that allows for games to be ``read'' procedurally
+\item \textbf{RQ3} -- The bi-directional nature of \textit{Gemini} allows it to verify that it has generated games that match its input specifications
+\item \textbf{RQ4} -- The analysis path of \textit{Gemini} shows a way for procedural readings of games to be performed by a machine, and \textit{Leda} demonstrates a method to learn interpretative rules, widening the scope of analyses produced by \textit{Gemini}
+\end{itemize}
 
 
 \section*{Related Work}
