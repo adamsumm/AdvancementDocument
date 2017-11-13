@@ -1,3 +1,4 @@
+
 %
 %* Page 4: You say that Kamak generates rooms "in the Mappy sense." But Kamek focused exclusively on platformers, while Mappy mostly maps non-platformers. In general, there's a bit of confusion in this chapter about how much you're focusing on platformers. Your related work is almost entirely platform level generation, but Agahnim doesn't do platform-level generation (which means you should say something about other kinds of level generators in related work).   --- I discuss Joris's work, van Der Linden, Sorenson and Pasquier, Valtachanov and Brown, Horswill and Foged, Valls-Vargas
 %* Page 26: How will Kamek and Agahnim use the output of the new mappy (with mechanical properties)? Kamek wants annotated maps - so will Mappy be outputting maps in this Kamek form? Agahnim doesn't make use of mechanical properties at all, right? So what does it mean to integrate the new Mappy with Agahnim? Separately from mechanical properties, is there any other work that needs to be done to make Mappy output flow seamlessly into these two generators? Somehow I don't quite believe the very sparse description you give here (which makes it sound like it will basically be trivial :) ). 
@@ -16,7 +17,6 @@
 %* Page 50: Need cites for FOIL, GOLEM, Metagol. 
 %
 %* Page 52: You should provide examples of what you'd like the system to learn from the Cygnus game description of Pong. You're walking through lots of steps in the abstraction process, but the reader is unclear on where it's going and what the gold-standard knowledge is that you'd like induction to learn for you.
-
 
 
 \documentclass[12pt]{report}
@@ -82,9 +82,8 @@ PCG has been a part of computer games for the majority of their existence (Benea
 
 This is not to say that it can not be done, as, obviously, people have done this.  But it is to say that in general it is a hard, arduous endeavor that can still lead to feelings of ``oatmealishness'' \cite{kateoatmeal,mikeaestheticoflargenumbers}, i.e. content that while different in countless different ways, still feels the same.  
 
+
 However, the design decisions to generate a piece of content do not need to be exhaustively encoded, they can be learned.  The design of an artifact is latent within the artifact itself.  The goal of this work is to learn that latent design, so as to be able to generate perceptually similar artifacts, and to do so from observation, with minimal human supervision. 
-
-
 
 \subsection*{Research Questions and Contributions}
 
@@ -130,14 +129,16 @@ We will address these questions and contributions as they relate to three differ
 
 \noindent with each mode of content being addressed separately.  The rest of the document will detail these three modes, the related work by others for that mode, my prior work, and my proposed work for that mode.
 
+
 \chapter*{Procedural Generation of Levels}
 
 Level generation has been the most popular avenue of procedural content generation for games, since PCG's inception.  The vast majority of work has been centered around human authored rules and constraints and only recently has machine learning been applied to the task of learning from levels so as to generate levels with similar properties.  My work on level generation comes in the form of the following systems:
 
 \begin{itemize}
 \item \textit{Mappy} -- A tool that observes playthroughs of NES games and extracts \textit{levels}, a graph where each node is a \textit{room}, where a \textit{room} is a grid of the observed tiles
-\item \textit{Kamek} -- An LSTM-based generator that generates \textit{rooms}, in the \textit{Mappy} sense
-\item \textit{Agahnim} -- A Bayes Net based generator that generates graphs of \textit{rooms}
+\item \textit{Kamek} -- An LSTM-based generator that generates \textit{rooms}, in the \textit{Mappy} sense 
+\item \textit{Agahnim} -- Previously, a Bayes Net based generator that generates graphs of \textit{rooms}, but this will be revised to a more general less \textit{Zelda} specific architecture
+
 \end{itemize}
 
 These systems address:
@@ -179,7 +180,6 @@ Horswill and Foged \cite{HORSWILLCONSTRAINT} developed a constraint solver that 
 Smith et al. \cite{refraction} used answer set programming, a form of declarative programming that finds admissable sets of ``answers'' that satisfy all of the constraints defined by the author, to generate levels for a puzzle game intended to teach fractions \textit{Refraction}.  Their goal was to generate levels that guaranteed that a specific pedagogical goal was met (e.g., $3 \frac{1}{3}$ pieces sum to $1$) which required not just generating levels that met those pedagogical goals but also did not allow them to be circumvented.
 
 The above approaches all rely on human design intuition at some level.  Some stitch together human-authored snippets (Baumgarten's, ORE, ProMP), while others use human authored rules to generate level geometry (Tanagra, Hopper), while others  utilize human design intuition to score evolved content (Sorenson and Pasquier, Shimizu and Hashiyama), and some rely on human design intuition about playability (Horswill and Foged).  More recently there has been interest in generators that do not require humans to author at the rule or design level and instead utilize machine learning techniques to generate levels.
-
 \subsubsection*{Level Generation -- Machine Learned Approaches}
 
 Dahlskog et al. trained $n$-gram models on the levels of the original \textit{Super Mario Bros.} game, and used these models to generate new levels~\cite{dahlskog2014linear}. As $n$-gram models are fundamentally one-dimensional, these levels needed to be converted to strings in order for $n$-grams to be applicable. This was done through dividing the levels into vertical ``slices,'' where most slices recur many times throughout the level~\cite{dahlskog2013patterns}. This representational trick is dependent on there being a large amount of redundancy in the level design, something that is true in many games. Models were trained using various levels of $n$, and it was observed that while $n=0$ create essentially random structures and $n=1$ create barely playable levels, $n=2$ and $n=3$ create rather well-shaped levels.
@@ -237,7 +237,6 @@ The trained BN captured a variety of high level features, such as number of room
 \item \textit{Next Room Type}
 \item \textit{Door Type to Next Room}
 \end{itemize}
-
 
 Once the global level parameters have either been observed or inferred, the dungeon is built up from a seed room. The initial entry point to every dungeon is a special \textit{Start} room. \textit{Start} rooms only ever have 1 neighbor, and it is this first neighbor room that is inferred. The room type, the incoming door type, and the number of neighbors are all inferred, given the prior room type (initially the \textit{Start} room), the traversed door type (initially a regular door), its depth in the dungeon (initially one), and all of the inferred or specified global parameters. During this process there is a simultaneous grid embedding process that happens in parallel. The \textit{Start} room is always placed at $(0,-1)$ and its child room is always placed at $(0,0)$. Each new child room is placed at an open neighboring place on the grid, and added to a list of rooms to be inferred. Once all of the specified number of rooms have been placed, a second cleaning process guarantees that the level is playable. d{figure}
 
@@ -400,6 +399,7 @@ Note that many game levels are much wider than 64 tiles---the game map as a whol
 A \emph{Mappy} map at this stage is a dictionary whose keys are a tuple of spatial coordinates (with the origin initially placed at the top-left of the first screen of the level) and the time points at which those coordinates were observed, and whose values are \emph{tile keys}.
 A tile key combines the internal index used by the game to reference the tile with the specific palette and other data necessary to render it properly (from the attribute table and other regions of NES memory).
 After \emph{Mappy} has determined that the player has left the room, the map is offset so that the top-left corner of its bounding rectangle is the origin and all coordinates within the map are positive; this is rasterized and output as an image.
+
 We thereby construct the level as it is seen from the perspective of (tile-based) collision logics: the (mostly) static geometry and its (semantically significant) visual appearance over time.
 
 We learn the full history of every tile, rather than committing to its initial or final appearance, for four main reasons.
@@ -416,8 +416,7 @@ Large enemies that do not animate much are often built from background tiles (as
 Objects like movable blocks in \emph{Zelda} or breakable bricks in \emph{Super Mario Bros.}\ are tiles most of the time, but temporarily turn into sprites when interacted with so that they can animate smoothly off of the tile grid.
 \emph{Mappy} does not account for these special cases yet.
 
-Because some important level objects are sprites and not tiles, we also learn the initial placements of dynamic game objects in the larger map.
-\emph{Mappy} identifies abstract game objects by observing hardware sprites over time using the sprite tracker described in~\cite{summerville2017mechanics}.
+Because some important level objects are sprites and not tiles, we also learn the initial placements of dynamic game objects in the larger map. \emph{Mappy} identifies abstract game objects by observing hardware sprites over time using the sprite tracker described in~\cite{summerville2017mechanics}.
 This system uses information-theoretic measures to merge adjacent hardware sprites into larger game objects and maintains object identity across time using maximum-weight matchings of bipartite graphs (object identity and positioning in 2D space are natural conclusions to draw from collision logics).
 For \emph{Mappy}, we take the first-witnessed position of each object, register those coordinates relative to level scrolling (explained in the next section), and render its constituent sprites into our level maps to capture, for example, that a mushroom pops out of a particular question-mark block.
 
@@ -481,6 +480,7 @@ Given the optional room merging discussed below (and the possibility of stronger
 
 \subsection*{Learning Mechanical Property Groupings}
 
+
 While \textit{Mappy} is able to extract levels composed of graphs of \textit{rooms}, sets of visually unique tiles and sprites, I believe that for full mechanical viability in machine learned level generation it is required to learn the mechanical properties, such as ``solidity'' or ``$A$ harms $B$'' -- an important first step towards learning full rulesets and behaviors. These properties are borne out via their mechanical interactions.  I.e. an object might show the property of solidity due to the fact that other objects are unable to inter-penetrate it, or an object might be seen as harmful if it causes the deletion of the player or decreases a resource that the player sees as beneficial (e.g. the player's health or score).  Some of the above approaches (Guzdial and Riedl) operate strictly on a visual level and only learn to place images with no concept of the mechanical properties, but I believe that the mechanical properties are key for generating sound, sensible levels.  Some approaches, like those of Snodgrass and Onta{\~n}{\'o}n and Dahlskog et al. require a human to semantically compress the visual representations down to mechanically important categories.  
 
 In earlier work, I used different machine learning approaches to  learn the mechanical properties based on the effects that object interactions cause in the game using gameplay trace data. 
@@ -493,6 +493,7 @@ In earlier work, I used different machine learning approaches to  learn the mech
 \item \textbf{Addition of an Object} - An object not previously present is added to the screen
 \item \textbf{Deletion of an Object} - An object previously present is removed from the screen
 \end{itemize} 
+
 
 While most are self-explanatory, the change of visual representation is the most open ended.  An example of this type of effect is: ``Mario changes into Fire Mario upon collecting (colliding with) a Fire Flower.''The semantics of Mario changing from a small red/brown object to a larger white/orange object upon collision with the Fire Flower object are only readily apparent via play, but even without these semantics it is easy to understand that some change in the underlying simulation has occurred.  
 \begin{figure}[ht]
@@ -525,8 +526,7 @@ There are two remaining pieces of work that I intend to look at for level genera
 \item Producing the next iteration of \textit{Agahnim}
 \end{itemize}
 
-
-\subsection*{Mappy Refinements Integration}
+\subsection*{Mappy Refinements and Integration}
 
  Currently, \textit{Mappy} does not learn any mechanical properties, and instead just keeps track of all seen visual representations of tiles.  I believe that while the visual signifiers are important, that the mechanical properties of the game entities/background tiles is of higher importance. \textit{Mappy} will first need to be integrated with my earlier work on learning mechanical property clusters. Once this integration is complete, Mappy can integrated with \textit{Kamek} and \textit{Agahnim}
 
@@ -569,9 +569,7 @@ To calculate this volume, we use Kernel Density Estimation (KDE) as calculated b
 
 By comparing the volume of generators to that of the exemplar set, we can see how closely the generators are matching the target distributions.
 
-
 Furthermore, we can directly compare the expressive space of two generators via a statistical measure.  Most statistical tests are simply univariate tests and we wanted to test how close the multi-dimensional joint probability distributions are for the metric space of two generators; however, the e-distance proposed by Szekely and Rizzo \cite{szekely2013energy} compares samples as defined by
-
 $e(C_i,C_j) = \frac{n_in_j}{n_i+n_j}[2M_{ij}-M_{ii}-M_{jj}]$
 
 where
@@ -597,12 +595,12 @@ Procedural generation is not just limited to levels, but can also be used to gen
 
 These systems address:
 
-
+=======
+\begin{itemize}
 \begin{itemize}
 \item \textbf{RQ1} -- The use of \textit{CHARDA} to identify behaviors directly from observation
 \item \textbf{RQ2} -- Explorations in representation for \textit{CALE} showing which representations can be learned and generated efficiently
 \end{itemize}
-
 
 \section*{Related Work}
 
@@ -732,6 +730,7 @@ With the ultimate goal of entity behavior generation, I worked on a system, CHAR
 
 
 With a segmentation of the trace into these modes, we then learn guard transitions between modes, i.e. under what conditions do we transition from mode $A$ to mode $B$. e.g. In \textit{SMB} Mario transitions from being on the ground to jumping when the A button is pressed. We do this by again using PMI to find which explanatory variables are most likely causing these transitions (e.g. we might observe many different B button presses or collisions with background objects with no change in mode, but the A button press is always found). The HAs learned by CHARDA can be seen in Figure \ref{fig:LearnedHA}, in comparison to the true HAs in \ref{fig:TrueHA}.  The Mario trace used for this work was 3772 frames in length, $~63$ seconds.  The learned HAs are over-approximations of the true HA.  Whereas the true HA has 3 separate jump modes based on the state of $\dot{x}$ at the time of transition, the learned HAs have only one such jump whose parameters are averages of the parameters of the true modes.  Following from learning just one jump, CHARDA learns only a single falling mode.  MDL does learn that releasing the \textbf{A} button while ascending leads to a different set of dynamics, but it considers this a change in gravity as opposed to a reset in velocity.
+
 
 MDL produces the more faithful model of the true behavior, but is overzealous in its merging of the distinct jump mode chains into a single jump mode chain. As such, it only recovers 7 of the 22 modes; however, abstracting away the differences between the jump chains it learns 7 of 8 modes, only missing the distinction between hard bump and soft bump. 
 As an abstraction, this seems similar to what a human analyst might decide.
@@ -1300,7 +1299,6 @@ Given the graphical structure of how the clauses relate to each other, we know p
 \noindent \texttt{moves(paddle\_player,south,low)).}
 
 \noindent \texttt{precondition(overlaps(ball,paddle\_player),}
-
 \texttt{player\_hit).}
 
 Given the bias that better rules are those that are more compact, we visit the neighbors in ascending order number of predicates. With a set of clauses to be used in the rule, we then enumerate all possible rules given those clauses. This combinatorial space is made of all combinations of:
