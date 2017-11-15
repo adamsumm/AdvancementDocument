@@ -151,7 +151,7 @@ These systems address:
 
 \section*{Related Work}
 
-The procedural generation of level content has been popular in commercial, hobbyist, and academic circles with recent years seeing increasing amounts of interest in procedural generation.   A game jam devoted to procedural content, PROCJAM, had 99 games submitted in 2015 and nearly double, 173, in 2016 \cite{PROCJAM2015,PROCJAM2016}.  While PCG has focused on a number of different game aspects such as characters \cite{SOMETHING} and narrative \cite{SOMETHING}, levels have been the major area of focus.   
+The procedural generation of level content has been popular in commercial, hobbyist, and academic circles with recent years seeing increasing amounts of interest in procedural generation.   A game jam devoted to procedural content, PROCJAM, had 99 games submitted in 2015 and nearly double, 173, in 2016 \cite{PROCJAM2015,PROCJAM2016}.  While PCG has focused on a number of different game aspects such as characters \cite{SOMETHING} and narrative \cite{SOMETHING}, levels have been the major area of focus.    A wide variety of types of level have been generated, but my work is focused on levels that seek to match those of a designer's, so endlessly generated Roguelike levels \cite{rogue,adom,nethack} are not covered.  Furthermore, my work is focused on levels that involve players controlling an avatar, so puzzle level generation is not considered \cite{refraction,ropossum,angrybirds}.
 
 \subsubsection*{Level Generation -- Human Design Approaches}
 Platformer levels have represented one of the most fecund areas of research, particularly levels for \textit{Super Mario Bros.}  As the progenitor of the platformer genre, as well as one of the most popular games of all time, \textit{SMB} has been the most common game for level generation.  A large number of different approaches have been taken for \textit{SMB} level generation.
@@ -265,7 +265,9 @@ For a level to be playable, all of the rooms must be accessible, the number of k
     \caption{A zoomed in subset, showing the entry point (bottom right corner) and 8 other generated rooms..}
   \label{fig:dungeon_zoom}
 \end{figure*}
-With the level topology constructed we need to generate the rooms at the tile level to have a playable level.  To generate rooms we first performed Principal Component Analaysis (PCA) on a tile level grid representation of the rooms. The dataset for this work was 488 rooms from the three aforementioned games.  However, to increase the size of the sample space we also used all mirrorings (up-down, left-right, both) to quadruple the size of our dataset. Each room can be thought of as a tensor of width by height by tile type, and this tensor is then raveled t make a 1-dimensional vector of size width $\times$ height $\times$ tile type.  All 1952 rooms are converted to this vector format and stacked together to form a 1952 by width $\times$ height $\times$ tile type.  PCA is then applied to this matrix to find a lower dimensionality representation, 20 dimensions in the case covering 95\% of the variance within the data.  To generate a room, existing vectors in this 20 dimensional space are chosen based on the room types (e.g. if a room containing enemies must be generated, 2 vectors corresponding to enemy rooms are chosen) and then randomly interpolated between.  The results of this interpolation can be seen in figure \ref{fig:PCAinterp}. A generated level can be seen in figure \ref{fig:dungeon}, along with a zoomed subset in figure \ref{fig:dungeon_zoom}.
+With the level topology constructed we need to generate the rooms at the tile level to have a playable level.  To generate rooms we first performed Principal Component Analaysis (PCA) on a tile level grid representation of the rooms. The dataset for this work was 488 rooms from the three aforementioned games.  However, to increase the size of the sample space we also used all mirrorings (up-down, left-right, both) to quadruple the size of our dataset. Each room can be thought of as a tensor of width by height by tile type, and this tensor is then raveled t make a 1-dimensional vector of size width $\times$ height $\times$ tile type.  All 1952 rooms are converted to this vector format and stacked together to form a 1952 by width $\times$ height $\times$ tile type.  PCA is then applied to this matrix to find a lower dimensionality representation, 20 dimensions in the case covering 95\% of the variance within the data.  To generate a room, existing vectors in this 20 dimensional space are chosen based on the room types (e.g. if a room containing enemies must be generated, 2 vectors corresponding to enemy rooms are chosen) and then randomly interpolated between.  The results of this interpolation can be seen in figure \ref{fig:PCAinterp}. A generated level can be seen in figure \ref{fig:dungeon}, along with a zoomed subset in figure \ref{fig:dungeon_zoom}.  
+
+While these approaches (Bayes Nets and PCA) worked decently in this context, they are not particularly generalizable.  Bayes Nets encode all discrete possibilities in a table, which means any unseen combination of discrete possibilities is assigned a probability of 0, leading to an overly constrained range of generativity.  Furthermore, the architecture described above is specific to that of a Zelda dungeon.  Similarly, the PCA approach requires a fixed size, which while suitable for rooms from the original Zelda, is not suitable in general.  However, while these specific approaches have flaws, the general approach of generating the topological structure of levels, with summarized information about the contents of the individual rooms, is sound.  In the future work section, I describe how I intend to rework \textit{Agahnim} to make a more general system.
 
 \subsection*{Kamek}
 
@@ -360,6 +362,8 @@ which can be seen in figure \ref{fig:orderings}.  We also included meta-informat
 This method of selecting generated content works not just as a methodology for choosing how to showcase generated content (removing problems of cherry-picking, random selection, and showing that the most similar generated content is not merely regurgitated), but is also a way for a designer to exert control on the generated content.  A designer does not have to encode the rules that they are looking for, they need merely find exemplars.
 
 An extension of this work replaced the simulated A$^*$ agents with paths provided by actual players.  These paths were then able to bias the generation even though the coarse level geometry remained the same across the players.  Due to the incorporation of player paths in the generation process, the generated levels generated paths informed by the player's actions with corresponding impacts on the generated levels.  E.g. a player that interacts with enemies more is more likely to have enemies along their generated path, which in turn means that enemies are more likely to be in the generated level.  We found that the players on the extremes (e.g. those who interact with every interactable object or those who interact with none) had the most biased levels, tailored to those play styles, while ``average'' players in between those extremes had levels most similar to the original \textit{Super Mario Bros.} levels.
+
+While \textit{Kamek} is capable of producing high quality rooms, it does so with little guidance about what should be contained in a room. Toward this end, I intend to modify \textit{Kamek} such that it will encode a room in a high-dimensional latent design space, such that this space can be explored and sampled, biasing the generation towards specific attributes.
 
 \subsection*{Mappy}
 
@@ -548,6 +552,15 @@ I would like to encode the levels in a lower dimensional space.  Recently, there
 
 The earlier iteration of \textit{Agahnim} relied heavily on human knowledge (e.g., annotation of room types, knowledge of the players' paths through the dungeons, viability constraints, etc.).  It also used a machine learning formulation that was ill-suited for generalization (e.g., it relied on sparsely filled tables, so there were many situations that were outside of the training contexts).  Toward this end, I propose a new architecture for \textit{Agahnim}, illustrated in figure \ref{fig:agahnim}.
 
+\begin{figure}[ht]
+\centering
+    \includegraphics[width=0.97\textwidth]{figures/Agahnim_Pointer_Process.pdf} 
+   
+    \caption{The proposed \textit{Agahnim} link detection process.  The pointer network takes in the set of room encodings, and after processing all of them, determines the links. The links take the form of subsequent pairs of selected pointers, in this case the links are R1 $\rightarrow$ R2, R1 $\rightarrow$ R3. The decoding process ends when the pointer to the \textit{end} symbol is decoded.}
+  \label{fig:agahnim}
+  \end{figure}
+
+
 \textit{Agahnim} will be composed of two components, an auto-regressive LSTM (the same network topoology found in \textit{Kamek}) and a pointer network \cite{pointer_network}.  The input to \textit{Agahnim} will be a graph of latent room encodings (as learned and supplied by \textit{Kamek}).  The LSTM portion will train on sets of latent room encodings, so as to be able to generate a set of latent room encodings (which can then be decoded by a coupled \textit{Kamek} generator).  The pointer network will take in a set of room encodings and produce a set of edges between the input rooms, so as to turn the set of room encoding nodes into a graph.   Pointer networks are a variant of neural networks that in many ways are similar to a sequence-to-sequence LSTM autoencoder-decoder, but instead of decoding to a fixed vocabulary they use an attentional mechanism to select elements from the input.  For certain tasks it is critical to guarantee that the output is constructed of elements from the input -- e.g., the convex hull of a set of points must be made up of only the points found in that set or the use case here, selecting rooms from the input set and determining which edges exist.
   
 \section*{Evaluation}
@@ -595,8 +608,6 @@ Procedural generation is not just limited to levels, but can also be used to gen
 
 These systems address:
 
-=======
-\begin{itemize}
 \begin{itemize}
 \item \textbf{RQ1} -- The use of \textit{CHARDA} to identify behaviors directly from observation
 \item \textbf{RQ2} -- Explorations in representation for \textit{CALE} showing which representations can be learned and generated efficiently
@@ -737,14 +748,21 @@ As an abstraction, this seems similar to what a human analyst might decide.
 Any implementation of this algorithm could certainly track which modes were merged and offer to un-merge them in case an analyst believes the elided distinctions are actually important.
 \section*{Remaining Work}
 
-\begin{figure}[ht]
+\begin{figure}[htbp!]
 \centering
     \includegraphics[width=0.97\textwidth]{figures/CALE_Architecture.pdf} 
    
-    \caption{The proposed \textit{CALE} architecture.  \textit{CALE} will be composed of two parts, an auto-regressive LSTM that will learn from and generate sets of mode behaviors and a pointer network that will learn from and generate transitions between modes. Training (on left) can occur in parallel, as in \textit{Agahnim}.  Generation (on right) requires first generating a set of mode behaviors which are then fed to the topology pointer network, which determines which modes have transitions between them, finally the actual properties of the transitions are determined by feeding in pairs of modes (source and sink) and outputing a sequence of mode transitions.}
+    \caption{The proposed \textit{CALE} architecture.  \textit{CALE} will be composed of three parts, an auto-regressive LSTM that will learn from and generate sets of mode behaviors, a pointer network that will learn determine which modes should be connected, and an auto-regressive LSTM that will, given two modes, generate the conditions under which a transition should occur. Training (on left) can occur in parallel, as in \textit{Agahnim}.  Generation (on right) requires first generating a set of mode behaviors which are then fed to the topology pointer network, which determines which modes have transitions between them, finally the actual properties of the transitions are determined by feeding in pairs of modes (source and sink) and outputing a sequence of mode transitions.}
   \label{fig:cale}
   \end{figure}
-
+  
+\begin{figure}[htbp!]
+\centering
+    \includegraphics[width=0.97\textwidth]{figures/CALE_Transition.pdf} 
+   
+    \caption{The proposed \textit{CALE} transition generation process. Given two modes and an initial \textit{start} signal, \textit{CALE} generates the conditions under which the transition from the first (top) mode to the second should occur. The decoded symbol is fed back in as the input to the next time step, along with the modes, alleviating the system from needing to memorize the two modes. The process continues until the \textit{end} symbol is decoded.}
+  \label{fig:cale_transition}
+  \end{figure}
 While CHARDA is able to learn automata from observation it is unable to generate.  Toward this end, I propose CALE ---Creating Automata from Learned Examples.  The goal for CALE is to produce automata after being trained on automata extracted by CHARDA.  The proposed architecture of CALE (see figure \ref{fig:cale}) is very closely related to the architecture of \textit{Agahnim}; however, instead of latent encodings, the modes are structures containing: $\dot{x}$, $\ddot{x}$, $\dot{y}$, and $\ddot{y}$  --- the reset velocities and accelerations triggered by entering the state.  Similarly, instead of just the presence of a link between two nodes (rooms for \textit{Agahnim}, modes for CALE), CALE will need to generate the conditions under which a mode transition should occur.  These conditions are:
 
 \begin{itemize}
@@ -753,6 +771,8 @@ While CHARDA is able to learn automata from observation it is unable to generate
 \item A given button is pressed, held, or released
 \item A within-mode timer has elapsed
 \end{itemize}
+
+The transition decoding process can be seen in figure \ref{fig:cale_transition}.
 
 
 \section*{Evaluation}
@@ -1408,7 +1428,27 @@ As with behavior generation, yet still even moreso, the evaluation of generated 
 
 \end{enumerate}
 
+To conclude, I am looking to explore the research questions:
 
+\begin{itemize}
+
+
+\item \textbf{RQ1: How can a machine learn the important mechanical properties of the content?} -- \textit{Mappy}, \textit{CHARDA}, \textit{Leda}, and \textit{Gemini} address this
+
+
+\item \textbf{RQ2: How should content be represented such that it can be efficiently learned for generation?} -- \textit{Kamek}, \textit{Agahnim}, and \textit{CALE} address this
+
+
+\item \textbf{RQ3: How do we assess whether a learned generator has learned to generate the desired content?} -- My evaluations address this
+
+\item \textbf{RQ4: Can higher level properties of games be learned?} -- \textit{Leda} and \textit{Gemini} address this
+
+\end{itemize}
+
+
+
+
+\bibliographystyle{acm}
 \bibliography{bibliography}
 
 \end{document}

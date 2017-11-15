@@ -1,0 +1,181 @@
+\begin{thebibliography}{10}
+
+\bibitem{ZELDASHRINE}
+The legend of zelda \- world \& dungeon maps, Nov. 2014.
+\newblock {http://zs.ffshrine.org/legend-of-zelda/maps.php}.
+
+\bibitem{ANGELFIRE}
+The legend of zelda oracle of ages, Nov. 2014.
+\newblock {http://www.angelfire.com/games4/ages/}.
+
+\bibitem{ZELDAELEMENTS}
+Link's awakening maps, Nov. 2014.
+\newblock {http://www.zeldaelements.net/games/c/links\_awakening/maps}.
+
+\bibitem{rogue}
+Rogue, Nov. 2014.
+\newblock http://en.wikipedia.org/wiki/Rogue\_\(video\_game\).
+
+\bibitem{IANALBERT}
+{\sc Albert, I.}
+\newblock {Legend of Zelda Maps}, Nov 2014.
+\newblock {http://ian-albert.com/games/legend\_of\_zelda\_maps/}.
+
+\bibitem{JDADVENTURE}
+{\sc Dormans, J.}
+\newblock Adventures in level design: Generating missions and spaces for action
+  adventure games.
+\newblock In {\em Proceedings of the 2010 Workshop on Procedural Content
+  Generation in Games\/} (New York, NY, USA, 2010), PCGames '10, ACM,
+  pp.~1:1--1:8.
+
+\bibitem{clingo}
+{\sc Gebser, M., Kaminski, R., Kaufmann, B., and Schaub, T.}
+\newblock \textit{Clingo} = {ASP} + control: Preliminary report.
+\newblock {\em Theory and Practice of Logic Programming 14\/} (2014), Online
+  Supplement.
+
+\bibitem{guzdial2016game}
+{\sc Guzdial, M., and Riedl, M.}
+\newblock Game level generation from gameplay videos.
+\newblock In {\em Twelfth Artificial Intelligence and Interactive Digital
+  Entertainment Conference\/} (2016).
+
+\bibitem{harmon2017narrative}
+{\sc Harmon, S.}
+\newblock Narrative encoding for computational reasoning and adaptation.
+
+\bibitem{hartsook}
+{\sc Hartsook, K., Zook, A., Das, S., and Riedl, M.~O.}
+\newblock Toward supporting stories with procedurally generated game worlds.
+\newblock In {\em CIG\/} (2011), S.-B. Cho, S.~M. Lucas, and P.~Hingston, Eds.,
+  IEEE, pp.~297--304.
+
+\bibitem{hilbert1891ueber}
+{\sc Hilbert, D.}
+\newblock Ueber die stetige abbildung einer line auf ein fl{\"a}chenst{\"u}ck.
+\newblock {\em Mathematische Annalen 38}, 3 (1891), 459--460.
+
+\bibitem{LSTM}
+{\sc Hochreiter, S., and Schmidhuber, J.}
+\newblock Long short-term memory.
+\newblock {\em Neural Computing\/} (1997).
+
+\bibitem{HORSWILLCONSTRAINT}
+{\sc Horswill, I.~D., and Foged, L.}
+\newblock Fast procedural level population with playability constraints.
+\newblock In {\em AIIDE\/} (2012), M.~Riedl and G.~Sukthankar, Eds., The AAAI
+  Press.
+
+\bibitem{VDLPROCGENLEVEL}
+{\sc Linden, R. v.~d., Lopes, R., and Bidarra, R.}
+\newblock Designing procedurally generated levels.
+\newblock In {\em Proceedings of IDPv2 2013 - Workshop on Artificial
+  Intelligence in the Game Design Process, co-located with the Ninth AAAI
+  Conference on Artificial Intelligence in Interactive Digital Entertainment\/}
+  (AAAI Press, Palo Alto, CA, oct 2013), AAAI, AAAI Press, pp.~41--47.
+\newblock ISBN 978-1-57735-635-6.
+
+\bibitem{martens2015ceptre}
+{\sc Martens, C.}
+\newblock Ceptre: A language for modeling generative interactive systems.
+\newblock In {\em Eleventh Artificial Intelligence and Interactive Digital
+  Entertainment Conference\/} (2015), pp.~1--7.
+
+\bibitem{martens2016proceduralist}
+{\sc Martens, C., Summerville, A., Mateas, M., Osborn, J., Harmon, S.,
+  Wardrip-Fruin, N., and Jhala, A.}
+\newblock Proceduralist readings, procedurally.
+\newblock In {\em Workshop on Experimental AI for Games\/} (2016).
+
+\bibitem{OperationalLogics}
+{\sc Mateas, M., and Wardrip-Fruin, N.}
+\newblock Defining operational logics.
+\newblock In {\em Proceedings of the Digital Games Research Association\/}
+  (Brunel University, London, September 2009).
+
+\bibitem{morton1966computer}
+{\sc Morton, G.~M.}
+\newblock {\em A computer oriented geodetic data base and a new technique in
+  file sequencing}.
+
+\bibitem{nesdev}
+{\sc NESDev}.
+\newblock Nesdev wiki: Nes reference guide, 2017.
+
+\bibitem{MARIOGRAPHGRAMMAR}
+{\sc {n}o, S.~L., and Missura, O.}
+\newblock Graph grammars for super mario bros levels.
+\newblock In {\em Proceedings of the FDG workshop on Procedural Content
+  Generation in Games\/} (2015).
+
+\bibitem{osborn2017refining}
+{\sc Osborn, J.~C., Wardrip-Fruin, N., and Mateas, M.}
+\newblock Refining operational logics.
+\newblock In {\em Proceedings of the 12th International Conference on the
+  Foundations of Digital Games\/} (2017).
+
+\bibitem{salen2004rules}
+{\sc Salen, K., and Zimmerman, E.}
+\newblock {\em Rules of play: Game design fundamentals}.
+\newblock MIT press, 2004.
+
+\bibitem{tanagra}
+{\sc Smith, G., Member, S., Whitehead, J., Member, S., and Mateas, M.}
+\newblock Tanagra: Reactive planning and constraint solving for
+  mixed-initiative level design.
+\newblock {\em IEEE Transactions on Computational Intelligence and AI in
+  Games\/}, 2011.
+
+\bibitem{smith2010analyzing}
+{\sc Smith, G., and Whitehead, J.}
+\newblock Analyzing the expressive range of a level generator.
+\newblock In {\em Proceedings of the 2010 Workshop on Procedural Content
+  Generation in Games\/} (2010), ACM, p.~4.
+
+\bibitem{SORPASLEVEL}
+{\sc Sorenson, N., and Pasquier, P.}
+\newblock Towards a generic framework for automated video game level creation.
+\newblock In {\em Proceedings of the 2010 International Conference on
+  Applications of Evolutionary Computation - Volume Part I\/} (Berlin,
+  Heidelberg, 2010), EvoApplicatons'10, Springer-Verlag, pp.~131--140.
+
+\bibitem{stolee2011expressing}
+{\sc Stolee, K.~T., and Fristoe, T.}
+\newblock Expressing computer science concepts through kodu game lab.
+\newblock In {\em Proceedings of the 42nd ACM technical symposium on Computer
+  science education\/} (2011), ACM, pp.~99--104.
+
+\bibitem{summerville2017mechanics}
+{\sc Summerville, A., Osborn, J.~C., Holmg{\aa}rd, C., Zhang, D., and Mateas,
+  M.}
+\newblock Mechanics automatically recognized via interactive observation:
+  Jumping.
+\newblock In {\em Proceedings of the 12th International Conference on the
+  Foundations of Digital Games\/} (2017).
+
+\bibitem{szekely2013energy}
+{\sc Sz{\'e}kely, G.~J., and Rizzo, M.~L.}
+\newblock Energy statistics: A class of statistics based on distances.
+\newblock {\em Journal of statistical planning and inference 143}, 8 (2013),
+  1249--1272.
+
+\bibitem{VARGASPLOTPOINTS}
+{\sc Valls-Vargas, J., Ontanon, S., and Zhu, J.}
+\newblock Towards story-based content generation: From plot-points to maps.
+\newblock In {\em Computational Intelligence in Games (CIG), 2013 IEEE
+  Conference on\/} (Aug 2013), pp.~1--8.
+
+\bibitem{VALTCHANOVEVOLVE}
+{\sc Valtchanov, V., and Brown, J.~A.}
+\newblock Evolving dungeon crawler levels with relative placement.
+\newblock In {\em Proceedings of the Fifth International C* Conference on
+  Computer Science and Software Engineering\/} (New York, NY, USA, 2012), C3S2E
+  '12, ACM, pp.~27--35.
+
+\bibitem{wardrip-fruin2005playable}
+{\sc Wardrip-Fruin, N.}
+\newblock Playable media and textual instruments.
+\newblock {\em Dichtung Digital 34\/} (2005), 211--253.
+
+\end{thebibliography}
