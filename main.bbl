@@ -1,25 +1,108 @@
 \begin{thebibliography}{10}
 
-\bibitem{ZELDASHRINE}
-The legend of zelda \- world \& dungeon maps, Nov. 2014.
-\newblock {http://zs.ffshrine.org/legend-of-zelda/maps.php}.
-
-\bibitem{ANGELFIRE}
-The legend of zelda oracle of ages, Nov. 2014.
-\newblock {http://www.angelfire.com/games4/ages/}.
-
-\bibitem{ZELDAELEMENTS}
-Link's awakening maps, Nov. 2014.
-\newblock {http://www.zeldaelements.net/games/c/links\_awakening/maps}.
-
-\bibitem{rogue}
-Rogue, Nov. 2014.
-\newblock http://en.wikipedia.org/wiki/Rogue\_\(video\_game\).
-
 \bibitem{IANALBERT}
 {\sc Albert, I.}
 \newblock {Legend of Zelda Maps}, Nov 2014.
 \newblock {http://ian-albert.com/games/legend\_of\_zelda\_maps/}.
+
+\bibitem{ANGELFIRE}
+{\sc {Angel Fire}}.
+\newblock The legend of zelda oracle of ages, Nov. 2014.
+\newblock {http://www.angelfire.com/games4/ages/}.
+
+\bibitem{baum1966statistical}
+{\sc Baum, L.~E., and Petrie, T.}
+\newblock Statistical inference for probabilistic functions of finite state
+  markov chains.
+\newblock {\em The annals of mathematical statistics\/} (1966).
+
+\bibitem{beal2002infinite}
+{\sc Beal, M.~J., Ghahramani, Z., and Rasmussen, C.~E.}
+\newblock The infinite hidden markov model.
+\newblock {\em Advances in neural information processing systems\/} (2002).
+
+\bibitem{adom}
+{\sc Biskup, T.}
+\newblock {Ancient Domains of Mystery}, 1994.
+
+\bibitem{bridewell2008inductive}
+{\sc Bridewell, W., Langley, P., Todorovski, L., and D{\v{z}}eroski, S.}
+\newblock Inductive process modeling.
+\newblock {\em Machine learning\/} (2008).
+
+\bibitem{browne2011evolutionary}
+{\sc Browne, C.}
+\newblock {\em Evolutionary game design}.
+\newblock Springer Science \& Business Media, 2011.
+
+\bibitem{Butler:2017:PSG:3102071.3102076}
+{\sc Butler, E., Siu, K., and Zook, A.}
+\newblock Program synthesis as a generative method.
+\newblock In {\em Proceedings of the 12th International Conference on the
+  Foundations of Digital Games\/} (New York, NY, USA, 2017), FDG '17, ACM,
+  pp.~6:1--6:10.
+
+\bibitem{chen2016infogan}
+{\sc Chen, X., Duan, Y., Houthooft, R., Schulman, J., Sutskever, I., and
+  Abbeel, P.}
+\newblock Infogan: Interpretable representation learning by information
+  maximizing generative adversarial nets.
+\newblock In {\em Advances in Neural Information Processing Systems\/} (2016),
+  pp.~2172--2180.
+
+\bibitem{ching2007multi}
+{\sc Ching, W., Zhang, S., and Ng, M.}
+\newblock On multi-dimensional markov chain models.
+\newblock {\em Pacific Journal of Optimization 3}, 2 (2007).
+
+\bibitem{kate_oatmeal}
+{\sc Compton, K.}
+\newblock So you want to build a generator...
+\newblock
+  \url{http://galaxykate0.tumblr.com/post/139774965871/so-you-want-to-build-a-generator},
+  2016.
+
+\bibitem{compton2006procedural}
+{\sc Compton, K., and Mateas, M.}
+\newblock Procedural level design for platform games.
+
+\bibitem{cook2015co}
+{\sc Cook, M.}
+\newblock Co-operative coevolution for computational creativity: a case study
+  in videogame design.
+
+\bibitem{PROCJAM2015}
+{\sc Cook, M.}
+\newblock Procedural generation jam 2015.
+\newblock \url{https://itch.io/jam/procjam2015}, 2015.
+
+\bibitem{mikepcg}
+{\sc Cook, M.}
+\newblock Alien languages: How we talk about procedural generation.
+\newblock \url{http://www.gamesbyangelina.org/2016/08/procedurallanguage/},
+  2016.
+
+\bibitem{PROCJAM2016}
+{\sc Cook, M.}
+\newblock Procedural generation jam 2016.
+\newblock \url{https://itch.io/jam/procjam2016}, 2016.
+
+\bibitem{cropper2016learning}
+{\sc Cropper, A., and Muggleton, S.~H.}
+\newblock Learning higher-order logic programs through abstraction and
+  invention.
+\newblock In {\em International Joint Conference on Artificial Intelligence\/}
+  (2016).
+
+\bibitem{dahlskog2013patterns}
+{\sc Dahlskog, S., and Togelius, J.}
+\newblock Patterns as objectives for level generation.
+\newblock In {\em EvoApplications\/} (2013).
+
+\bibitem{dahlskog2014linear}
+{\sc Dahlskog, S., Togelius, J., and Nelson, M.~J.}
+\newblock Linear levels through n-grams.
+\newblock In {\em Intl.Academic MindTrek Conf.\/} (2014).
 
 \bibitem{JDADVENTURE}
 {\sc Dormans, J.}
@@ -29,11 +112,29 @@ Rogue, Nov. 2014.
   Generation in Games\/} (New York, NY, USA, 2010), PCGames '10, ACM,
   pp.~1:1--1:8.
 
+\bibitem{ks}
+{\sc Duong, T., and Hazelton, M.~L.}
+\newblock Cross-validation bandwidth matrices for multivariate kernel density
+  estimation.
+\newblock {\em Scandinavian Journal of Statistics 32}, 3 (2005), 485--506.
+
+\bibitem{wordnet}
+{\sc Fellbaum, C.}
+\newblock {\em WordNet: An Electronic Lexical Database}.
+\newblock Bradford Books, 1998.
+
 \bibitem{clingo}
 {\sc Gebser, M., Kaminski, R., Kaufmann, B., and Schaub, T.}
 \newblock \textit{Clingo} = {ASP} + control: Preliminary report.
 \newblock {\em Theory and Practice of Logic Programming 14\/} (2014), Online
   Supplement.
+
+\bibitem{gans}
+{\sc Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D.,
+  Ozair, S., Courville, A., and Bengio, Y.}
+\newblock Generative adversarial nets.
+\newblock In {\em Advances in neural information processing systems\/} (2014),
+  pp.~2672--2680.
 
 \bibitem{guzdial2016game}
 {\sc Guzdial, M., and Riedl, M.}
@@ -67,6 +168,39 @@ Rogue, Nov. 2014.
 \newblock In {\em AIIDE\/} (2012), M.~Riedl and G.~Sukthankar, Eds., The AAAI
   Press.
 
+\bibitem{kalogerakis:2012:SIG}
+{\sc Kalogerakis, E., Chaudhuri, S., Koller, D., and Koltun, V.}
+\newblock A probabilistic model for component-based shape synthesis.
+\newblock {\em ACM Transactions on Graphics 31}, 4 (2014).
+
+\bibitem{ganinterpolation}
+{\sc Karras, T., Aila, T., Laine, S., and Lehtinen, J.}
+\newblock Progressive growing of gans for improved quality, stability, and
+  variation.
+\newblock In {\em arXiv:1710.10196\/} (2017).
+
+\bibitem{vae}
+{\sc Kingma, D.~P., and Welling, M.}
+\newblock Auto-encoding variational bayes.
+\newblock {\em The International Conference on Learning Representations\/}
+  (2014).
+
+\bibitem{kukreja2005least}
+{\sc Kukreja, S.~L., Kearney, R.~E., and Galiana, H.~L.}
+\newblock A least-squares parameter estimation algorithm for switched
+  hammerstein systems with applications to the vor.
+\newblock {\em IEEE Transactions on Biomedical Engineering\/} (2005).
+
+\bibitem{lee1999learning}
+{\sc Lee, D.~D., and Seung, H.~S.}
+\newblock Learning the parts of objects by non-negative matrix factorization.
+\newblock {\em Nature 401}, 6755 (1999), 788--791.
+
+\bibitem{li2013story}
+{\sc Li, B., Lee-Urban, S., Johnston, G., and Riedl, M.}
+\newblock Story generation with crowdsourced plot graphs.
+\newblock In {\em AAAI\/} (2013).
+
 \bibitem{VDLPROCGENLEVEL}
 {\sc Linden, R. v.~d., Lopes, R., and Bidarra, R.}
 \newblock Designing procedurally generated levels.
@@ -75,6 +209,23 @@ Rogue, Nov. 2014.
   Conference on Artificial Intelligence in Interactive Digital Entertainment\/}
   (AAAI Press, Palo Alto, CA, oct 2013), AAAI, AAAI Press, pp.~41--47.
 \newblock ISBN 978-1-57735-635-6.
+
+\bibitem{liu2004conceptnet}
+{\sc Liu, H., and Singh, P.}
+\newblock Conceptnet?a practical commonsense reasoning tool-kit.
+\newblock {\em BT technology journal 22}, 4 (2004), 211--226.
+
+\bibitem{MARIOGRAPHGRAMMAR}
+{\sc {Londo\~{n}o}, S., and Missura, O.}
+\newblock Graph grammars for super mario bros levels.
+\newblock In {\em Proceedings of the FDG workshop on Procedural Content
+  Generation in Games\/} (2015).
+
+\bibitem{ly2012learning}
+{\sc Ly, D.~L., and Lipson, H.}
+\newblock Learning symbolic representations of hybrid dynamical systems.
+\newblock {\em Journal of Machine Learning Research 13}, Dec (2012),
+  3585--3618.
 
 \bibitem{martens2015ceptre}
 {\sc Martens, C.}
@@ -94,20 +245,53 @@ Rogue, Nov. 2014.
 \newblock In {\em Proceedings of the Digital Games Research Association\/}
   (Brunel University, London, September 2009).
 
+\bibitem{mawhorter2010procedural}
+{\sc Mawhorter, P., and Mateas, M.}
+\newblock Procedural level generation using occupancy-regulated extension.
+\newblock In {\em Computational Intelligence and Games (CIG), 2010 IEEE
+  Symposium on\/} (2010), IEEE, pp.~351--358.
+
 \bibitem{morton1966computer}
 {\sc Morton, G.~M.}
 \newblock {\em A computer oriented geodetic data base and a new technique in
   file sequencing}.
 
+\bibitem{muggleton1990efficient}
+{\sc Muggleton, S., Feng, C., et~al.}
+\newblock {\em Efficient induction of logic programs}.
+
+\bibitem{nelson2007towards}
+{\sc Nelson, M.~J., and Mateas, M.}
+\newblock Towards automated game design.
+\newblock In {\em AI* IA 2007: Artificial Intelligence and Human-Oriented
+  Computing}. Springer, 2007, pp.~626--637.
+
 \bibitem{nesdev}
 {\sc NESDev}.
 \newblock Nesdev wiki: Nes reference guide, 2017.
 
-\bibitem{MARIOGRAPHGRAMMAR}
-{\sc {n}o, S.~L., and Missura, O.}
-\newblock Graph grammars for super mario bros levels.
-\newblock In {\em Proceedings of the FDG workshop on Procedural Content
-  Generation in Games\/} (2015).
+\bibitem{nielsen2015towards}
+{\sc Nielsen, T.~S., Barros, G.~A., Togelius, J., and Nelson, M.~J.}
+\newblock Towards generating arcade game rules with vgdl.
+\newblock In {\em Computational Intelligence and Games (CIG), 2015 IEEE
+  Conference on\/} (2015), IEEE, pp.~185--192.
+
+\bibitem{niggemann2012learning}
+{\sc Niggemann, O., Stein, B., Vodencarevic, A., Maier, A., and B{\"u}ning,
+  H.~K.}
+\newblock Learning behavior models for hybrid timed systems.
+\newblock In {\em AAAI\/} (2012).
+
+\bibitem{nisbett1977telling}
+{\sc Nisbett, R.~E., and Wilson, T.~D.}
+\newblock Telling more than we can know: Verbal reports on mental processes.
+\newblock {\em Psychological review 84}, 3 (1977), 231.
+
+\bibitem{characters}
+{\sc Oliveira, Y.}
+\newblock A primer on procedural character generation for games and real-time
+  applications.
+\newblock {\em Game Dynamics\/} (2017).
 
 \bibitem{osborn2017refining}
 {\sc Osborn, J.~C., Wardrip-Fruin, N., and Mateas, M.}
@@ -115,10 +299,66 @@ Rogue, Nov. 2014.
 \newblock In {\em Proceedings of the 12th International Conference on the
   Foundations of Digital Games\/} (2017).
 
+\bibitem{polozov2015flashmeta}
+{\sc Polozov, O., and Gulwani, S.}
+\newblock Flashmeta: A framework for inductive program synthesis.
+\newblock {\em ACM SIGPLAN Notices 50}, 10 (2015), 107--126.
+
+\bibitem{Pulli:2012:RCV:2184319.2184337}
+{\sc Pulli, K., Baksheev, A., Kornyakov, K., and Eruhimov, V.}
+\newblock Real-time computer vision with opencv.
+\newblock {\em Commun. ACM 55}, 6 (June 2012), 61--69.
+
+\bibitem{quinlan1990learning}
+{\sc Quinlan, J.~R.}
+\newblock Learning logical definitions from relations.
+\newblock {\em Machine learning 5}, 3 (1990), 239--266.
+
+\bibitem{riedl2010narrative}
+{\sc Riedl, M.~O., and Young, R.~M.}
+\newblock Narrative planning: Balancing plot and character.
+\newblock {\em Journal of Artificial Intelligence Research 39\/} (2010),
+  217--268.
+
 \bibitem{salen2004rules}
 {\sc Salen, K., and Zimmerman, E.}
 \newblock {\em Rules of play: Game design fundamentals}.
 \newblock MIT press, 2004.
+
+\bibitem{hybridmodels2015santana}
+{\sc Santana, P., Lane, S., Timmons, E., Williams, B., and Forster, C.}
+\newblock Learning hybrid models with guarded transitions.
+
+\bibitem{Schkufza:2013:SS:2499368.2451150}
+{\sc Schkufza, E., Sharma, R., and Aiken, A.}
+\newblock Stochastic superoptimization.
+\newblock {\em SIGPLAN Not. 48}, 4 (Mar. 2013), 305--316.
+
+\bibitem{shaker2014alone}
+{\sc Shaker, N., and Abou-Zleikha, M.}
+\newblock Alone we can do so little, together we can do so much: A
+  combinatorial approach for generating game content.
+\newblock {\em AIIDE 14\/} (2014).
+
+\bibitem{shaker2013ropossum}
+{\sc Shaker, N., Shaker, M., and Togelius, J.}
+\newblock Ropossum: An authoring tool for designing, optimizing and solving cut
+  the rope levels.
+
+\bibitem{mario2010}
+{\sc Shaker, N., Togelius, J., Yannakakis, G.~N., Weber, B.~G., Shimizu, T.,
+  Hashiyama, T., Sorenson, N., Pasquier, P., Mawhorter, P.~A., Takahashi, G.,
+  Smith, G., and Baumgarten, R.}
+\newblock The 2010 mario ai championship: Level generation track.
+\newblock {\em IEEE Trans. Comput. Intellig. and AI in Games 3\/} (2011),
+  332--347.
+
+\bibitem{smith2012case}
+{\sc Smith, A.~M., Andersen, E., Mateas, M., and Popovi{\'c}, Z.}
+\newblock A case study of expressively constrainable level design automation
+  tools for a puzzle game.
+\newblock In {\em Proceedings of the International Conference on the
+  Foundations of Digital Games\/} (2012), ACM, pp.~156--163.
 
 \bibitem{tanagra}
 {\sc Smith, G., Member, S., Whitehead, J., Member, S., and Mateas, M.}
@@ -133,6 +373,33 @@ Rogue, Nov. 2014.
 \newblock In {\em Proceedings of the 2010 Workshop on Procedural Content
   Generation in Games\/} (2010), ACM, p.~4.
 
+\bibitem{smith2011launchpad}
+{\sc Smith, G., Whitehead, J., Mateas, M., Treanor, M., March, J., and Cha, M.}
+\newblock Launchpad: A rhythm-based level generator for 2-d platformers.
+\newblock {\em IEEE Transactions on Computational Intelligence and AI in Games
+  3}, 1 (2011), 1--16.
+
+\bibitem{snodgrass2014experiments}
+{\sc Snodgrass, S., and Onta{\~n}{\'o}n, S.}
+\newblock Experiments in map generation using {M}arkov chains.
+\newblock In {\em FDG\/} (2014), vol.~14.
+
+\bibitem{snodgrass2015hierarchical}
+{\sc Snodgrass, S., and Onta{\~{n}}{\'{o}}n, S.}
+\newblock A hierarchical {MdMC} approach to 2{D} video game map generation.
+\newblock {\em AIIDE\/} (2015).
+
+\bibitem{snodgrassconstrained}
+{\sc Snodgrass, S., and Onta{\~{n}}{\'{o}}n, S.}
+\newblock Controllable procedural content generation via constrained
+  multi-dimensional {M}arkov chain sampling.
+\newblock In {\em {IJCAI}\/} (2016), pp.~780--786.
+
+\bibitem{snodgrass2016learning}
+{\sc Snodgrass, S., and Ontanon, S.}
+\newblock Learning to generate video game maps using {M}arkov models.
+\newblock {\em TCIAIG\/} (2016).
+
 \bibitem{SORPASLEVEL}
 {\sc Sorenson, N., and Pasquier, P.}
 \newblock Towards a generic framework for automated video game level creation.
@@ -140,11 +407,26 @@ Rogue, Nov. 2014.
   Applications of Evolutionary Computation - Volume Part I\/} (Berlin,
   Heidelberg, 2010), EvoApplicatons'10, Springer-Verlag, pp.~131--140.
 
+\bibitem{steffen2011introduction}
+{\sc Steffen, B., Howar, F., and Merten, M.}
+\newblock Introduction to active automata learning from a practical
+  perspective.
+\newblock Springer.
+
+\bibitem{stephenson2016procedural}
+{\sc Stephenson, M., and Renz, J.}
+\newblock Procedural generation of levels for angry birds style physics games.
+
 \bibitem{stolee2011expressing}
 {\sc Stolee, K.~T., and Fristoe, T.}
 \newblock Expressing computer science concepts through kodu game lab.
 \newblock In {\em Proceedings of the 42nd ACM technical symposium on Computer
   science education\/} (2011), ACM, pp.~99--104.
+
+\bibitem{summerville2016mariostring}
+{\sc Summerville, A., and Mateas, M.}
+\newblock Super {M}ario as a string: Platformer level generation via {LSTM}s.
+\newblock {\em DiGRA/FDG\/} (2016).
 
 \bibitem{summerville2017mechanics}
 {\sc Summerville, A., Osborn, J.~C., Holmg{\aa}rd, C., Zhang, D., and Mateas,
@@ -154,11 +436,29 @@ Rogue, Nov. 2014.
 \newblock In {\em Proceedings of the 12th International Conference on the
   Foundations of Digital Games\/} (2017).
 
+\bibitem{seq2seq}
+{\sc Sutskever, I., Vinyals, O., and Le, Q.~V.}
+\newblock Sequence to sequence learning with neural networks.
+\newblock In {\em CoRR\/} (2014).
+
 \bibitem{szekely2013energy}
 {\sc Sz{\'e}kely, G.~J., and Rizzo, M.~L.}
 \newblock Energy statistics: A class of statistics based on distances.
 \newblock {\em Journal of statistical planning and inference 143}, 8 (2013),
   1249--1272.
+
+\bibitem{nethack}
+{\sc {The NetHack DevTeam}}.
+\newblock {NetHack}, 1987.
+
+\bibitem{rogue}
+{\sc Toy, M., Wichman, G., and Arnold, K.}
+\newblock {Rogue}, 1980.
+
+\bibitem{treanor2012game}
+{\sc Treanor, M., Blackford, B., Mateas, M., and Bogost, I.}
+\newblock Game-o-matic: Generating videogames that represent ideas.
+\newblock In {\em Second PCG workshop\/} (2012).
 
 \bibitem{VARGASPLOTPOINTS}
 {\sc Valls-Vargas, J., Ontanon, S., and Zhu, J.}
@@ -173,9 +473,42 @@ Rogue, Nov. 2014.
   Computer Science and Software Engineering\/} (New York, NY, USA, 2012), C3S2E
   '12, ACM, pp.~27--35.
 
+\bibitem{van2013designing}
+{\sc Van~der Linden, R., Lopes, R., and Bidarra, R.}
+\newblock Designing procedurally generated levels.
+\newblock In {\em Proceedings of the the second workshop on Artificial
+  Intelligence in the Game Design Process\/} (2013).
+
+\bibitem{pointer_network}
+{\sc Vinyals, O., Fortunato, M., and Jaitly, N.}
+\newblock Pointer networks.
+\newblock In {\em Advances in Neural Information Processing Systems\/} (2015),
+  pp.~2692--2700.
+
 \bibitem{wardrip-fruin2005playable}
 {\sc Wardrip-Fruin, N.}
 \newblock Playable media and textual instruments.
 \newblock {\em Dichtung Digital 34\/} (2005), 211--253.
+
+\bibitem{ZELDAELEMENTS}
+{\sc {Zelda Elements}}.
+\newblock Link's awakening maps, Nov. 2014.
+\newblock {http://www.zeldaelements.net/games/c/links\_awakening/maps}.
+
+\bibitem{ZELDASHRINE}
+{\sc {Zelda Shrine}}.
+\newblock The legend of zelda \- world \& dungeon maps, Nov. 2014.
+\newblock {http://zs.ffshrine.org/legend-of-zelda/maps.php}.
+
+\bibitem{artistic_practices}
+{\sc Zembylas, T.}
+\newblock {\em Artistic Practices: Social Interactions and Cultural Dynamics}.
+\newblock Routledge, 2014.
+
+\bibitem{zook2014automatic}
+{\sc Zook, A., and Riedl, M.~O.}
+\newblock Automatic game design via mechanic generation.
+\newblock In {\em Proceedings of the 28th AAAI Conference on Artificial
+  Intelligence\/} (2014).
 
 \end{thebibliography}

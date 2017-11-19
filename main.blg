@@ -3,115 +3,57 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: acm.bst
 Database file #1: bibliography.bib
-Warning--I didn't find a database entry for "tellingmorethanwecanknow"
-Warning--I didn't find a database entry for "artisticpractices_Social_Interactions_and_Cultural_Dynamics"
-Warning--I didn't find a database entry for "kateoatmeal"
-Warning--I didn't find a database entry for "mikeaestheticoflargenumbers"
-Warning--I didn't find a database entry for "PROCJAM2015"
-Warning--I didn't find a database entry for "PROCJAM2016"
-Warning--I didn't find a database entry for "SOMETHING"
-Warning--I didn't find a database entry for "adom"
-Warning--I didn't find a database entry for "nethack"
-Warning--I didn't find a database entry for "refraction"
-Warning--I didn't find a database entry for "ropossum"
-Warning--I didn't find a database entry for "angrybirds"
-Warning--I didn't find a database entry for "KATESProceduralLevelDesignforPlatformGames"
-Warning--I didn't find a database entry for "mario2010"
-Warning--I didn't find a database entry for "mawhorterORE"
-Warning--I didn't find a database entry for "sorpasq"
-Warning--I didn't find a database entry for "dahlskog2014linear"
-Warning--I didn't find a database entry for "dahlskog2013patterns"
-Warning--I didn't find a database entry for "snodgrass2014experiments"
-Warning--I didn't find a database entry for "ching2007multi"
-Warning--I didn't find a database entry for "snodgrass2015hierarchical"
-Warning--I didn't find a database entry for "snodgrassconstrained"
-Warning--I didn't find a database entry for "snodgrass2016learning"
-Warning--I didn't find a database entry for "Pulli:2012:RCV:2184319.2184337"
-Warning--I didn't find a database entry for "kalogerakis:2012:SIG"
-Warning--I didn't find a database entry for "shaker2014alone"
-Warning--I didn't find a database entry for "lee1999learning"
-Warning--I didn't find a database entry for "snodgrassmdmc"
-Warning--I didn't find a database entry for "gans"
-Warning--I didn't find a database entry for "vae"
-Warning--I didn't find a database entry for "seq2seq"
-Warning--I didn't find a database entry for "ganstuff"
-Warning--I didn't find a database entry for "ganinterpolation"
-Warning--I didn't find a database entry for "pointer_network"
-Warning--I didn't find a database entry for "van2013designing"
-Warning--I didn't find a database entry for "summerville2016mariostring"
-Warning--I didn't find a database entry for "smith2011launchpad"
-Warning--I didn't find a database entry for "ks"
-Warning--I didn't find a database entry for "programsynthesis"
-Warning--I didn't find a database entry for "OleksandrPolozovandSumitGulwani.2015.FlashMeta:Aframeworkforinductiveprogramsynthesis"
-Warning--I didn't find a database entry for "EricSchkufza"
-Warning--I didn't find a database entry for "RahulSharma"
-Warning--I didn't find a database entry for "andAlexAiken.2013.StochasticSuperoptimization."
-Warning--I didn't find a database entry for "IntroductiontoActiveAutomataLearningfromaPracticalPerspective?"
-Warning--I didn't find a database entry for "niggemann2012learning"
-Warning--I didn't find a database entry for "hybridmodels2015santana"
-Warning--I didn't find a database entry for "LearningSymbolicRepresentationsofHybridDynamicalSystems"
-Warning--I didn't find a database entry for "baum1966statistical"
-Warning--I didn't find a database entry for "beal2002infinite"
-Warning--I didn't find a database entry for "kukreja2005least"
-Warning--I didn't find a database entry for "bridewell2008inductive"
-Warning--I didn't find a database entry for "AGDViaMechanics"
-Warning--I didn't find a database entry for "towardsAGD"
-Warning--I didn't find a database entry for "conceptnet"
-Warning--I didn't find a database entry for "wordnet"
-Warning--I didn't find a database entry for "gameomatic"
-Warning--I didn't find a database entry for "("
-Warning--I didn't find a database entry for "mikesThesis"
-Warning--I didn't find a database entry for "EvolutionaryGameDesign"
-Warning--I didn't find a database entry for "FOIL"
-Warning--I didn't find a database entry for "GOLEM"
-Warning--I didn't find a database entry for "Metgol"
-Warning--to sort, need author or key in rogue
-Warning--to sort, need author or key in ZELDASHRINE
-Warning--to sort, need author or key in ANGELFIRE
-Warning--to sort, need author or key in ZELDAELEMENTS
+Warning--empty booktitle in compton2006procedural
+Warning--empty journal in cook2015co
 Warning--empty journal in harmon2017narrative
 Warning--empty publisher in morton1966computer
 Warning--empty year in morton1966computer
+Warning--empty publisher in muggleton1990efficient
+Warning--empty year in muggleton1990efficient
+Warning--empty journal in hybridmodels2015santana
+Warning--empty booktitle in shaker2013ropossum
 Warning--empty year in tanagra
-You've used 31 entries,
+Warning--empty booktitle in steffen2011introduction
+Warning--empty booktitle in stephenson2016procedural
+You've used 91 entries,
             2253 wiz_defined-function locations,
-            789 strings with 10756 characters,
-and the built_in function-call counts, 9732 in all, are:
-= -- 894
-> -- 397
+            991 strings with 18397 characters,
+and the built_in function-call counts, 29108 in all, are:
+= -- 2674
+> -- 1381
 < -- 0
-+ -- 167
-- -- 133
-* -- 681
-:= -- 1488
-add.period$ -- 87
-call.type$ -- 31
-change.case$ -- 155
++ -- 578
+- -- 477
+* -- 2077
+:= -- 4646
+add.period$ -- 263
+call.type$ -- 91
+change.case$ -- 502
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 440
-empty$ -- 909
-format.name$ -- 133
-if$ -- 2107
+cite$ -- 103
+duplicate$ -- 1229
+empty$ -- 2509
+format.name$ -- 477
+if$ -- 6131
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 27
-newline$ -- 152
-num.names$ -- 58
-pop$ -- 246
+int.to.str$ -- 91
+missing$ -- 85
+newline$ -- 447
+num.names$ -- 186
+pop$ -- 710
 preamble$ -- 1
-purify$ -- 126
+purify$ -- 417
 quote$ -- 0
-skip$ -- 270
+skip$ -- 743
 stack$ -- 0
-substring$ -- 499
-swap$ -- 109
+substring$ -- 1392
+swap$ -- 305
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
-warning$ -- 8
-while$ -- 87
-width$ -- 33
-write$ -- 304
-(There were 70 warnings)
+type$ -- 352
+warning$ -- 12
+while$ -- 264
+width$ -- 93
+write$ -- 872
+(There were 12 warnings)
