@@ -15,45 +15,45 @@ Warning--empty booktitle in shaker2013ropossum
 Warning--empty year in tanagra
 Warning--empty booktitle in steffen2011introduction
 Warning--empty booktitle in stephenson2016procedural
-You've used 91 entries,
+You've used 92 entries,
             2253 wiz_defined-function locations,
-            991 strings with 18397 characters,
-and the built_in function-call counts, 29108 in all, are:
-= -- 2674
-> -- 1381
+            995 strings with 18466 characters,
+and the built_in function-call counts, 29322 in all, are:
+= -- 2693
+> -- 1388
 < -- 0
-+ -- 578
-- -- 477
-* -- 2077
-:= -- 4646
-add.period$ -- 263
-call.type$ -- 91
-change.case$ -- 502
++ -- 581
+- -- 479
+* -- 2087
+:= -- 4680
+add.period$ -- 266
+call.type$ -- 92
+change.case$ -- 506
 chr.to.int$ -- 0
-cite$ -- 103
-duplicate$ -- 1229
-empty$ -- 2509
-format.name$ -- 477
-if$ -- 6131
+cite$ -- 104
+duplicate$ -- 1237
+empty$ -- 2532
+format.name$ -- 479
+if$ -- 6177
 int.to.chr$ -- 0
-int.to.str$ -- 91
+int.to.str$ -- 92
 missing$ -- 85
-newline$ -- 447
-num.names$ -- 186
-pop$ -- 710
+newline$ -- 452
+num.names$ -- 188
+pop$ -- 719
 preamble$ -- 1
-purify$ -- 417
+purify$ -- 420
 quote$ -- 0
-skip$ -- 743
+skip$ -- 750
 stack$ -- 0
-substring$ -- 1392
-swap$ -- 305
+substring$ -- 1397
+swap$ -- 307
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 352
+type$ -- 356
 warning$ -- 12
-while$ -- 264
-width$ -- 93
-write$ -- 872
+while$ -- 266
+width$ -- 94
+write$ -- 882
 (There were 12 warnings)

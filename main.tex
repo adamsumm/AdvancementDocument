@@ -91,7 +91,7 @@ To this end I propose a body of work that will look to answer the following ques
 
 \textbf{RQ1: How can a machine learn the important mechanical properties of the content?}
 
-Currently, techniques such as Generative Adversarial Networks (GANs) or Variational AutoEncoders (VAEs) are popular techniques for image generation.  Certainly, it would be possible to supply images of game levels (these exist in abundance on the internet **CITE VGATLAS**), but visual signifiers are only one portion of the semiotics of a game.  The mechanical properties of the game entities are at least equally as important (and certainly visuals can deceive, as two visually identical entities might have different properties).  While image based techniques might be able to generate visually acceptable levels, without a way of encoding these properties they are going to lack the expressivity of a generator which has access to such properties.  Previous machine learned approaches have either operated on the visual level or with designer specified mechanical properties.   I aim to answer the question of how to learn the mechanical properties in a way that enables down stream use (e.g., for a generator).
+Currently, techniques such as Generative Adversarial Networks (GANs) or Variational AutoEncoders (VAEs) are popular techniques for image generation.  Certainly, it would be possible to supply images of game levels (these exist in abundance on the internet\cite{vgatlas}), but visual signifiers are only one portion of the semiotics of a game.  The mechanical properties of the game entities are at least equally as important (and certainly visuals can deceive, as two visually identical entities might have different properties).  While image based techniques might be able to generate visually acceptable levels, without a way of encoding these properties they are going to lack the expressivity of a generator which has access to such properties.  Previous machine learned approaches have either operated on the visual level or with designer specified mechanical properties.   I aim to answer the question of how to learn the mechanical properties in a way that enables down stream use (e.g., for a generator).
 
 
 \textbf{RQ2: How should content be represented such that it can be efficiently learned for generation?}
@@ -1425,13 +1425,13 @@ After finding all possible combinations of rules involving the abstraction of co
 
 As with behavior generation, yet still even moreso, the evaluation of generated games is still very much an open question.  For \textit{Leda}, the evaluation can take the form of ``How many of a desired set of rules can be found?'' and ``How usable are the learned rules for down-stream generation?''  Unlike the work on behavior and level generation, the generated games from \textit{Gemini} are not trying to match the distributions of some target set, but instead are trying to match certain design goals.  This means that it is likely going to require user evaluations to determine whether the desired properties are found in the generated games.
 
-\chapter*{Timeline}
+\chapter*{Conclusion And Timeline}
 
 \begin{enumerate}
 \item \textbf{Fall 2017} - Proposal, apply for faculty positions, work on \textit{Leda}, \textit{Mappy} $\rightarrow$ \textit{Kamek} \& \textit{Agahnim}, work on CALE, work on \textit{Agahnim}
 \item \textbf{Winter 2017} - work on \textit{Leda}, \textit{Mappy} $\rightarrow$ \textit{Kamek} \& \textit{Agahnim}, work on CALE, work on \textit{Agahnim}, dissertation writing
-\item \textbf{Spring 2017} - dissertation writing
-\item \textbf{Summer 2017} - disseration writing/defense
+\item \textbf{Spring 2018} - dissertation writing
+\item \textbf{Summer 2018} - disseration writing/defense
 
 \end{enumerate}
 
@@ -1452,7 +1452,7 @@ To conclude, I am looking to explore the research questions:
 
 \end{itemize}
 
-
+I believe that the systems that I have developed, in conjunction with the refinements (generalization of the \textit{Agahnim} architecture in particular) and my proposed work (integration of \textit{Mappy} with \textit{Kamek} and \textit{Agahnim} \& development of \textit{CALE}) answer my research questions.  In general, this work should be interesting to a number of communities --  \textit{Kamek}, \textit{Agahnim}, \textit{Gemini} and \textit{CALE} to the broader PCG community, \textit{Leda} and \textit{Gemini} to the computational creativity community, and \textit{Kamek}, \textit{CALE}, and \textit{Agahnim} to the machine learning community.
 
 
 \bibliographystyle{acm}

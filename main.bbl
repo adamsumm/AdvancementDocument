@@ -479,6 +479,11 @@
 \newblock In {\em Proceedings of the the second workshop on Artificial
   Intelligence in the Game Design Process\/} (2013).
 
+\bibitem{vgatlas}
+{\sc {VGMaps}}.
+\newblock {VGMaps: The Video Game Atlas}, Nov. 2017.
+\newblock {http://www.vgmaps.com/}.
+
 \bibitem{pointer_network}
 {\sc Vinyals, O., Fortunato, M., and Jaitly, N.}
 \newblock Pointer networks.
